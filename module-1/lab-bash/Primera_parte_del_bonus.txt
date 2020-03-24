@@ -1,0 +1,24 @@
+david@david-Lenovo-Y70-70-Touch:~$ read name
+David
+david@david-Lenovo-Y70-70-Touch:~$ echo "$name"
+David
+david@david-Lenovo-Y70-70-Touch:~$ cd datamex0320
+david@david-Lenovo-Y70-70-Touch:~/datamex0320$ cd/module-1
+bash: cd/module-1: No such file or directory
+david@david-Lenovo-Y70-70-Touch:~/datamex0320$ cd module-1
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1$ cd lab-bash
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash$ mkdir David
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash$ ls
+David  exercices  inputs  lorem  lorem-copy  outputs  Primeros_ejercicios_en_bash.txt  README.md
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash$ rmdir David
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash$ ls
+exercices  inputs  lorem  lorem-copy  outputs  Primeros_ejercicios_en_bash.txt  README.md
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash$ cd lorem
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ ls
+at.txt  lorem-copy  lorem.txt  sed.txt
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ rmdir lorem-copy
+rmdir: failed to remove 'lorem-copy': Not a directory
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ rm lorem-copy
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ ls
+at.txt  lorem.txt  sed.txt
+
