@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ¿QUIEN SOY?
 
 Soy Saùl Romero, soy de la CDMX, actualmente realizo el bootcamp de data analytics
@@ -12,3 +13,6 @@ Me gustaria trabajar por un tiempo y terminar los proyectos que actualmente teng
 
 
 
+=======
+Lm vehicula iaculis.
+>>>>>>> 2b603a781bfe85388560adafda2efa4496bc2d35
