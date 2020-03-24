@@ -137,6 +137,6 @@ After resolving the conflicts, add the fixed files and commit. In the commit mes
 
 ### Step 8 - Make Pull Request
 
-Make a pull request to **merge the `lab-resolving-git-conflicts` branch of your fork to the bootcamp's lab repo**. This can be done in the webpage of your bootcamp's lab repo. Select the correct repos and branches in both the *base* and *head*. Git should tell you the pull request is able to be merged. Your pull request
+Make a pull request to **merge the `lab-resolving-git-conflicts` branch of your fork to the bootcamp's lab repo**. This can be done in the webpage of your bootcamp's lab repo. Select the correct repos and branches in both the *base* and *head*. Git should tell you the pull request is able to be merged. Your pull request should look like:
 
 ![Git pull request](git-pull-request.png)
