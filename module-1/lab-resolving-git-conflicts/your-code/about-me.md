@@ -29,4 +29,4 @@ Tech industry
 One that provides valuable information that influence decisions
 
 * What is your career goal?
-Succeed in the Data Science field 
+Succeed in the Data Science field
