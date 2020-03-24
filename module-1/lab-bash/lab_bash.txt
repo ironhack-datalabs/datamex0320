@@ -1,0 +1,22 @@
+﻿lab_dash:
+
+    1. echo "Hola Mundo" 
+    2.  mkdir new_dir
+    3. rm -rf new_dir
+    4. cp lorem/sed.txt lorem-copy/sed.txt
+    5. cp lorem/at.txt lorem-copy/at.txt ; cp lorem/lorem.txt lorem-copy/lorem.txt
+    6. cat sed.txt
+    7. cat at.txt ; cat lorem.txt
+    8. head -n 3 sed.txt
+    9. tail -n 3 sed.txt
+    10. echo "Homo homini lupus." >>  sed.txt
+    11. tail -n 3 sed.txt
+    12. sed 's/et/ET/g'  lorem
+    13. last
+    14. pwd
+    15. ls
+    16. cat sed.txt | wc -l sed.txt
+    17. find / lorem | wc -l
+    18. grep "et" at.txt
+    19. cat at.txt | grep "et" at.txt | wc -l
+    20. grep -ri "et" | wc -l
