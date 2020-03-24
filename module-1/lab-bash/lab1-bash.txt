@@ -1,0 +1,161 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf610
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;}
+{\*\expandedcolortbl;;\csgray\c0;\csgray\c100000;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \cb3 \CocoaLigature0 Last login: Mon Mar 23 15:03:13 on ttys001\
+MacBookPro:~ juan$ ls\
+Desktop			Music			clases_datamex0320\
+Documents		Mystudy			data-prework\
+Downloads		Pictures		example.txt\
+Library			Public\
+Movies			README.md\
+MacBookPro:~ juan$ cd documents\
+MacBookPro:documents juan$ cd ironhack\
+MacBookPro:ironhack juan$ ls\
+GitHub\
+MacBookPro:ironhack juan$ cd git\
+-bash: cd: git: No such file or directory\
+MacBookPro:ironhack juan$ cd github\
+MacBookPro:github juan$ ls\
+data-prework\
+MacBookPro:github juan$ mkdir labs\
+MacBookPro:github juan$ cd labs\
+MacBookPro:labs juan$ ls\
+MacBookPro:labs juan$ pwd\
+/Users/juan/documents/ironhack/github/labs\
+MacBookPro:labs juan$ git init\
+Initialized empty Git repository in /Users/juan/Documents/IronHack/GitHub/labs/.git/\
+MacBookPro:labs juan$ git checkout lab1-lab_bash\
+error: pathspec 'lab1-lab_bash' did not match any file(s) known to git.\
+MacBookPro:labs juan$ git checkout -b lab1-lab_bash\
+Switched to a new branch 'lab1-lab_bash'\
+MacBookPro:labs juan$ git branch\
+MacBookPro:labs juan$ git checkout\
+fatal: You are on a branch yet to be born\
+MacBookPro:labs juan$ git checkout\
+fatal: You are on a branch yet to be born\
+MacBookPro:labs juan$ git checkoutclar\
+git: 'checkoutclar' is not a git command. See 'git --help'.\
+MacBookPro:labs juan$ clear\
+\
+MacBookPro:labs juan$ ls\
+MacBookPro:labs juan$ pwd\
+/Users/juan/documents/ironhack/github/labs\
+MacBookPro:labs juan$ git clone https://github.com/Herguejuan/datamex0320.git\
+Cloning into 'datamex0320'...\
+remote: Enumerating objects: 723, done.\
+remote: Total 723 (delta 0), reused 0 (delta 0), pack-reused 723\
+Receiving objects: 100% (723/723), 241.08 MiB | 253.00 KiB/s, done.\
+Resolving deltas: 100% (119/119), done.\
+Checking out files: 100% (639/639), done.\
+MacBookPro:labs juan$ ls\
+datamex0320\
+MacBookPro:labs juan$ cd datamex0320\
+MacBookPro:datamex0320 juan$ ls\
+LICENSE		final-project	module-1	module-3\
+README.md	images		module-2\
+MacBookPro:datamex0320 juan$ cd module-1\
+MacBookPro:module-1 juan$ cd lab-bash\
+MacBookPro:lab-bash juan$ ls\
+README.md	inputs		lorem-copy\
+exercices	lorem		outputs\
+MacBookPro:lab-bash juan$ echo 'Hello World, Im Jhon'\
+Hello World, Im Jhon\
+MacBookPro:lab-bash juan$ mkdir new_dir\
+MacBookPro:lab-bash juan$ ls\
+README.md	inputs		lorem-copy	outputs\
+exercices	lorem		new_dir\
+MacBookPro:lab-bash juan$ rmdir new_dir\
+MacBookPro:lab-bash juan$ ls\
+README.md	inputs		lorem-copy\
+exercices	lorem		outputs\
+MacBookPro:lab-bash juan$ cp lorem/sed.txt lorem-copy/\
+MacBookPro:lab-bash juan$ cp lorem/at.txt lorem-copy/; cp lorem/lorem.txt lorem-copy/\
+MacBookPro:lab-bash juan$ pwd\
+/Users/juan/documents/ironhack/github/labs/datamex0320/module-1/lab-bash\
+MacBookPro:lab-bash juan$ cd lorem\
+MacBookPro:lorem juan$ ls\
+at.txt		lorem.txt	sed.txt\
+MacBookPro:lorem juan$ cat at.txt; cat lorem.txt\
+At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum \
+deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non \
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. \
+Et harum quidem rerum facilis est et expedita distinctio. \
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod \
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. \
+Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet \
+ut et voluptates repudiandae sint et molestiae non recusandae. \
+Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores \
+alias consequatur aut perferendis doloribus asperiores repellatLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. \
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. \
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseruMacBookPro:lorem juan$ pwd\
+/Users/juan/documents/ironhack/github/labs/datamex0320/module-1/lab-bash/lorem\
+MacBookPro:lorem juan$ cd ..\
+MacBookPro:lab-bash juan$ cd lorem-copy\
+MacBookPro:lorem-copy juan$ pwd\
+/Users/juan/documents/ironhack/github/labs/datamex0320/module-1/lab-bash/lorem-copy\
+MacBookPro:lorem-copy juan$ ls\
+at.txt		lorem.txt	sed.txt\
+MacBookPro:lorem-copy juan$ head -n3 sed.txt\
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, \
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. \
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, \
+MacBookPro:lorem-copy juan$ tail -n3 sed.txt\
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, \
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, \
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?MacBookPro:lorem-copy juan$ \
+MacBookPro:lorem-copy juan$ ls\
+at.txt		lorem.txt	sed.txt\
+MacBookPro:lorem-copy juan$ echo 'Homo homini lupus.' >> sed.txt\
+MacBookPro:lorem-copy juan$ tail -n3 sed.txt\
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, \
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, \
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus.\
+MacBookPro:lorem-copy juan$ pwd\
+/Users/juan/documents/ironhack/github/labs/datamex0320/module-1/lab-bash/lorem-copy\
+MacBookPro:lorem-copy juan$ sed 's/et/ET/g' at.txt\
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum \
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non \
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga. \
+Et harum quidem rerum facilis est ET expedita distinctio. \
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod \
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. \
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET \
+ut ET voluptates repudiandae sint ET molestiae non recusandae. \
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores \
+alias consequatur aut perferendis doloribus asperiores repellat\
+MacBookPro:lorem-copy juan$ whoami\
+juan\
+MacBookPro:lorem-copy juan$ pwd\
+/Users/juan/documents/ironhack/github/labs/datamex0320/module-1/lab-bash/lorem-copy\
+MacBookPro:lorem-copy juan$ cd ..\
+MacBookPro:lab-bash juan$ cd lorem\
+MacBookPro:lorem juan$ ls -l *.txt\
+-rwxr-xr-x  1 juan  staff  852 Mar 23 17:48 at.txt\
+-rwxr-xr-x  1 juan  staff  448 Mar 23 17:48 lorem.txt\
+-rwxr-xr-x  1 juan  staff  873 Mar 23 17:48 sed.txt\
+-rw-r--r--@ 1 juan  staff   76 Mar 23 18:46 test.txt\
+MacBookPro:lorem juan$ cat set.txt; wc -l sed.txt\
+cat: set.txt: No such file or directory\
+       8 sed.txt\
+MacBookPro:lorem juan$ cat sed.txt; wc -l sed.txt\
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, \
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. \
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, \
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. \
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, \
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. \
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, \
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, \
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?       8 sed.txt\
+MacBookPro:lorem juan$ ls 'lorem.txt'| wc -l\
+       1\
+MacBookPro:lorem juan$ pwd\
+/Users/juan/documents/ironhack/github/labs/datamex0320/module-1/lab-bash/lorem\
+MacBookPro:lorem juan$ grep -c 'et' at.txt\
+7\
+MacBookPro:lorem juan$ }
