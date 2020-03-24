@@ -1,0 +1,198 @@
+Imprime en consola "Hello World".
+MacBook-Air-de-Esteban:lab-bash EstebanCardona$ echo 'Hello World'
+Hello World
+
+
+Crea un directorio nuevo llamado new_dir.
+MacBook-Air-de-Esteban:lab-bash EstebanCardona$ mkdir 'new_dir'
+MacBook-Air-de-Esteban:lab-bash EstebanCardona$ ls
+README.md	lorem		outputs
+exercices	lorem-copy
+inputs		new_dir
+
+
+
+Elimina ese directorio.
+MacBook-Air-de-Esteban:lab-bash EstebanCardona$ rm -rf new_dir
+MacBook-Air-de-Esteban:lab-bash EstebanCardona$ ls
+README.md	inputs		lorem-copy
+exercices	lorem		outputs
+
+
+
+Copia el archivo sed.txt dentro de la carpeta lorem a la carpeta lorem-copy.
+MacBook-Air-de-Esteban:lorem EstebanCardona$ cp sed.txt /Users/EstebanCardona/documents/ironhack/datamex0320/module-1/lab-bash/lorem-copy
+
+
+Copia los otros dos archivos de la carpeta lorem a la carpeta lorem-copy en una sola linea mediante el pipe ;.
+MacBook-Air-de-Esteban:lorem EstebanCardona$ cp at.txt /Users/EstebanCardona/documents/ironhack/datamex0320/module-1/lab-bash/lorem-copy ; cp lorem.txt /Users/EstebanCardona/documents/ironhack/datamex0320/module-1/lab-bash/lorem-copy
+
+
+
+Muestra el contenido del archivo sed.txt dentro de la carpeta lorem.
+MacBook-Air-de-Esteban:lorem EstebanCardona$ cat sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+
+
+
+
+Muestra el contenido de los archivos at.txt y lorem.txt dentro de la carpeta lorem.
+MacBook-Air-de-Esteban:lorem EstebanCardona$ cat at.txt;cat lorem.txt
+At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum 
+deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non 
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. 
+Et harum quidem rerum facilis est et expedita distinctio. 
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod 
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. 
+Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet 
+ut et voluptates repudiandae sint et molestiae non recusandae. 
+Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores 
+alias consequatur aut perferendis doloribus asperiores repellatLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserun
+
+
+Visualiza las primeras 3 lineas del archivo sed.txt dentro de la carpeta lorem-copy
+MacBook-Air-de-Esteban:lorem-copy EstebanCardona$ head -n3 sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+
+
+
+Visualiza las ultimas 3 lineas del archivo sed.txt dentro de la carpeta lorem-copy
+MacBook-Air-de-Esteban:lorem-copy EstebanCardona$ tail -n3 sed.txt
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+
+
+Añade Homo homini lupus. al final de archivo sed.txt dentro de la carpeta lorem-copy.
+MacBook-Air-de-Esteban:lorem-copy EstebanCardona$ echo Homo homini lupus. >> sed.txt
+
+
+Visualiza las últimas 3 linas del archivo sed.txt dentro de la carpeta lorem-copy. Deberías ver ahora Homo homini lupus..
+MacBook-Air-de-Esteban:lorem-copy EstebanCardona$ tail -n3 sed.txt
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus.
+
+
+
+Sustituye todas las apariciones de et por ET del archivo at.txt dentro de la carpeta lorem a la carpeta lorem-copy. Deberás usar sed.
+MacBook-Air-de-Esteban:lorem EstebanCardona$ sed 's/et/ET/' at.txt
+At vero eos ET accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum 
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non 
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga. 
+Et harum quidem rerum facilis est ET expedita distinctio. 
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod 
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. 
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniet 
+ut ET voluptates repudiandae sint et molestiae non recusandae. 
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores 
+alias consequatur aut perferendis doloribus asperiores repellat
+
+
+
+Encuentra al usuario activo en el sistema.
+MacBook-Air-de-Esteban:lorem-copy EstebanCardona$ whoami
+EstebanCardona
+
+
+Encuentra dónde estás en tu sistema de ficheros.
+MacBook-Air-de-Esteban:lorem EstebanCardona$ pwd
+/Users/EstebanCardona/documents/ironhack/datamex0320/module-1/lab-bash/lorem
+
+
+Lista los archivos que terminan por .txt en la carpeta lorem.
+MacBook-Air-de-Esteban:lorem EstebanCardona$ ls *.txt
+at.txt		lorem.txt	sed.txt
+
+
+Cuenta el número de lineas que tiene el archivo sed.txt dentro de la carpeta lorem. Tendrás que encadenar cat y wc mediante el pipe |.
+MacBook-Air-de-Esteban:lorem EstebanCardona$ cat at.txt| wc -l
+       9
+
+
+Cuenta el número de archivos que empiezan por lorem que están en este directorio y en directorios internos
+
+
+
+Encuentra todas las apariciones de et en at.txt dentro de la carpeta lorem.
+MacBook-Air-de-Esteban:lorem EstebanCardona$ grep et at.txt
+At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum 
+deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non 
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. 
+Et harum quidem rerum facilis est et expedita distinctio. 
+Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet 
+ut et voluptates repudiandae sint et molestiae non recusandae. 
+Itaque earum rerum hic tenetur a s
+
+
+Cuenta el número de apariciones del string et en at.txt dentro de la carpeta lorem. Para ello debes obtener sólo los string buscados y contar las lineas.
+MacBook-Air-de-Esteban:lorem EstebanCardona$ grep -c et at.txt
+7
+
+Cuenta el número de apariciones del string et en todos los archivos del directorio lorem-copy.
+MacBook-Air-de-Esteban:lorem-copy EstebanCardona$ grep -c et at.txt
+7
+
+
+MacBook-Air-de-Esteban:lab-bash EstebanCardona$ bash list_files.sh
+README.md
+exercices
+inputs
+list_files.sh
+lorem
+lorem-copy
+module-1 - lab-bash - Esteban Cardona.txt
+outputs
+
+BONUS
+Almacena en una variable name tu nombre mediante el comando read.
+MacBook-Air-de-Esteban:lab-bash EstebanCardona$ read -p 'escribe tu nombre: ' name
+escribe tu nombre: EstebanCardona
+
+
+Imprime esa variable.
+MacBook-Air-de-Esteban:lab-bash EstebanCardona$ echo $name
+EstebanCardona
+
+Crea un directorio nuevo que se llame como el contenido de la variable name.
+MacBook-Air-de-Esteban:lab-bash EstebanCardona$ mkdir $name
+MacBook-Air-de-Esteban:lab-bash EstebanCardona$ ls
+EstebanCardona
+README.md
+exercices
+inputs
+list_files.sh
+lorem
+lorem-copy
+module-1 - lab-bash - Esteban Cardona.txt
+outputs
+
+Elimina ese directorio.
+MacBook-Air-de-Esteban:lab-bash EstebanCardona$ rm -rf $name
+MacBook-Air-de-Esteban:lab-bash EstebanCardona$ ls
+README.md
+exercices
+inputs
+list_files.sh
+lorem
+lorem-copy
+module-1 - lab-bash - Esteban Cardona.txt
+outputs
+
+Por cada archivo dentro de la carpeta lorem imprime el número de carácteres que tienen sus nombres. Intenta primero mostrar los archivos mediante un bucle for. Luego calcula la longitud de cada elemento de la iteración.
+
+Imprime los ficheros
+Imprime las longitudes de los nombres de los ficheros.
