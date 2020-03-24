@@ -1,0 +1,60 @@
+
+Listado de contenido
+$ ls
+
+Imprime en consola “hello world”
+$ echo 'hello world'
+
+Crear nuevo directorio
+$ mkdir new_dir
+
+Eliminar directorio
+$ rm -rf new_dir
+
+Copiar archivo sed.txt
+$ cp /Users/sylviac/datamex0320/module-1/lab-bash/lorem/sed.txt /Users/sylviac/datamex0320/module-1/lab-bash/lorem-copy
+
+Copiar los otros dos archivos
+cp /Users/sylviac/datamex0320/module-1/lab-bash/lorem/sed.txt /Users/sylviac/datamex0320/module-1/lab-bash/lorem-copy ; cp /Users/sylviac/datamex0320/module-1/lab-bash/lorem/at.txt /Users/sylviac/datamex0320/module-1/lab-bash/lorem-copy
+
+Muestra el contenido 
+$ cat sed.txt
+
+Contenido de los otros dos archivos 
+$ cat at.txt;lorem.txt
+
+$ cd ..
+$ cd lorem-copy
+
+
+Tres primeras lineas de sed.txt
+head -n 3 sed.txt
+
+Tres últimas líneas
+tail -3 sed.txt
+
+Añadir al final homo homini lupus
+$ echo 'Homo homini lupus' >> sed.txt
+
+MacBook-Pro-de-Sylvia:lorem-copy sylviac$ tail -3 sed.txt
+
+Reemplazar et por ET
+$ sed 's/et/ET/g' at.txt > /Users/sylviac/datamex0320/module-1/lab-bash/lorem-copy/at.txt
+
+Usuario activo
+$ whoami
+
+Número de líneas 
+$ cat sed.txt | wc -l
+
+Archivos con el nombre “lorem”
+$ find . -name "lorem*" -print
+
+Apariciones de et en at.txt
+grep 'et' at.txt
+
+Número de veces que aparece et en at.txt
+$ grep ‘et’ at.txt | wc -l
+
+Et en todos los archivos 
+grep 'et' *.txt | wc -l
