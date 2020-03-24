@@ -1,0 +1,27 @@
+echo 'Hello World'
+mkdir new_dir
+rm -rf new_dir
+cp lorem/sed.txt lorem-copy/
+cp lorem/at.txt lorem-copy/; cp lorem/lorem.txt lorem-copy/
+cat lorem/sed.txt
+cat lorem/at.txt; cat lorem/lorem.txt
+head -n 3 lorem/sed.txt
+tail -n 3 lorem/sed.txt
+echo 'Homo homini lupus' >> lorem/sed.txt
+tail -n 3 lorem/sed.txt
+sed -ie 's/et/ET/g' lorem/at.txt
+whoami
+pwd
+ls lorem/*.txt
+cat lorem/sed.txt | wc
+find lorem* -type f | wc -l
+grep 'et' lorem/at.txt
+grep -c 'ET' lorem/at.txt
+grep -rc 'et' lorem/
+read name
+echo $name
+mkdir ${name}
+rm -r ${name}
+for f in lorem/*; do echo $f | wc -c; done
+ls -d */
+for f in */; do echo $f | wc -c; done
