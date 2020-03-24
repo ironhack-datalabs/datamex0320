@@ -1,0 +1,42 @@
+echo 'Hello World'
+
+mkdir new_dir
+
+rm -rf new_dir
+
+cp /Users/esdras/Ironhack/datamex0320/module-1/lab-bash/lorem/sed.txt  /Users/esdras/Ironhack/datamex0320/module-1/lab-bash/lorem-copy
+
+cp /Users/esdras/Ironhack/datamex0320/module-1/lab-bash/lorem/at.txt  /Users/esdras/Ironhack/datamex0320/module-1/lab-bash/lorem-copy | cp /Users/esdras/Ironhack/datamex0320/module-1/lab-bash/lorem/lorem.txt  /Users/esdras/Ironhack/datamex0320/module-1/lab-bash/lorem-copy 
+
+cat /Users/esdras/Ironhack/datamex0320/module-1/lab-bash/lorem/sed.txt
+
+cat /Users/esdras/Ironhack/datamex0320/module-1/lab-bash/lorem/at.txt
+cat /Users/esdras/Ironhack/datamex0320/module-1/lab-bash/lorem/lorem.txt 
+
+head -3 /Users/esdras/Ironhack/datamex0320/module-1/lab-bash/lorem-copy/sed.txt
+
+tail -3 /Users/esdras/Ironhack/datamex0320/module-1/lab-bash/lorem-copy/sed.txt
+
+echo 'Homo homini lupus.' >> /Users/esdras/Ironhack/datamex0320/module-1/lab-bash/lorem-copy/sed.txt
+
+tail -3 /Users/esdras/Ironhack/datamex0320/module-1/lab-bash/lorem-copy/sed.txt
+
+sed 's/et/ET/g' /Users/esdras/Ironhack/datamex0320/module-1/lab-bash/lorem/sed.txt > /Users/esdras/Ironhack/datamex0320/module-1/lab-bash/lorem-copy/sed.txt
+
+whoami
+
+pwd
+
+find /Users/esdras/Ironhack/datamex0320/module-1/lab-bash/lorem -type f -name "*.txt"
+
+cat /Users/esdras/Ironhack/datamex0320/module-1/lab-bash/lorem/sed.txt | wc -l
+
+find /Users/esdras/Ironhack/datamex0320/module-1/lab-bash  -name "lorem.*" | wc -l
+
+grep 'et' /Users/esdras/Ironhack/datamex0320/module-1/lab-bash/lorem/at.txt
+
+grep -c "et" /Users/esdras/Ironhack/datamex0320/module-1/lab-bash/lorem/at.txt
+
+grep -o "et" *.* | wc -l
+
+
