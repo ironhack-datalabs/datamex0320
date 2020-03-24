@@ -1,0 +1,438 @@
+david@david-Lenovo-Y70-70-Touch:~$ git clone https://github.com/DavidCis/datamex0320.git
+fatal: destination path 'datamex0320' already exists and is not an empty directory.
+david@david-Lenovo-Y70-70-Touch:~$ cd datamex0320
+david@david-Lenovo-Y70-70-Touch:~/datamex0320$ cd module-1
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1$ cd ..
+david@david-Lenovo-Y70-70-Touch:~/datamex0320$ git pull
+Already up to date.
+david@david-Lenovo-Y70-70-Touch:~/datamex0320$ cd module-1
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1$ cd lab-bash
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash$ ls
+exercices  inputs  lorem  lorem-copy  outputs  README.md
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash$ cd lorem
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ ls
+at.txt  lorem-copy  lorem.txt
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ nano lorem-copy
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ mv lorem-copy sed.txt
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ ls
+at.txt  lorem.txt  sed.txt
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ cp sed.txt lorem-copy
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ cd ..
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash$ cd lorem-copy
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem-copy$ ls
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem-copy$ cd ..
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash$ cd ..
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1$ cd ..
+david@david-Lenovo-Y70-70-Touch:~/datamex0320$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   module-1/lab-bash/lorem/sed.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	module-1/lab-bash/lorem/lorem-copy
+
+no changes added to commit (use "git add" and/or "git commit -a")
+david@david-Lenovo-Y70-70-Touch:~/datamex0320$ git branch "Lab dia 1"
+fatal: 'Lab dia 1' is not a valid branch name.
+david@david-Lenovo-Y70-70-Touch:~/datamex0320$ git branch "Lab-dia-1"
+david@david-Lenovo-Y70-70-Touch:~/datamex0320$ git checkout
+M	module-1/lab-bash/lorem/sed.txt
+Your branch is up to date with 'origin/master'.
+david@david-Lenovo-Y70-70-Touch:~/datamex0320$ git branch -av
+  Lab-dia-1             67c75b6 bootcamp
+* master                67c75b6 bootcamp
+  remotes/origin/HEAD   -> origin/master
+  remotes/origin/master 67c75b6 bootcamp
+david@david-Lenovo-Y70-70-Touch:~/datamex0320$ git checkout
+M	module-1/lab-bash/lorem/sed.txt
+Your branch is up to date with 'origin/master'.
+david@david-Lenovo-Y70-70-Touch:~/datamex0320$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   module-1/lab-bash/lorem/sed.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	module-1/lab-bash/lorem/lorem-copy
+
+no changes added to commit (use "git add" and/or "git commit -a")
+david@david-Lenovo-Y70-70-Touch:~/datamex0320$ git ckeckout Lab-dia-1
+git: 'ckeckout' is not a git command. See 'git --help'.
+
+The most similar command is
+	checkout
+david@david-Lenovo-Y70-70-Touch:~/datamex0320$ git checkout Lab-dia-1
+M	module-1/lab-bash/lorem/sed.txt
+Switched to branch 'Lab-dia-1'
+david@david-Lenovo-Y70-70-Touch:~/datamex0320$ git status
+On branch Lab-dia-1
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   module-1/lab-bash/lorem/sed.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	module-1/lab-bash/lorem/lorem-copy
+
+no changes added to commit (use "git add" and/or "git commit -a")
+david@david-Lenovo-Y70-70-Touch:~/datamex0320$ cd module-1
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1$ cd lab-bash
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash$ ls
+exercices  inputs  lorem  lorem-copy  outputs  README.md
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash$ cd lorem
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ ls
+at.txt  lorem-copy  lorem.txt  sed.txt
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ git reset --hard HEAD
+HEAD is now at 67c75b6 bootcamp
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ ls
+at.txt  lorem-copy  lorem.txt  sed.txt
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ cp sed.txt /lab-bash/lorem-copy
+cp: cannot create regular file '/lab-bash/lorem-copy': No such file or directory
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ cd ..
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash$ cd lorem-copy
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem-copy$ ls
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem-copy$ cd ..
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash$ lorem
+
+Command 'lorem' not found, but can be installed with:
+
+sudo apt install libtext-lorem-perl
+
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash$ cd lorem
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ ls
+at.txt  lorem-copy  lorem.txt  sed.txt
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ cp lorem/sed.txt lorem-copy/sed.txt
+cp: failed to access 'lorem-copy/sed.txt': Not a directory
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ cp lorem/sed.txt lab-bash/lorem-copy
+cp: cannot stat 'lorem/sed.txt': No such file or directory
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ cp sed.txt/lorem lorem-copy
+cp: cannot stat 'sed.txt/lorem': Not a directory
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ cp lorem/sed.txt lorem-copy
+cp: cannot stat 'lorem/sed.txt': No such file or directory
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ ls
+at.txt  lorem-copy  lorem.txt  sed.txt
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ cp sed.txt /lab-bash/lorem-copy
+cp: cannot create regular file '/lab-bash/lorem-copy': No such file or directory
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ cp sed-txt /datamex0320/module-1-/lab-bash/lorem-copy
+cp: cannot stat 'sed-txt': No such file or directory
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ cp sed.txt ^C
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ cp sed.txt /datamex0320/moduel-1/lab-bash/lorem-copy
+cp: cannot create regular file '/datamex0320/moduel-1/lab-bash/lorem-copy': No such file or directory
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ cp sed.txt /datamex0320/module-1/lab-bash/lorem-copy
+cp: cannot create regular file '/datamex0320/module-1/lab-bash/lorem-copy': No such file or directory
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ cd ..
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash$ cp /lorem /datamex0320/module-1/lab-bash/lorem-copy
+cp: cannot stat '/lorem': No such file or directory
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash$ cd lorem
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ ls
+at.txt  lorem-copy  lorem.txt  sed.txt
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ cp datamex0320/module-1/lab-bash/lorem/sed.txt datamex0320/module-1/lab-bash/lorem-copy
+cp: cannot stat 'datamex0320/module-1/lab-bash/lorem/sed.txt': No such file or directory
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ cp lorem/sed.txt lorem-copy/sed.txt
+cp: failed to access 'lorem-copy/sed.txt': Not a directory
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ cd ..}
+bash: cd: ..}: No such file or directory
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ cd ..
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash$ cp lorem/sed.txt lorem-copy/sed.txt
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash$ cd lorem-copy
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem-copy$ ls
+sed.txt
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem-copy$ cd ..
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash$ lorem
+
+Command 'lorem' not found, but can be installed with:
+
+sudo apt install libtext-lorem-perl
+
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash$ cd lorem
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ ls
+at.txt  lorem-copy  lorem.txt  sed.txt
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ cd ..
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash$ cp lorem/lorem.txt lorem-copy/lorem.txt;cp lorem/at.txt lorem-copy/at.txt 
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash$ cd lorem-copy
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem-copy$ ls
+at.txt  lorem.txt  sed.txt
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem-copy$ cd ..
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash$ cd larem
+bash: cd: larem: No such file or directory
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash$ cd lorem
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ echo sed.txt
+sed.txt
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ cat sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ cat lorem.txt;cat at.txt
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum 
+deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non 
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. 
+Et harum quidem rerum facilis est et expedita distinctio. 
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod 
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. 
+Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet 
+ut et voluptates repudiandae sint et molestiae non recusandae. 
+Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores 
+alias consequatur aut perferendis doloribus asperiores repellatdavid@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ cd ..
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash$ cd lorem-copy
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem-copy$ head n-3 sed.txt
+head: cannot open 'n-3' for reading: No such file or directory
+==> sed.txt <==
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem-copy$ head -n3 sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem-copy$ tail -n3 sed.txt
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem-copy$ echo "Homo homini lupus." >> sed.txt
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem-copy$ tail -n3 sed.txt
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus.
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem-copy$ cat at.txt
+At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum 
+deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non 
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. 
+Et harum quidem rerum facilis est et expedita distinctio. 
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod 
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. 
+Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet 
+ut et voluptates repudiandae sint et molestiae non recusandae. 
+Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores 
+alias consequatur aut perferendis doloribus asperiores repellatdavid@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem-copy$ sed -i "s/et/ET/g" at.txt
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem-copy$ cat at.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum 
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non 
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga. 
+Et harum quidem rerum facilis est ET expedita distinctio. 
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod 
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. 
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET 
+ut ET voluptates repudiandae sint ET molestiae non recusandae. 
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores 
+alias consequatur aut perferendis doloribus asperiores repellatdavid@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem-copy$ whoami
+david
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem-copy$ pwd
+/home/david/datamex0320/module-1/lab-bash/lorem-copy
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem-copy$ cd ..
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash$ cd lorem
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ ls -l
+total 16
+-rwxr-xr-x 1 david david 852 mar 23 16:26 at.txt
+-rwxr-xr-x 1 david david 852 mar 23 17:14 lorem-copy
+-rwxr-xr-x 1 david david 448 mar 23 16:26 lorem.txt
+-rwxr-xr-x 1 david david 873 mar 23 17:21 sed.txt
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ ls *.txt
+at.txt  lorem.txt  sed.txt
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ ls -l *.txt
+-rwxr-xr-x 1 david david 852 mar 23 16:26 at.txt
+-rwxr-xr-x 1 david david 448 mar 23 16:26 lorem.txt
+-rwxr-xr-x 1 david david 873 mar 23 17:21 sed.txt
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ cat sed.txt| wc-l
+wc-l: command not found
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ cat sed.txt | wc-i
+wc-i: command not found
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ cat sed.txt | wc-l
+wc-l: command not found
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ wc
+^C
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ wc --help
+Usage: wc [OPTION]... [FILE]...
+  or:  wc [OPTION]... --files0-from=F
+Print newline, word, and byte counts for each FILE, and a total line if
+more than one FILE is specified.  A word is a non-zero-length sequence of
+characters delimited by white space.
+
+With no FILE, or when FILE is -, read standard input.
+
+The options below may be used to select which counts are printed, always in
+the following order: newline, word, character, byte, maximum line length.
+  -c, --bytes            print the byte counts
+  -m, --chars            print the character counts
+  -l, --lines            print the newline counts
+      --files0-from=F    read input from the files specified by
+                           NUL-terminated names in file F;
+                           If F is - then read names from standard input
+  -L, --max-line-length  print the maximum display width
+  -w, --words            print the word counts
+      --help     display this help and exit
+      --version  output version information and exit
+
+GNU coreutils online help: <http://www.gnu.org/software/coreutils/>
+Full documentation at: <http://www.gnu.org/software/coreutils/wc>
+or available locally via: info '(coreutils) wc invocation'
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ wc -l sed.txt
+8 sed.txt
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ cat sed.txt|wc -l sed.txt
+8 sed.txt
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ cd ..
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash$ wc -w lorem
+wc: lorem: Is a directory
+0 lorem
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash$ wc lorem
+wc: lorem: Is a directory
+      0       0       0 lorem
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash$ ls|wc lorem
+wc: lorem: Is a directory
+      0       0       0 lorem
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash$ ls| wc *lorem
+wc: lorem: Is a directory
+      0       0       0 lorem
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash$ ls | wc -l lorem
+wc: lorem: Is a directory
+0 lorem
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash$ ls
+exercices  inputs  lorem  lorem-copy  outputs  README.md
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash$ wc "lorem"
+wc: lorem: Is a directory
+      0       0       0 lorem
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash$ ls | wc-l
+wc-l: command not found
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash$ ls | wc-l lab-bash
+wc-l: command not found
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash$ ls | wc -l lab-bash
+wc: lab-bash: No such file or directory
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash$ ls | wc -l /lab-bash
+wc: /lab-bash: No such file or directory
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash$ find. -iname "lorem" | wc -l
+
+Command 'find.' not found, did you mean:
+
+  command 'find' from deb findutils
+  command 'findg' from deb ncl-ncarg
+  command 'findv' from deb polylib-utils
+
+Try: sudo apt install <deb name>
+
+0
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash$ find . -iname "lorem" | wc -l
+1
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash$ cd lorem
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ find . -iname "et"| wc -l at.txt
+9 at.txt
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ find . -iname "et" | wc -l lorem-copy
+9 lorem-copy
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ git status
+On branch Lab-dia-1
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	../lorem-copy/at.txt
+	../lorem-copy/lorem.txt
+	../lorem-copy/sed.txt
+	lorem-copy
+
+nothing added to commit but untracked files present (use "git add" to track)
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ git commit -a "Primeros ejercicios en bash"
+fatal: Paths with -a does not make sense.
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ git commit -am "Primeros ejercicios en bash"
+On branch Lab-dia-1
+Untracked files:
+	../lorem-copy/at.txt
+	../lorem-copy/lorem.txt
+	../lorem-copy/sed.txt
+	lorem-copy
+
+nothing added to commit but untracked files present
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+	add
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ git add .
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ git status
+On branch Lab-dia-1
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   lorem-copy
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	../lorem-copy/at.txt
+	../lorem-copy/lorem.txt
+	../lorem-copy/sed.txt
+
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash/lorem$ cd ..
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash$ git add .
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash$ git status
+On branch Lab-dia-1
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   lorem-copy/at.txt
+	new file:   lorem-copy/lorem.txt
+	new file:   lorem-copy/sed.txt
+	new file:   lorem/lorem-copy
+
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash$ git commit -am "Primeros ejercicios en bash"
+[Lab-dia-1 b0cee29] Primeros ejercicios en bash
+ 4 files changed, 33 insertions(+)
+ create mode 100755 module-1/lab-bash/lorem-copy/at.txt
+ create mode 100755 module-1/lab-bash/lorem-copy/lorem.txt
+ create mode 100755 module-1/lab-bash/lorem-copy/sed.txt
+ create mode 100755 module-1/lab-bash/lorem/lorem-copy
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash$ git status
+On branch Lab-dia-1
+nothing to commit, working tree clean
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash$ git push
+fatal: The current branch Lab-dia-1 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin Lab-dia-1
+
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash$ git push oirigin Lab-dia-1
+fatal: 'oirigin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash$ git push origin Lab-dia-1
+Username for 'https://github.com': DavidCis
+Password for 'https://DavidCis@github.com': 
+Counting objects: 8, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 1.49 KiB | 1.49 MiB/s, done.
+Total 8 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
+remote: 
+remote: Create a pull request for 'Lab-dia-1' on GitHub by visiting:
+remote:      https://github.com/DavidCis/datamex0320/pull/new/Lab-dia-1
+remote: 
+To https://github.com/DavidCis/datamex0320.git
+ * [new branch]      Lab-dia-1 -> Lab-dia-1
+david@david-Lenovo-Y70-70-Touch:~/datamex0320/module-1/lab-bash$
