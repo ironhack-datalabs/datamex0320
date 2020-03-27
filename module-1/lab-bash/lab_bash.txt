@@ -1,0 +1,24 @@
+﻿Saúl Romero Bárcenas.
+
+lab_bash 
+
+1. echo “Hola mundo”
+2. mkdir new_dir
+3. rm -rf new_dir
+4. cp lorem/sed.txt lorem-copy/sed.txt
+5. cp lorem/at.txt lorem-copy/at.txt; cp lorem/lorem.txt lorem-copy/lorem.txt
+6. cat sed.txt
+7. cat at.txt; cat lorem.txt
+8. head -n 3 sed.txt
+9. tail -n 3 sed.txt
+10. echo "Homo homini lupus">>sed.txt
+11. tail -n 3 sed.txt
+12. sed ‘s/et/ET/g’ lorem.txt
+13. last
+14. pwd
+15. ls
+16. find / lorem | wc -l
+17. cat sed.txt | wc -1
+18. grep "et" at.txt
+19. grep “et” at.tx | wc -l
+20. grep -ri "et" | wc -l
