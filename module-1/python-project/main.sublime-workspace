@@ -1,0 +1,352 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ro",
+				"rotozoom(…)\tfunction ⟠"
+			],
+			[
+				"mon",
+				"monkey_mr\tFont | Surface ⟠"
+			],
+			[
+				"play",
+				"player_image\tSurface ⟠"
+			],
+			[
+				"g",
+				"get_width\tfunction ⟠"
+			],
+			[
+				"pla",
+				"player_y_momentum\tfloat | int ⟠"
+			],
+			[
+				"get",
+				"get_height()\tfunction ⟠"
+			],
+			[
+				"mov",
+				"moving_right"
+			],
+			[
+				"K_R",
+				"K_RIGHT\tint ⟠"
+			],
+			[
+				"WIN",
+				"WINDOW_SIZE\ttuple ⟠"
+			],
+			[
+				"vi",
+				"vikingArmy\tlist ⟠"
+			],
+			[
+				"sa",
+				"saxonArmy\tlist ⟠"
+			],
+			[
+				"s",
+				"saxonArmy\tlist ⟠"
+			],
+			[
+				"v",
+				"vikingArmy\tlist ⟠"
+			],
+			[
+				"ch",
+				"choices\tfunction ⟠"
+			],
+			[
+				"nodes",
+				"nodes_no_master"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/miguel/.cache/.fr-ssRjGW/Platformer.py",
+		"/home/miguel/Desktop/Ironhack/datamex0320/module-1/lab-bag-of-words/your-code/doc1.txt",
+		"/home/miguel/Desktop/Ironhack/datamex0320/module-1/lab-resolving-git-conflicts/your-code/about-me.md",
+		"/home/miguel/Desktop/Ironhack/datamex0320/module-1/lab-resolving-git-conflicts/README.md",
+		"/home/miguel/Desktop/Ironhack/datamex0320/module-1/lab-bash/README.md",
+		"/home/miguel/Documents/KPOINTS_template_bands",
+		"/home/miguel/Documents/ejemplo.xyz",
+		"/home/miguel/Siliceno/bands/c1_22.csv",
+		"/home/miguel/Siliceno/Silicene_1x1_singlet.out",
+		"/home/miguel/Desktop/silicene/hojas/c1_2x2/KPOINTS",
+		"/home/miguel/Desktop/Molecular-GVAE/utils.py",
+		"/home/miguel/Desktop/Native-Americans-Social-Media-Analytics/data/raw/Data Analysis-SMA Joint Staff -White Paper/Twitter/Brokeahontas/brokeahontas_jan_1_2019-may_11_2019.csv",
+		"/home/miguel/Desktop/Native-Americans-Social-Media-Analytics/data/raw/Data Analysis-SMA Joint Staff -White Paper/Twitter/NativeVotesMatter/NativeVotesMatter.csv",
+		"/home/miguel/Desktop/Reprints & Permissions.desktop",
+		"/home/miguel/Desktop/Native-Americans-Social-Media-Analytics/data/raw/Data Analysis-SMA Joint Staff -White Paper/Twitter/Fauxcahontas/fauxcahontas_2019-2020.csv",
+		"/home/miguel/Desktop/MP2T Paper/Benchmark/Molecules/coordinates/s3mol4.xyz",
+		"/home/miguel/Desktop/MP2T Paper/Benchmark/Molecules/coordinates/s3mol3.xyz",
+		"/home/miguel/Desktop/MP2T Paper/Benchmark/Molecules/coordinates/s3mol2.xyz",
+		"/home/miguel/Desktop/MP2T Paper/Benchmark/Molecules/coordinates/s3mol1.xyz",
+		"/home/miguel/Desktop/MP2T Paper/Benchmark/Molecules/coordinates/s5mol11.xyz",
+		"/home/miguel/Desktop/MP2T Paper/Benchmark/Molecules/coordinates/s5mol9.xyz",
+		"/home/miguel/Desktop/MP2T Paper/Benchmark/Molecules/coordinates/s3mol24.xyz",
+		"/home/miguel/Desktop/MP2T Paper/Benchmark/Molecules/coordinates/s3mol23.xyz",
+		"/home/miguel/Desktop/MP2T Paper/Benchmark/Molecules/coordinates/s5mol8.xyz",
+		"/home/miguel/Desktop/MP2T Paper/Benchmark/Molecules/coordinates/s5mol17.xyz",
+		"/home/miguel/Desktop/MP2T Paper/Benchmark/Molecules/coordinates/s5mol18_ee.xyz",
+		"/home/miguel/Desktop/MP2T Paper/Benchmark/Molecules/coordinates/s5mol18.xyz",
+		"/home/miguel/Desktop/MP2T Paper/Benchmark/Molecules/set5/geometries/sub_b/s5mol11",
+		"/home/miguel/Desktop/MP2T Paper/Benchmark/Molecules/set5/excitation_energy/sub_b/s5mol11_ee",
+		"/home/miguel/Desktop/MP2T Paper/Benchmark/Molecules/coordinates/s3mol16.xyz",
+		"/home/miguel/Desktop/MP2T Paper/Benchmark/Molecules/coordinates/s5mol34.xyz",
+		"/home/miguel/Desktop/MP2T Paper/Benchmark/Molecules/coordinates/s5mol36.xyz",
+		"/home/miguel/Desktop/MP2T Paper/Benchmark/Molecules/s5mol11.xyz",
+		"/home/miguel/Desktop/MP2T Paper/Benchmark/Molecules/set5/excitation_energy/sub_a/s5mol10_ee",
+		"/home/miguel/Desktop/MP2T Paper/Benchmark/Molecules/set5/frequencies/sub_a/s5mol10",
+		"/home/miguel/Desktop/MP2T Paper/Benchmark/Molecules/set5/geometries/sub_a/s5mol10",
+		"/home/miguel/Desktop/MP2T Paper/Benchmark/Molecules/set5/geometries/sub_a/s5mol1",
+		"/home/miguel/Desktop/MP2T Paper/Benchmark/Molecules/set5/frequencies/sub_a/s5mol1",
+		"/home/miguel/Desktop/MP2T Paper/Benchmark/Molecules/set5/electron_attachment/sub_a/s5mol1_ea",
+		"/home/miguel/Desktop/MP2T Paper/Benchmark/Molecules/set5/excitation_energy/sub_a/s5mol1_ee",
+		"/home/miguel/Desktop/MP2T Paper/Benchmark/Molecules/set5/frequencies/sub_b/s5mol11",
+		"/home/miguel/Desktop/MP2T Paper/Benchmark/Molecules/set5/geometries/sub_c/s5mol11~",
+		"/home/miguel/Desktop/MP2T Paper/Benchmark/Molecules/set5/frequencies/sub_c/s5mol11~",
+		"/home/miguel/Desktop/MP2T Paper/Benchmark/Molecules/set5/excitation_energy/sub_c/s5mol11_ip~",
+		"/home/miguel/Desktop/MP2T Paper/new_EA/carbonyls/elec_attach/car1_ea",
+		"/home/miguel/Desktop/MP2T Paper/new_EA/carbonyls/geo_freq/car1",
+		"/home/miguel/Desktop/MP2T Paper/new_EA/ge_freq/mal_anhy.out",
+		"/home/miguel/Desktop/MP2T Paper/new_EA/ge_freq/mal_anhy",
+		"/home/miguel/Desktop/$28.22.desktop",
+		"/media/miguel/MAC/BU/Desktop/Desktop/ionization_potential/s4mol1_ip",
+		"/home/miguel/Desktop/MP2T Paper/Benchmark/Molecules/Old Calculations/Set1/Eight/eight.out",
+		"/home/miguel/Desktop/MP2T Paper/Benchmark/Molecules/set5/geometries/sub_a/s5mol2",
+		"/home/miguel/Desktop/MP2T Paper/Benchmark/Molecules/set5/frequencies/sub_a/s5mol2",
+		"/home/miguel/Desktop/MP2T Paper/Benchmark/Molecules/set5/electron_attachment/sub_a/s5mol2_ea",
+		"/home/miguel/Desktop/MP2T Paper/Benchmark/Molecules/set5/excitation_energy/sub_a/s5mol2_ee",
+		"/home/miguel/Desktop/MP2T Paper/Benchmark/Molecules/set5/ionization_potential/sub_a/s5mol2_ip",
+		"/home/miguel/Desktop/MP2T Paper/Benchmark/Molecules/set5/ionization_potential/sub_a/s5mol1_ip",
+		"/home/miguel/Desktop/MP2T Paper/Benchmark/Molecules/setIV/electron_attachment/s4mol1_ea",
+		"/home/miguel/Desktop/MP2T Paper/Benchmark/Molecules/setIV/excitation_energies/s4mol1_ee",
+		"/home/miguel/Desktop/MP2T Paper/Benchmark/Molecules/setIV/new_geo/s4mol1",
+		"/home/miguel/Desktop/MP2T Paper/Benchmark/Molecules/setIII/excitation_energy/sub_c/s3mol20_ee",
+		"/home/miguel/Desktop/MP2T Paper/Benchmark/Molecules/setIII/geometries_c/s3mol20",
+		"/home/miguel/Desktop/Virginia Paper/Data/Data Analysis-SMA Joint Staff -White Paper/reddit/brokeahontas.csv",
+		"/home/miguel/Desktop/Virginia Paper/Data/Data Analysis-SMA Joint Staff -White Paper/Twitter/Brokeahontas/brokeahontas_may_12_2019-jan_25_2020.csv",
+		"/media/miguel/MAC/BU/Desktop/Desktop/CAP/cap_plotter_ev.py",
+		"/media/miguel/MAC/BU/Desktop/new_EA/carbonyls/elec_attach/car1_ea.out",
+		"/media/miguel/MAC/BU/Desktop/new_EA/carbonyls/elec_attach/car1_ea",
+		"/home/miguel/Desktop/Molecular-GVAE/data/external/ncdbi/.gitattributes",
+		"/home/miguel/Desktop/Molecular-GVAE-miguel/data_a/external/ncidb_test.txt",
+		"/home/miguel/Desktop/Molecular-GVAE/data/external/pcba/PCBA_README.txt",
+		"/home/miguel/Documents/latinhire.txt",
+		"/home/miguel/Universal_github_token.txt",
+		"/home/miguel/Desktop/Molecular-GVAE/repos/microsoft_5k/utils.py",
+		"/home/miguel/Desktop/Molecular-GVAE/repos/microsoft_5k/evaluate.py",
+		"/home/miguel/Desktop/Molecular-GVAE/repos/microsoft_5k/GGNN_core.py",
+		"/home/miguel/Desktop/Molecular-GVAE/repos/dummy_test/data/molecules_train_qm9.json",
+		"/home/miguel/Desktop/Molecular-GVAE/repos/microsoft_5k/data_augmentation.py",
+		"/home/miguel/Desktop/Molecular-GVAE/repos/microsoft_5k/CGVAE.py",
+		"/home/miguel/Downloads/2020-01-16-22-21-38_1441_params_qm9.json",
+		"/home/miguel/Downloads/2020-01-16-22-21-38_1441_log_qm9.json",
+		"/home/miguel/Desktop/Molecular-GVAE/repos/microsoft_5k/data/molecules_train_qm9.json",
+		"/home/miguel/.cache/.fr-eL95bg/myZip.pkl",
+		"/home/miguel/.cache/.fr-Ebj5Fh/Si_HSE_band/INCAR.hse",
+		"/home/miguel/Siliceno/DOS/c1_44.dat",
+		"/home/miguel/.cache/.fr-yGWUYR/myZip.pkl",
+		"/home/miguel/Downloads/2019-12-26-04-38-17_4213_params_qm9.json",
+		"/home/miguel/Downloads/2019-12-26-04-38-17_4213_log_qm9.json",
+		"/home/miguel/Desktop/Molecular-GVAE/repos/sets/test/molecules_valid_qm9_300.json",
+		"/home/miguel/Desktop/silicene/hojas/c1_2x2/CONTCAR",
+		"/home/miguel/Desktop/silicene/hojas/c8_2x2/CONTCAR",
+		"/home/miguel/Desktop/silicene/hojas/c1_4x4/CONTCAR",
+		"/home/miguel/Documents/INCAR_B3LYP",
+		"/home/miguel/Desktop/MP2T Paper/papers/Leidos/investigation.txt",
+		"/home/miguel/Desktop/MP2T Paper/papers/Leidos/pdfinfo.py",
+		"/home/miguel/Desktop/Paper Ben/Untitled.ipynb",
+		"/home/miguel/Desktop/MP2T Paper/papers/Leidos/rev.txt",
+		"/home/miguel/composer.sh",
+		"/home/miguel/Desktop/MP2T Paper/papers/Leidos/pdfannots.py",
+		"/home/miguel/Desktop/Molecular-GVAE/repos/sets/qm9_300.json",
+		"/home/miguel/Desktop/Molecular-GVAE/repos/microsoft_5k/ML_train_qm9.json",
+		"/home/miguel/Desktop/dropped text.txt",
+		"/home/miguel/Desktop/MP2T Paper/papers/Leidos/response_fun.txt",
+		"/home/miguel/Desktop/Paper Ben/Pre Processing.ipynb",
+		"/home/miguel/Desktop/MP2T Paper/papers/Leidos/green.txt",
+		"/home/miguel/Desktop/MP2T Paper/papers/Leidos/exc.txt",
+		"/tmp/kite_tutorial.py",
+		"/home/miguel/Documents/13_singlet.cube",
+		"/home/miguel/Documents/6_singlet.cube",
+		"/home/miguel/Downloads/p.txt",
+		"/home/miguel/Documents/pdfinfo.py",
+		"/media/miguel/MAC/FEDORA_COPY/miguel/Desktop/CAP/cap_traj_gen_vec_ext1.py",
+		"/media/miguel/MAC/BU/Desktop/derivatives/der1.out",
+		"/home/miguel/.cache/.fr-4DxalF/content/Molecular-GVAE/repos/microsoft/2019-08-29-01-28-21_2627_params_qm9.json",
+		"/home/miguel/.cache/.fr-NGwoMv/content/Molecular-GVAE/repos/microsoft/2019-08-29-01-28-21_2627_log_qm9.json",
+		"/home/miguel/.cache/.fr-a5lv7g/content/Molecular-GVAE/repos/microsoft/2019-08-29-01-28-21_2627_params_qm9.json",
+		"/home/miguel/Desktop/Molecular-GVAE/repos/microsoft_colab/.ipynb_checkpoints/test dataset-checkpoint.ipynb",
+		"/home/miguel/.cache/.fr-bTENRK/content/Molecular-GVAE/test_environment.py",
+		"/home/miguel/Desktop/Molecular-GVAE/repos/microsoft_5k/2019-08-21-00-21-54_4823_params_qm9.json",
+		"/home/miguel/Documents/bookmarks_10_3_19.html",
+		"/home/miguel/Desktop/silicene/hojas/c3_2x2/CONTCAR",
+		"/home/miguel/Desktop/silicene/hojas/c4_2x2/CONTCAR",
+		"/home/miguel/Desktop/silicene/hojas/c1_3x3/CONTCAR",
+		"/home/miguel/Desktop/Molecular-GVAE/repos/microsoft_5k/molecules_train_qm9.json",
+		"/home/miguel/Desktop/Julia/Curso-Julia/Notebooks/Template.ipynb",
+		"/media/miguel/MAC/Cuantica II/La mejor clase 1.ipynb",
+		"/home/miguel/Desktop/Molecular-GVAE/repos/dummy_test/GGNN_core.py",
+		"/home/miguel/Desktop/Molecular-GVAE/repos/dummy_test/CGVAE.py",
+		"/home/miguel/Desktop/Molecular-GVAE/repos/microsoft_5k/myZip.pkl"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 104.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "main.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 248.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
