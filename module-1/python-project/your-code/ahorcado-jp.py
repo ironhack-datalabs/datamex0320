@@ -1,8 +1,10 @@
 # Importa random para escoger una palabra al aleatorea.
 import random
+import sys
+import pykakasi
 # Mis graficos mejorados de ASCII a Emoji porque pues millenial.
 # Los apostrofes son para imprimir la etapa del juego.
-HORCADOEMOJI = ['''
+AHORCADOEMOJI = ['''
 
   ➕➖➖➖➖➕
   🔽       🏿🏿
@@ -60,19 +62,15 @@ HORCADOEMOJI = ['''
            🏾💀
 🔥🔥🔥🔥🔥💀🏿''']
 # diccionario con 4 catergorias. Me gustaría cambiarlo por algo mas interesante
-palabras = {'Animales':'hormiga chango tejon murcielago oso castor camello \
-                     gato ostra cobra tigre coyote cuervo venado perro \
-                     burro pato aguila huron zorro rana cabra ganso hacon \
-                     leon lagartija llama topo simio alce raton mula nutria \
-                     buho panda cotorro paloma piton conejo carnero rata \
-                     rinoceronte salmon foca tiburon chivo zorrillo vibora \
-                     araña cisne guajolote ballena lobo wombat zebra'.split(),
-         'Formas':'cuadro triangulo rectangulo circulo elipse rombo \
-                   trapezoide pentagon hexagono septagono octogono'.split(),
-         'Frutas':'manzana naranja limon lima pera sandia uva toronja \
-                   cereza platano mango fresa'.split(),
-         'Colores':'rojo naranja amarillo verde azul indigo violeta blanco \
-                   negro marron'.split()}
+palabras = {'動物・どうぶつ':'あり さる アナグマ コウモリ クマ ビーバー\
+                     ねこ　へび とら しか いぬ\
+                     アヒル きつね かえる\
+                     ライオン トカゲ ねずみ カワウソ'.split(),
+         '形・かたち':'しかく さんかく まる'.split(),
+         '果物・くだもの':'りんご オレンジ ライム レモン なし スイカ ぶどう グレープフルーツ\
+                   さくらんぼ バナナ マンゴ いちご'.split(),
+         '色・いろ':'あか オレンジ きいろ みどり あおい むらさき しろ\
+                   くろ ちゃいろ'.split()}
 # Esta función genera una palabra aleatorea del diccionario: palabraKey
 # despues obtiene el index de la palabra seleccionada
 # regresa tanto la palabra como su index
@@ -83,8 +81,8 @@ def palabraAletorea(DictPalabras):
 
 # Visualización del tablero del juego, donde imprime tanto los graficos de Emoji
 # y el estado del juego segun las letras equivocadas, correctas, y por adivinar
-def tablero(HORCADOEMOJI, letrasequivocadas, letrascorrectas, palabrasecreta):
-    print(HORCADOEMOJI[len(letrasequivocadas)])
+def tablero(AHORCADOEMOJI, letrasequivocadas, letrascorrectas, palabrasecreta):
+    print(AHORCADOEMOJI[len(letrasequivocadas)])
     print()
 
     print('Equivocaciones:', end=' ')
@@ -109,14 +107,20 @@ def tablero(HORCADOEMOJI, letrasequivocadas, letrascorrectas, palabrasecreta):
 def adivina(adivinadas):
     while True:
         print('Venga, adivina una letra, sin miedo:👾👾👾')
-        adivinar = input()
+        adivinar = str(input())
         adivinar = adivinar.lower()
+
         if len(adivinar) != 1:
             print('Vamos alegre, te dije solo UNA letra...UNA, ONE, HITOTSU, Uma')
         elif adivinar in adivinadas:
-            print('Perooo que pashaaaaaa!!!!, esa letra ya la escogiste.🔡')
-        elif adivinar not in 'abcdefghijklmnñopqrstuvwxyz':
-            print('Vamos alegre, que te digo una LETRA, 🔤')
+            print('Perooo que pashaaaa!!何それ〜〜!!, esa letra ya la escogiste.🈳')
+        elif adivinar not in 'abcdefghijklmnñopqrstuvwxyzあいうえおかきくけこ\
+                              さしすせそたちつてとなにぬねのはひふへほまみむめもやゆよ\
+                              んらりるれろがぎぐげござじずぜぞだぢづでどばびぶべぼぱぴぷぺぽ\
+                              アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフ\
+                              ヘホマミムメモヤユヨラリルレロワヲンガギグゲゴザジズゼゾ\
+                              ダヂヅデドバビブベボパピプペポー':
+            print('Vamos alegre, que te digo una LETRA, 🈳')
         else:
             return adivinar
 
@@ -129,18 +133,31 @@ def playAgain():
 # Mi super banner con ASCII art pense hacer las graficas con la misma tematica
 # para las etapas del horcado pero escogí Emoji. Para la version 2.0
 print("""
-╔╗▒╔╗▒▒▒▒▒▒▒▒▒▒▒▒╔╗▒▒▒
-║║▒║║▒▒▒▒▒▒▒▒▒▒▒▒║║▒▒▒
-║╚═╝╠══╦═╦══╦══╦═╝╠══╗
-║╔═╗║╔╗║╔╣╔═╣╔╗║╔╗║╔╗║
-║║▒║║╚╝║║║╚═╣╔╗║╚╝║╚╝║
-╚╝▒╚╩══╩╝╚══╩╝╚╩══╩══╝
+╔═══╦╗░░░░░░░░░░░░░░╔╗░░░
+║╔═╗║║░░░░░░░░░░░░░░║║░░░
+║║░║║╚═╦══╦═╦══╦══╦═╝╠══╗
+║╚═╝║╔╗║╔╗║╔╣╔═╣╔╗║╔╗║╔╗║
+║╔═╗║║║║╚╝║║║╚═╣╔╗║╚╝║╚╝║
+╚╝░╚╩╝╚╩══╩╝╚══╩╝╚╩══╩══╝
+
+\n
+╔╦╗▒▒╔╗▒▒▒╔╗▒▒▒▒▒▒▒▒▒▒▒▒▒╔╗╔╦╗▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+║╔╬═╗║╚╦═╗║╠╦═╗╔═╦╦═╗▒╔╦╗║╚╝╠╬╦╦═╗╔═╦═╗╔═╦╦═╗▒
+║╚╣╬╚╣╔╣╬╚╣═╣╬╚╣║║║╬╚╗║║║║╔╗║║╔╣╬╚╣╬║╬╚╣║║║╬╚╗
+╚╩╩══╩═╩══╩╩╩══╩╩═╩══╝╠╗║╚╝╚╩╩╝╚══╬╗╠══╩╩═╩══╝
+▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒╚═╝▒▒▒▒▒▒▒▒▒╚═╝▒▒▒▒▒▒▒▒▒
+
 \n
 ╔╗▒▒▒▒╔═╗▒▒╔╦╗▒▒▒▒▒╔══╗▒▒▒▒▒▒▒╔╗▒
 ║╚╦╦╦╗║╔╬═╦╝╠╬═╦╦═╗║═╦╬═╦╦╦╦╦═╣╚╗
 ║╬║║╠╣║╚╣╬║╬║║║║║╬║║╔╝║╩╣╔╣╔╣╩╣╔╣
 ╚═╬╗╠╝╚═╩═╩═╩╩╩═╬╗║╚╝▒╚═╩╝╚╝╚═╩═╝
 ▒▒╚═╝▒▒▒▒▒▒▒▒▒▒▒╚═╝▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+\n
+Tu aventura aprendiendo Japonés comienza aprendiendo los dos alfabetos básicos:\n
+Hiragana (ひらがな) y Katakana (カタカナ)\
+Para perfeccionar tu lectura y rápidez usaremos el viejo juego del horcado.\n
+Venga, que con un par de juegos por día veráz resultados muy buenos. \
 
 
 """)
@@ -166,7 +183,8 @@ finJuego = False
 #TL;DR Basicamente el curpo y cerebro del juego.
 while True:
     print('La categoria es: ' + secretoKey)
-    tablero(HORCADOEMOJI, letrasequivocadas, letrascorrectas, palabrasecreta)
+    print('La palabra es: ' + palabrasecreta)
+    tablero(AHORCADOEMOJI, letrasequivocadas, letrascorrectas, palabrasecreta)
     adivinar = adivina(letrasequivocadas + letrascorrectas)
 
     if adivinar in palabrasecreta:
@@ -181,8 +199,8 @@ while True:
             finJuego = True
     else:
         letrasequivocadas = letrasequivocadas + adivinar
-        if len(letrasequivocadas) == len(HORCADOEMOJI) - 1:
-            tablero(HORCADOEMOJI, letrasequivocadas, letrascorrectas, palabrasecreta)
+        if len(letrasequivocadas) == len(AHORCADOEMOJI) - 1:
+            tablero(AHORCADOEMOJI, letrasequivocadas, letrascorrectas, palabrasecreta)
             print('Se te han acabado las oportunidades para adivinar!\nDespues de ' + str(len(letrasequivocadas)) + ' equivocacione(s) y ' + str(len(letrascorrectas)) + ' intentos correctos, la palabra era: "' + palabrasecreta + '"')
             finJuego = True
 

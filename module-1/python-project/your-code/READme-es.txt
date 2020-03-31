@@ -1,9 +1,10 @@
-╔╗▒╔╗▒▒▒▒▒▒▒▒▒▒▒▒╔╗▒▒▒
-║║▒║║▒▒▒▒▒▒▒▒▒▒▒▒║║▒▒▒
-║╚═╝╠══╦═╦══╦══╦═╝╠══╗
-║╔═╗║╔╗║╔╣╔═╣╔╗║╔╗║╔╗║
-║║▒║║╚╝║║║╚═╣╔╗║╚╝║╚╝║
-╚╝▒╚╩══╩╝╚══╩╝╚╩══╩══╝
+
+╔═══╦╗░░░░░░░░░░░░░░╔╗░░░
+║╔═╗║║░░░░░░░░░░░░░░║║░░░
+║║░║║╚═╦══╦═╦══╦══╦═╝╠══╗
+║╚═╝║╔╗║╔╗║╔╣╔═╣╔╗║╔╗║╔╗║
+║╔═╗║║║║╚╝║║║╚═╣╔╗║╚╝║╚╝║
+╚╝░╚╩╝╚╩══╩╝╚══╩╝╚╩══╩══╝
 
 ╔╗▒▒▒▒╔═╗▒▒╔╦╗▒▒▒▒▒╔══╗▒▒▒▒▒▒▒╔╗▒
 ║╚╦╦╦╗║╔╬═╦╝╠╬═╦╦═╗║═╦╬═╦╦╦╦╦═╣╚╗
@@ -15,7 +16,7 @@
 
 Introducción:
 
-Bienvenido a mi tercer juego simple: HORCADO
+Bienvenido a mi tercer juego simple: AHORCADO
 Es un juego que me recuerda mi niñez por dos motivos:
 1. Lo jugué en papel
 2. Fue uno de los primeros juegos que pude disfrutar en una vieja PC
@@ -26,13 +27,13 @@ algo así como 8 bits meets 32 bits.
 Instrucciones:
 - Arranque
 Para iniciar el juego simplemente en la terminal ve al directorio donde tienes el
-archivo: horcado.py y escribe el siguiente comando o copia y pega en tu terminal:
+archivo: ahorcado.py y escribe el siguiente comando o copia y pega en tu terminal:
 
-python3 horcado.py
+python3 ahorcado.py
 
-|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|
-| python3 horcado.py |
-|____________________|
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|
+| python3 ahorcado.py |
+|_____________________|
 
 - Modo de juego
 Una vez que el juego inicia, verás las instrucciones en pantalla que te irán guiando.
