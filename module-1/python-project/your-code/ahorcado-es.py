@@ -182,8 +182,8 @@ while True:
             finJuego = True
     else:
         letrasequivocadas = letrasequivocadas + adivinar
-        if len(letrasequivocadas) == len(AAHORCADOEMOJI) - 1:
-            tablero(AAHORCADOEMOJI, letrasequivocadas, letrascorrectas, palabrasecreta)
+        if len(letrasequivocadas) == len(AHORCADOEMOJI) - 1:
+            tablero(AHORCADOEMOJI, letrasequivocadas, letrascorrectas, palabrasecreta)
             print('Se te han acabado las oportunidades para adivinar!\nDespues de ' + str(len(letrasequivocadas)) + ' equivocacione(s) y ' + str(len(letrascorrectas)) + ' intentos correctos, la palabra era: "' + palabrasecreta + '"')
             finJuego = True
 
