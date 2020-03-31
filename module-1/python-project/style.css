@@ -1,0 +1,150 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: teal;
+    
+}
+section { 
+    border: black;
+    border-style: solid;
+    border-width: 1px;
+}
+.ant{
+    border: aquamarine;
+    margin: 0 ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    background-color:aquamarine;
+
+}
+.ant>img {
+    width: 200px;
+}
+nav {
+    margin: 0 ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    background-color:aquamarine;
+
+}
+
+nav>a {
+    text-align: center;
+}
+
+h1 {
+    width: 100%;
+    color: black;
+    text-align: center;
+}
+
+.blanco{
+    color: white;
+}
+.uno>h1{
+    font-size: xx-large;
+    
+}
+.uno>img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+.primer{
+    background-color:darkslategrey;
+}
+.primer>img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+.primer>p{
+    text-align: center;
+}
+
+.segunda{
+    background-color: chartreuse;
+}
+
+.segunda>img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+
+}
+
+.segunda>p{
+    text-align: center;
+}
+
+.tercer{
+    background-color:lightseagreen;
+}
+
+.tercer>img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+
+}
+.tercer>p{
+    text-align: center;
+}
+.Rick{
+    border:greenyellow;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.Rick>img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+.ricktext{
+    text-align: center;
+    border:greenyellow;
+    border-style: solid;
+    border-width: 1px;
+}
+.Morty{
+    border:greenyellow;
+    border-style: solid;
+    border-width: 1px;
+}
+.Morty>img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+.mortytext{
+    text-align: center;
+    border:greenyellow;
+    border-style: solid;
+    border-width: 1px;
+
+}
+
+footer {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    position: sticky;
+    left:0px;
+    bottom:0px;
+    height:30px;
+    width:100%;
+    background:beige;
+ }
+ 
