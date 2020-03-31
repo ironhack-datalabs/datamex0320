@@ -6,6 +6,8 @@ Instrucciones:
 
 Eres Morty y tienes que salvar a Rick de morir ahorcado
 
+Las palabras que tienes que adivinar son personajes de Rick y morty
+
 Solo puedes adivinar una letra por turno
 
 Las letras erroneas se mostraran 
