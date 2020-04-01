@@ -118,7 +118,7 @@ while True:
         for i in range(len(secreto)):
             if secreto[i] not in letras_correctas:
                 win = False
-                break
+                
         if win:
             print("Wubba luba dub dub! Me salvaste Morty, la palabra secreta es", secreto)
             d = True
