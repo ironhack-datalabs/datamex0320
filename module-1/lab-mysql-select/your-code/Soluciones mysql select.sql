@@ -4,9 +4,9 @@
 
 use publications;
 
-select a.au_id 'AUTHOR ID', a.au_lname 'LAST NAME', a.au_fname 'FIRST NAME', t.title 'TITLE', p.pub_name 'PUBLISHER'
+select a.au_id AS 'AUTHOR', a.au_lname AS'LAST NAME', a.au_fname AS'FIRST NAME', t.title AS 'TITLE', p.pub_name 'PUBLISHER'
 
-from authors as a
+from authors as 
 Inner join titleauthor as ta
 on a.au_id = ta.au_id
 
@@ -18,14 +18,14 @@ on t.pub_id = p.pub_id
 
 #Challenge 2 - Who Have Published How Many At Where?
 select
-a.au_id 'AUTHOR ID', 
-a.au_lname 'LAST NAME', 
-a.au_fname 'FIRST NAME', 
-p.pub_name 'PUBLISHER', 
-COUNT(t.title) 'TITLE'
+a.au_id AS'AUTHOR', 
+a.au_lname AS 'LAST NAME', 
+a.au_fname AS 'FIRST NAME', 
+p.pub_name  AS 'PUBLISHER', 
+COUNT(t.title) AS 'TITLE COUNT'
 
-FROM authors as a
-Inner join titleauthor as ta
+FROM authors 
+Inner join titleauthor 
 on a.au_id = ta.au_id
 
 inner join titles as t
@@ -71,7 +71,7 @@ SUM(s.qty) AS 'TITLES SOLD'
 
 
 
-FROM authors as a
+FROM authors 
 left join titleauthor as ta
 on a.au_id = ta.au_id
 
@@ -83,3 +83,5 @@ on t.title_id = s.title_id
 
 group by a.au_id
 order by 'TITLES SOLD' desc; 
+
+--Bonus
