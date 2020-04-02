@@ -1,0 +1,79 @@
+Imprime en consola "Hola Mundo".
+$ echo "Hola mundo"
+
+Crea un directorio nuevo llamado new_dir.
+$ mkdir new_dir
+
+Eliminar ese directorio.
+$ rm -rf nuevo_dir
+
+Copie el archivo sed.txt dentro de la carpeta lorem a la carpeta lorem-copy.
+$ cp lorem / sed.txt lorem-copy
+se
+Copia los otros dos archivos de la carpeta lorem a la carpeta lorem-copy en una sola línea mediante el pipe;
+$ cp lorem / at.txt lorem-copy; cp lorem /cp  lorem.txt lorem-copy
+
+Muestra el contenido del archivo sed.txt dentro de la carpeta lorem.
+$ cat sed.txt
+
+Muestra el contenido de los archivos en.txt y lorem.txt dentro de la carpeta lorem.
+$ cat at.txt; gato lorem.txt
+
+Visualiza las primeras 3 linas del archivo sed.txt dentro de la carpeta lorem-copy
+$ head -3 lorem / sed.txt
+
+Visualiza las ultimas 3 linas del archivo sed.txt dentro de la carpeta lorem-copy
+$ tail -3 lorem / sed.txt
+
+Añade Homo homini lupus. al final de archivo sed.txt dentro de la carpeta lorem-copy.
+$ echo Homo homini lupus. >> sed.txt
+
+Visualiza las últimas 3 linas del archivo sed.txt dentro de la carpeta lorem-copy. Deberías ver ahora Homo homini lupus ..
+$ tail -3 lorem-copy / sed.txt
+
+Sustituye todas las apariciones de et por ET del archivo at.txt dentro de la carpeta lorem a la carpeta lorem-copy. Deberás usar sed.
+$ sed s / "et" / "ET" / <at.txt 
+
+Encuentra al usuario activo en el sistema.
+$ whoami
+
+Encuentra dónde estás en tu sistema de relaciones.
+$ pwd
+
+Lista de archivos que terminan por .txt en la carpeta lorem.
+$ find lorem -name "* .txt"
+
+Cuenta el número de líneas que tiene el archivo sed.txt dentro de la carpeta lorem. Tendrás que encadenar gato y wc mediante el tubo |.
+$ cat sed.txt | wc -l
+
+Cuenta el número de archivos que registran por lorem que están en este directorio y en registros internos
+
+Encuentra todas las apariciones de et en at.txt dentro de la carpeta lorem.
+$ grep "et" at.txt
+
+Cuenta el número de apariciones del hilo y en at.txt dentro de la carpeta lorem. Para ello debes obtener solo los hilos buscados y contar las líneas.
+$ grep "et" at.txt | wc -l
+
+Cuenta el número de apariciones del string y en todos los archivos del directorio lorem-cop
+Prima
+
+Almacena en una variable nombre tu nombre mediante el comando leer.
+$ nombre = Samantha
+
+Imprime esa variable.
+$ echo $ nombre
+Samantha
+
+Crea un directorio nuevo que se llame como el contenido de la variable nombre.
+$ mkdir $ nombre 
+
+Eliminar ese directorio
+$ rm -rf Samantha
+
+
+
+
+
+
+
+
