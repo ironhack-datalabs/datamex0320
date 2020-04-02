@@ -1,6 +1,6 @@
 USE lab_mysql;
 
-Tabla cars
+#Tabla cars
 
 CREATE TABLE `lab_mysql`.`cars` (
   `id_cars` VARCHAR(45) NOT NULL,
@@ -12,7 +12,7 @@ CREATE TABLE `lab_mysql`.`cars` (
   PRIMARY KEY (`id_cars`));
 
 
-Tabla customer
+#Tabla customer
 Executing:
 CREATE TABLE `lab_mysql`.`customers` (
   `Idnum` INT NOT NULL,
@@ -27,7 +27,7 @@ CREATE TABLE `lab_mysql`.`customers` (
   `postal` INT NOT NULL,
   PRIMARY KEY (`id_customer`));
 
-tabla salespersons 
+#tabla salespersons 
 
 CREATE TABLE `lab_mysql`.`salespersons` (
   `id_num` INT NOT NULL,
@@ -37,7 +37,7 @@ CREATE TABLE `lab_mysql`.`salespersons` (
   PRIMARY KEY (`id_staff`));
 
 
- tabla invoices
+#tabla invoices
 
 CREATE TABLE `lab_mysql`.`invoices` (
   `id_numin` INT NOT NULL,
@@ -47,3 +47,5 @@ CREATE TABLE `lab_mysql`.`invoices` (
   `customer` VARCHAR(45) NOT NULL,
   `salesperson` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`invoice_number`));
+
+ 
