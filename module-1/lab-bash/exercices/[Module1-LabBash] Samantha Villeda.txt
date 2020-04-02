@@ -1,0 +1,443 @@
+lias python3=python
+alias python3=python
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~
+$ pwd
+/c/Users/Samantha V
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~
+$ cd IronhackLabs
+bash: cd: IronhackLabs: No such file or directory
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~
+$ cd desktop
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop
+$ cd IronhackLabs
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs
+$ git clone http://github.com/samvhuerta/datamex0320.git
+Cloning into 'datamex0320'...
+warning: redirecting to https://github.com/samvhuerta/datamex0320.git/
+remote: Enumerating objects: 723, done.
+remote: Total 723 (delta 0), reused 0 (delta 0), pack-reused 723
+Receiving objects: 100% (723/723), 241.08 MiB | 2.18 MiB/s, done.
+Resolving deltas: 100% (119/119), done.
+Updating files: 100% (639/639), done.
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs
+$ ls
+datamex0320/  datamex0320-master.zip
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs
+$ cd IronhackLabs
+bash: cd: IronhackLabs: No such file or directory
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs
+$ cd Desktop
+bash: cd: Desktop: No such file or directory
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs
+$ cd datamex0320
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320 (master)
+$ ls
+final-project/  images/  LICENSE  module-1/  module-2/  module-3/  README.md
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320 (master)
+$ cd module-1
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1 (master)
+$ cd lab-bash
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash (master)
+$ ls
+exercices/  inputs/  lorem/  lorem-copy/  outputs/  README.md
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash (master)
+$ echo "hola mundo"
+hola mundo
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash (master)
+$ mkdir new_dir
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash (master)
+$ rm -rf new_dir
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash (master)
+$ cp lorem / sed.txt lorem-copy
+cp: -r not specified; omitting directory 'lorem'
+cp: -r not specified; omitting directory '/'
+cp: cannot stat 'sed.txt': No such file or directory
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash (master)
+$ cd lorem / sed.txt lorem-copy
+bash: cd: too many arguments
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash (master)
+$ cp lorem / sed.txt lorem-copy
+cp: -r not specified; omitting directory 'lorem'
+cp: -r not specified; omitting directory '/'
+cp: cannot stat 'sed.txt': No such file or directory
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash (master)
+$ cp lorem/sed.txt lorem-copy
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash (master)
+$ cp lorem/at.txt lorem-copy; cp lorem/cp lorem.txt lorem-copy
+cp: cannot stat 'lorem/cp': No such file or directory
+cp: cannot stat 'lorem.txt': No such file or directory
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash (master)
+$ cp lorem/lorem.txt lorem_copy
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash (master)
+$ cat sed.txt
+cat: sed.txt: No such file or directory
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash (master)
+$ cat sed.txt
+cat: sed.txt: No such file or directory
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash (master)
+$ cd lorem-copy
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem-copy (master)
+$ ls
+at.txt  lorem.txt  sed.txt
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem-copy (master)
+$ cat sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem-copy (master)
+$ cat at.txt; cat lorem.txt
+At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+Et harum quidem rerum facilis est et expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet
+ut et voluptates repudiandae sint et molestiae non recusandae.
+Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellatLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem-copy (master)
+$ head -3/sed.txt
+head: invalid trailing option -- /
+Try 'head --help' for more information.
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem-copy (master)
+$ head -3 lorem/sed.txt
+head: cannot open 'lorem/sed.txt' for reading: No such file or directory
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem-copy (master)
+$ head-3 lorem/sed.txt
+bash: head-3: command not found
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem-copy (master)
+$ head -3 lorem/sed.text
+head: cannot open 'lorem/sed.text' for reading: No such file or directory
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem-copy (master)
+$ head -3 sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem-copy (master)
+$ tail -3 sed.txt
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem-copy (master)
+$ echo Homo homini lupus. >>sed.txt
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem-copy (master)
+$ tail -3 sed.txt
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus.
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem-copy (master)
+$ sed s/"et"/"ET"/ <at.txt
+At vero eos ET accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga.
+Et harum quidem rerum facilis est ET expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniet
+ut ET voluptates repudiandae sint et molestiae non recusandae.
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellat
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem-copy (master)
+$ whoami
+Samantha V
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem-copy (master)
+$ pwd
+/c/Users/Samantha V/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem-copy
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem-copy (master)
+$ find lorem -name "*.txt"
+find: ‘lorem’: No such file or directory
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem-copy (master)
+$ cd lorem
+bash: cd: lorem: No such file or directory
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem-copy (master)
+$ cd lab-bash
+bash: cd: lab-bash: No such file or directory
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem-copy (master)
+$ cd..
+bash: cd..: command not found
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem-copy (master)
+$ cd ..
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash (master)
+$ cd lorem
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem (master)
+$ find lorem -name "*.txt"
+find: ‘lorem’: No such file or directory
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem (master)
+$ ls
+at.txt  lorem.txt  sed.txt
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem (master)
+$ find lorem-name "*.txt"
+find: ‘lorem-name’: No such file or directory
+find: ‘*.txt’: No such file or directory
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem (master)
+$ find lorem -name "*.txt"
+find: ‘lorem’: No such file or directory
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem (master)
+$ cat sed.txt | wc -1
+wc: unknown option -- 1
+Try 'wc --help' for more information.
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem (master)
+$ catn sed.txt | wc
+bash: catn: command not found
+      0       0       0
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem (master)
+$ cat sed.txt | wc
+      8     129     881
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem (master)
+$ grep "et" at.txt | wc
+      7      86     612
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem (master)
+$ cat "et" at.txt
+cat: et: No such file or directory
+At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+Et harum quidem rerum facilis est et expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet
+ut et voluptates repudiandae sint et molestiae non recusandae.
+Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellat
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem (master)
+$ cat "et" at.tx | wc
+cat: et: No such file or directory
+cat: at.tx: No such file or directory
+      0       0       0
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem (master)
+$ nombre = Samantha
+bash: nombre: command not found
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem (master)
+$ nombre Samantha
+bash: nombre: command not found
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem (master)
+$ name = Samantha
+bash: name: command not found
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem (master)
+$ name: Samantha
+bash: name:: command not found
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem (master)
+$ name Samantha
+bash: name: command not found
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../lorem-copy/at.txt
+        ../lorem-copy/lorem.txt
+        ../lorem-copy/sed.txt
+        ../lorem_copy
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem (master)
+$ git commit -m "mensaje"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../lorem-copy/at.txt
+        ../lorem-copy/lorem.txt
+        ../lorem-copy/sed.txt
+        ../lorem_copy
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem (master)
+$ git push origin master
+warning: redirecting to https://github.com/samvhuerta/datamex0320.git/
+Everything up-to-date
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem (master)
+$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem (master)
+$ git add .
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem (master)
+$ git commit -m "mensaje"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../lorem-copy/at.txt
+        ../lorem-copy/lorem.txt
+        ../lorem-copy/sed.txt
+        ../lorem_copy
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem (master)
+$ git add .
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem (master)
+$ git push origin master
+warning: redirecting to https://github.com/samvhuerta/datamex0320.git/
+Everything up-to-date
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem (master)
+$ git commit -m "mensaje"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../lorem-copy/at.txt
+        ../lorem-copy/lorem.txt
+        ../lorem-copy/sed.txt
+        ../lorem_copy
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem (master)
+$ git push
+warning: redirecting to https://github.com/samvhuerta/datamex0320.git/
+Everything up-to-date
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem (master)
+$ git checkout -b "lab-git"
+Switched to a new branch 'lab-git'
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem (lab-git)
+$ git status
+On branch lab-git
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../lorem-copy/at.txt
+        ../lorem-copy/lorem.txt
+        ../lorem-copy/sed.txt
+        ../lorem_copy
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem (lab-git)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem (lab-git)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem (lab-git)
+$ git add .
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem (lab-git)
+$ git status
+On branch lab-git
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../lorem-copy/at.txt
+        ../lorem-copy/lorem.txt
+        ../lorem-copy/sed.txt
+        ../lorem_copy
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem (lab-git)
+$ git add lorem
+fatal: pathspec 'lorem' did not match any files
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem (lab-git)
+$ git add lorem-copy
+fatal: pathspec 'lorem-copy' did not match any files
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem (lab-git)
+$ pwd
+/c/Users/Samantha V/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem (lab-git)
+$ git add .
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem (lab-git)
+$ git status
+On branch lab-git
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../lorem-copy/at.txt
+        ../lorem-copy/lorem.txt
+        ../lorem-copy/sed.txt
+        ../lorem_copy
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Samantha V@LAPTOP-AFCG9I69 MINGW64 ~/desktop/IronhackLabs/datamex0320/module-1/lab-bash/lorem (lab-git)
+$
