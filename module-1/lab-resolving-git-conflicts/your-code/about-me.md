@@ -28,6 +28,6 @@ lab-re# Who am I
     * Which industry will you seek employment in?
     I qant to explore the e-commerce aspect of the tech world.
     * What will your future role look like?
-    Like a lot of hard work.
+    Like a lot of hard work..
     * What is your career goal?
     To become a founder and Ceo of a startup.
