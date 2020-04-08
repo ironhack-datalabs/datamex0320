@@ -30,4 +30,4 @@ while sum(jugador)< 21:
 if sum(jugador) > 21:
     print("Te has pasado, casino gana")
 elif sum(jugador)==21:
-    print("¡BLACKJACK!")
+    print("¡¡BLACKJACK!!")
