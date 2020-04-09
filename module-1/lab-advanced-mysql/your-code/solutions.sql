@@ -9,6 +9,7 @@ left join sales as s
 on t.title_id = s.title_id
 
 Step 2: Aggregate the total royalties for each title for each author
+
 select tauthor.au_id "AUTHOR ID",tauthor.title_id "TITLE ID", SUM(sales_royalty) as ROYALTIES
 
 from (select t.title 'TITLE',ta.au_id author_id, (t.price * s.qty * t.royalty / 100 * ta.royaltyper / 100) as 'sales_royalty'
