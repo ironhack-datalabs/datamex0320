@@ -1,0 +1,1004 @@
+<!DOCTYPE HTML>
+<html class="no-js" lang="en-gb">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=Edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=2.5,user-scalable=yes" name="viewport"/>
+<meta content="Springer, Tokyo" name="citation_publisher"/>
+<meta content="What is Data Science ? Fundamental Concepts and a Heuristic Example" name="citation_title"/>
+<meta content="10.1007/978-4-431-65950-1_3" name="citation_doi"/>
+<meta content="en" name="citation_language"/>
+<meta content="https://link.springer.com/chapter/10.1007/978-4-431-65950-1_3" name="citation_abstract_html_url"/>
+<meta content="https://link.springer.com/chapter/10.1007/978-4-431-65950-1_3" name="citation_fulltext_html_url"/>
+<meta content="https://link.springer.com/content/pdf/10.1007%2F978-4-431-65950-1_3.pdf" name="citation_pdf_url"/>
+<meta content="http://api.springer.com/metadata/pam?q=doi:10.1007/978-4-431-65950-1_3&amp;api_key=" name="citation_springer_api_url"/>
+<meta content="40" name="citation_firstpage"/>
+<meta content="51" name="citation_lastpage"/>
+<meta content="Chikio Hayashi" name="citation_author"/>
+<meta content="The Institute of Statistical Mathematics Sakuragaoka" name="citation_author_institution"/>
+<meta content="10.1007/978-4-431-65950-1_3" name="dc.identifier"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="Data Science is not only a synthetic concept to unify statistics, data analysis and their related methods but also comprises its results. It includes three phases, design for data, collection of..." name="description"/>
+<meta content="summary" name="twitter:card"/>
+<meta content="What is Data Science ? Fundamental Concepts and a Heuristic Example" name="twitter:title"/>
+<meta content="https://static-content.springer.com/cover/book/978-4-431-65950-1.jpg" name="twitter:image"/>
+<meta content="Content cover image" name="twitter:image:alt"/>
+<meta content="SpringerLink" name="twitter:site"/>
+<meta content="Data Science is not only a synthetic concept to unify statistics, data analysis and their related methods but also comprises its results. It includes three phases, design for data, collection of..." name="twitter:description"/>
+<meta content="Data Science, Classification, and Related Methods" name="citation_inbook_title"/>
+<meta content="1998" name="citation_publication_date"/>
+<meta content="What is Data Science ? Fundamental Concepts and a Heuristic Example" property="og:title"/>
+<meta content="Paper" property="og:type"/>
+<meta content="https://link.springer.com/chapter/10.1007/978-4-431-65950-1_3" property="og:url"/>
+<meta content="https://static-content.springer.com/cover/book/978-4-431-65950-1.jpg" property="og:image"/>
+<meta content="SpringerLink" property="og:site_name"/>
+<meta content="Data Science is not only a synthetic concept to unify statistics, data analysis and their related methods but also comprises its results. It includes three phases, design for data, collection of..." property="og:description"/>
+<title>What is Data Science ? Fundamental Concepts and a Heuristic Example | SpringerLink</title>
+<link href="https://link.springer.com/chapter/10.1007/978-4-431-65950-1_3" rel="canonical"/>
+<link href="/springerlink-static/409335052/images/favicon/favicon.ico" rel="shortcut icon"/>
+<link href="/springerlink-static/409335052/images/favicon/favicon.ico" rel="icon" sizes="16x16 32x32 48x48"/>
+<link href="/springerlink-static/409335052/images/favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="/springerlink-static/409335052/images/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="/springerlink-static/409335052/images/favicon/favicon-48x48.png" rel="icon" sizes="48x48" type="image/png"/>
+<link href="/springerlink-static/409335052/images/favicon/app-icon-iphone@3x.png" rel="apple-touch-icon"/>
+<link href="/springerlink-static/409335052/images/favicon/ic_launcher_hdpi.png" rel="apple-touch-icon" sizes="72x72"/>
+<link href="/springerlink-static/409335052/images/favicon/app-icon-ipad.png" rel="apple-touch-icon" sizes="76x76"/>
+<link href="/springerlink-static/409335052/images/favicon/app-icon-114x114.png" rel="apple-touch-icon" sizes="114x114"/>
+<link href="/springerlink-static/409335052/images/favicon/app-icon-iphone@2x.png" rel="apple-touch-icon" sizes="120x120"/>
+<link href="/springerlink-static/409335052/images/favicon/ic_launcher_xxhdpi.png" rel="apple-touch-icon" sizes="144x144"/>
+<link href="/springerlink-static/409335052/images/favicon/app-icon-ipad@2x.png" rel="apple-touch-icon" sizes="152x152"/>
+<link href="/springerlink-static/409335052/images/favicon/app-icon-iphone@3x.png" rel="apple-touch-icon" sizes="180x180"/>
+<meta content="#ffffff" name="msapplication-TileColor"/>
+<meta content="/springerlink-static/409335052/images/favicon/ic_launcher_xxhdpi.png" name="msapplication-TileImage"/>
+<link href="//fonts.gstatic.com" rel="dns-prefetch"/>
+<link href="//fonts.googleapis.com" rel="dns-prefetch"/>
+<link href="//google-analytics.com" rel="dns-prefetch"/>
+<link href="//www.google-analytics.com" rel="dns-prefetch"/>
+<link href="//www.googletagservices.com" rel="dns-prefetch"/>
+<link href="//www.googletagmanager.com" rel="dns-prefetch"/>
+<link href="//static-content.springer.com" rel="dns-prefetch"/>
+<link href="/springerlink-static/409335052/css/basic.css" media="screen" rel="stylesheet"/>
+<link class="js-ctm" href="/springerlink-static/409335052/css/styles.css" media="only screen and (-webkit-min-device-pixel-ratio:0) and (min-color-index:0), (-ms-high-contrast: none), only all and (min--moz-device-pixel-ratio:0) and (min-resolution: 3e1dpcm)" rel="stylesheet"/>
+<link href="/springerlink-static/409335052/css/print.css" media="print" rel="stylesheet"/>
+<script type="text/javascript">
+        window.Krux||((Krux=function(){Krux.q.push(arguments);}).q=[]);
+        var dataLayer = [{
+                'GA Key':"UA-26408784-1",
+                'Features':["leaderboardadverts","eventtracker"],
+                'Event Category':"Conference Paper",
+                'Open Access':"N",
+                'Labs':"Y",
+                'DOI':"10.1007/978-4-431-65950-1_3",
+                'VG Wort Identifier':"pw-vgzm.415900-10.1007-978-4-431-65950-1_3",
+                'hasAccess':"N",
+                'Full HTML':"N",
+                'Has Body':"N",
+                'Static Hash':"409335052",
+                'Has Preview':"Y",
+                'user':{"license":{"businessPartnerID":[],"businessPartnerIDString":""}},
+                'content':{"serial":{"eissn":"","pissn":"1431-8814"},"book":{"seriesTitle":"Studies in Classification, Data Analysis, and Knowledge Organization","eisbn":"978-4-431-65950-1","pisbn":"978-4-431-70208-5","bookProductType":"Proceedings","seriesId":"1564","title":"Data Science, Classification, and Related Methods","doi":"10.1007/978-4-431-65950-1"},"attributes":{"deliveryPlatform":"bunsen"},"chapter":{"doi":"10.1007/978-4-431-65950-1_3"},"category":{"pmc":{"primarySubject":"Statistics","primarySubjectCode":"S","secondarySubjects":{"1":"Statistics, general","2":"Economic Theory/Quantitative Economics/Mathematical Methods","3":"Data Structures"},"secondarySubjectCodes":{"1":"S0000X","2":"W29000","3":"I15017"}},"sucode":"SUCO11649"},"type":"ConferencePaper"},
+                'Access Type':"noaccess",
+                'Page':"chapter",
+                'Bpids':"",
+                'Bpnames':"",
+                'SubjectCodes':"SCS, SCS0000X, SCW29000, SCI15017",
+                'session':{"authentication":{"loginStatus":"N"},"attributes":{"edition":"academic"}},
+                'eventTrackerBaseUrl':"https://event-tracker.springernature.com",
+                'Keywords':"National Character, Exploratory Approach, Opinion Distribution, Comparative Survey, Cultural Sphere",
+                'Country':"MX",
+
+                    'doi': "10.1007-978-4-431-65950-1_3",
+                    'kwrd': ["National_Character","Exploratory_Approach","Opinion_Distribution","Comparative_Survey","Cultural_Sphere"],
+                    'pmc': ["S","S0000X","W29000","I15017"],
+                    'BPID': ["1"],
+                    'ksg': Krux.segments,
+                    'kuid': Krux.uid,
+
+        }];
+    </script>
+<script src="/springerlink-static/409335052/js/jquery-3.3.1.min.js" type="text/javascript"></script>
+<script charset="UTF-8" src="https://cdn.cookielaw.org/consent/6b2ec9cd-5ace-4387-96d2-963e596401c6.js" type="text/javascript"></script>
+<script type="text/javascript">
+    function OptanonWrapper() {
+        dataLayer.push({
+            'event' : 'onetrustActive'
+        });
+    }
+</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WCF9Z9');</script>
+</head>
+<body>
+<noscript><iframe height="0" src="//www.googletagmanager.com/ns.html?id=GTM-WCF9Z9" style="display:none;visibility:hidden" width="0"></iframe></noscript>
+<div class="skip-to">
+<a class="skip-to__link pseudo-focus" href="#main-content">Skip to main content</a>
+</div>
+<div class="page-wrapper">
+<noscript>
+<div class="nojs-banner u-interface">
+<p>This service is more advanced with JavaScript available, learn more at <a href="http://activatejavascript.org" rel="noopener" target="_blank">http://activatejavascript.org</a>
+</p>
+</div>
+</noscript>
+<div class="leaderboard u-hide" data-component="SpringerLink.GoogleAds" data-namespace="leaderboard" id="leaderboard">
+<div class="leaderboard__wrapper">
+<p class="leaderboard__label">Advertisement</p>
+<button class="leaderboard__hide" data-track="click" data-track-action="Hide advertisement" data-track-label="" title="Hide this advertisement">Hide</button>
+<div class="leaderboard__ad u-pt-24" id="doubleclick-leaderboard-ad"></div>
+</div>
+</div>
+<header class="header u-interface" id="header">
+<div class="header__content">
+<div class="header__menu-container">
+<a class="site-logo" href="/" id="logo" title="Go to homepage">
+<picture>
+<source srcset="/springerlink-static/409335052/images/svg/springerlink.svg" type="image/svg+xml">
+<img alt="SpringerLink" class="site-logo__springer" data-test="springer-logo" height="30" src="/springerlink-static/409335052/images/png/springerlink.png" width="148"/>
+</source></picture>
+</a>
+<nav class="u-inline-block" id="search-container">
+<div class="search">
+<div class="search__content">
+<form action="/search" class="u-form-single-input" method="get" role="search">
+<label for="search-springerlink">Search SpringerLink</label>
+<div class="u-relative">
+<input autocomplete="off" id="search-springerlink" name="query" type="text" value=""/>
+<input class="u-hide-text" title="Submit" type="submit" value="Submit"/>
+<svg aria-hidden="true" class="u-vertical-align-absolute" focusable="false" height="13" role="presentation" version="1.1" viewbox="222 151 13 13" width="13" xmlns="http://www.w3.org/2000/svg">
+<path d="M227 159C228.7 159 230 157.7 230 156 230 154.3 228.7 153 227 153 225.3 153 224 154.3 224 156 224 157.7 225.3 159 227 159L227 159 227 159 227 159ZM230 160.1L231.1 159 233.9 161.7C234.2 162.1 234.2 162.6 233.9 162.9 233.6 163.2 233.1 163.2 232.7 162.9L230 160.1 230 160.1 230 160.1 230 160.1ZM227 161L227 161C224.2 161 222 158.8 222 156 222 153.2 224.2 151 227 151 229.8 151 232 153.2 232 156 232 158.8 229.8 161 227 161L227 161 227 161 227 161 227 161Z" fill-rule="evenodd" stroke="none"></path>
+</svg>
+</div>
+</form>
+</div>
+</div>
+</nav>
+<nav class="nav-container u-interface">
+<div class="global-nav__wrapper">
+<div class="search-button">
+<a class="search-button__label" href="#search-container">
+<span class="search-button__title">Search</span><svg aria-hidden="true" focusable="false" height="12" role="presentation" version="1.1" viewbox="222 151 12 12" width="12" xmlns="http://www.w3.org/2000/svg">
+<path d="M227 159C228.7 159 230 157.7 230 156 230 154.3 228.7 153 227 153 225.3 153 224 154.3 224 156 224 157.7 225.3 159 227 159L227 159 227 159 227 159ZM230 160.1L231.1 159 233.9 161.7C234.2 162.1 234.2 162.6 233.9 162.9 233.6 163.2 233.1 163.2 232.7 162.9L230 160.1 230 160.1 230 160.1 230 160.1ZM227 161L227 161C224.2 161 222 158.8 222 156 222 153.2 224.2 151 227 151 229.8 151 232 153.2 232 156 232 158.8 229.8 161 227 161L227 161 227 161 227 161 227 161Z" fill-rule="evenodd" stroke="none"></path>
+</svg>
+</a>
+</div>
+<ul class="global-nav" data-component="SV.Menu" data-text="Menu" data-title="Navigation menu">
+<li>
+<a href="/">
+<span class="u-overflow-ellipsis">Home</span>
+</a>
+</li>
+<li class="global-nav__logged-out">
+<a class="test-login-link" href="//link.springer.com/signup-login?previousUrl=https%3A%2F%2Flink.springer.com%2Fchapter%2F10.1007%252F978-4-431-65950-1_3">
+<span class="u-overflow-ellipsis">Log in</span>
+</a>
+</li>
+</ul>
+</div>
+</nav>
+</div>
+</div>
+</header>
+<main class="main-wrapper" id="main-content" tabindex="-1">
+<div class="main-container uptodate-recommendations-off">
+<aside class="main-sidebar-left">
+<div class="main-sidebar-left__content">
+<div class="cover-image test-cover" itemscope="">
+<a class="test-cover-link" href="/book/10.1007/978-4-431-65950-1">
+<span class="u-screenreader-only">Data Science, Classification, and Related Methods</span>
+<img alt="" class="test-cover-image" itemprop="image" src="https://media.springernature.com/w306/springer-static/cover/book/978-4-431-65950-1.jpg"/>
+</a>
+</div>
+</div>
+</aside>
+<div class="main-body" data-role="NavigationContainer">
+<article class="main-body__content">
+<div class="FulltextWrapper" xmlns="http://www.w3.org/1999/xhtml"><div class="ArticleHeader main-context"><div class="enumeration" id="enumeration"><p class="test-LocationInConferenceProceeding"><span class="BookTitle"><a data-track="click" data-track-action="Book title" data-track-label="" href="/book/10.1007/978-4-431-65950-1">Data Science, Classification, and Related Methods</a></span><span class="page-numbers-info">
+                pp 40-51</span><span class="u-inline-block u-ml-4"> |
+                <a data-track="click" data-track-action="Cite as link" data-track-label="Enumeration section" href="#citeas">Cite as</a></span></p></div><div class="MainTitleSection"><h1 class="ChapterTitle" lang="en">What is Data Science ? Fundamental Concepts and a Heuristic Example</h1></div><div class="authors u-clearfix" data-component="SpringerLink.Authors"><ul class="u-interface u-inline-list authors__title" data-role="AuthorsNavigation"><li><span>Authors</span></li><li><a data-track="click" data-track-action="Authors and affiliations tab" data-track-label="" href="#authorsandaffiliations">Authors and affiliations</a></li></ul><div class="authors__list" data-role="AuthorsList"><ul class="test-contributor-names"><li class="u-mb-2 u-pt-4 u-pb-4" itemscope="" itemtype="http://schema.org/Person"><span class="authors__name" itemprop="name">Chikio Hayashi</span></li></ul></div></div><div class="main-context__container" data-component="SpringerLink.ArticleMetrics"><div class="main-context__column"><span><span class="test-render-category">Conference paper</span></span></div><div class="main-context__column"> <ul class="article-metrics u-sansSerif" id="book-metrics">
+<li class="article-metrics__item">
+<a class="article-metrics__link gtm-chaptercitations-count" href="https://citations.springer.com/item?doi=10.1007/978-4-431-65950-1_3" id="chaptercitations-link" rel="noopener" target="_blank" title="Visit Springer Citations for full citation details">
+<span class="test-metric-count c-button-circle gtm-chaptercitations-count" id="chaptercitations-count-number">14</span>
+<span class="test-metric-name article-metrics__label gtm-chaptercitations-count">Citations</span>
+</a>
+</li>
+<li class="article-metrics__item">
+<a class="article-metrics__link gtm-chaptermentions-count" href="http://www.altmetric.com/details.php?citation_id=14867448" id="chaptermentions-link" rel="noopener" target="_blank" title="Visit Altmetric for full social mention details">
+<span class="test-metric-count c-button-circle gtm-chaptermentions-count" id="chaptermentions-count-number">6</span>
+<span class="test-metric-name article-metrics__label gtm-chaptermentions-count">Mentions</span>
+</a>
+</li>
+<li class="article-metrics__item">
+<span class="test-metric-count article-metrics__views">1.5k</span>
+<span class="test-metric-name article-metrics__label">Downloads</span>
+</li>
+</ul>
+</div></div><span class="vol-info" id="test-SeriesTitle">
+                Part of the
+                <a class="gtm-book-series-link" href="/bookseries/1564">Studies in Classification, Data Analysis, and Knowledge Organization</a>
+                book series (STUDIES CLASS)</span></div><section class="Abstract" id="Abs1" lang="en" tabindex="-1"><h2 class="Heading">Summary</h2><p class="Para">Data Science is not only a synthetic concept to unify statistics, data analysis and their related methods but also comprises its results. It includes three phases, design for data, collection of data, and analysis on data. Fundamental concepts and various methods based on it are discussed with a heuristic example.</p></section><div class="KeywordGroup" lang="en"><h2 class="Heading">Keywords</h2><span class="Keyword">National Character </span><span class="Keyword">Exploratory Approach </span><span class="Keyword">Opinion Distribution </span><span class="Keyword">Comparative Survey </span><span class="Keyword">Cultural Sphere </span><div class="u-interface u-italic" id="test-keyword-message">
+							These keywords were added by machine and not by the authors. This process is experimental and the keywords may be updated as the learning algorithm improves.
+						</div></div><div class="HeaderArticleNotes"><aside class="ArticleNote ArticleNoteMisc"><p class="SimplePara">The roundtable discussion “Perspectives in classification and the Future of IFCS” was held at the last Conference under the chairmanship of Professor H. -H. Bock. In this panel discussion, I used the phrase ‘Data Science’. There was a question, “What is ‘Data Science’? ” I briefly answered it. This is the starting point of the present paper.</p></aside></div><div class="note test-pdf-link" id="cobranding-and-download-availability-text"><div id="chapter_no_access_banner">This is a preview of subscription content, <a data-track="click" data-track-action="Preview banner - Log in" data-track-label="" href="/signup-login?previousUrl=https%3A%2F%2Flink.springer.com%2Fchapter%2F10.1007%252F978-4-431-65950-1_3" id="test-login-banner-link">log in</a> to check access.</div></div><div class="article-actions--inline" data-component="article-actions--inline" id="article-actions--inline"></div><section class="pdf-preview" id="Sample"><h2 class="Heading">Preview</h2><object class="pdf-preview__embed pdf-preview__embed--height" data="//page-one.springer.com/pdf/preview/10.1007/978-4-431-65950-1_3" data-component="SpringerLink.PdfPreview" id="test-pdf-preview" type="application/pdf" width="100%"><p class="u-interface" data-fallback-text="true">Unable to display preview. <a href="//page-one.springer.com/pdf/preview/10.1007/978-4-431-65950-1_3" rel="noopener" target="_blank">Download preview PDF.</a></p></object><p class="pdf-preview__info u-interface">Unable to display preview. <a href="//page-one.springer.com/pdf/preview/10.1007/978-4-431-65950-1_3" rel="noopener" target="_blank">Download preview PDF.</a></p></section><section class="Section1 RenderAsSection1" id="Bib1" tabindex="-1"><h2 class="Heading">References</h2><div class="content"><ol class="BibliographyWrapper"><li class="Citation"><div class="CitationContent" id="CR1">The following references are relevant to the various parts of this paper.<span class="Occurrences"><span class="Occurrence OccurrenceGS"><a class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="https://scholar.google.com/scholar?q=The%20following%20references%20are%20relevant%20to%20the%20various%20parts%20of%20this%20paper." rel="noopener" target="_blank"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationContent" id="CR2">Arabie, P., Hubert, L.J. and De Soete, G. (1996) ed.: Clustering and Classification, World Scientific.<span class="Occurrences"><span class="Occurrence OccurrenceGS"><a class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="https://scholar.google.com/scholar?q=Arabie%2C%20P.%2C%20Hubert%2C%20L.J.%20and%20De%20Soete%2C%20G.%20%281996%29%20ed.%3A%20Clustering%20and%20Classification%2C%20World%20Scientific." rel="noopener" target="_blank"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationContent" id="CR3">Benzécri, J.P. (1973): <em class="EmphasisTypeItalic">L’Analyse des Données</em>,Dunod.<span class="Occurrences"><span class="Occurrence OccurrenceGS"><a class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="https://scholar.google.com/scholar?q=Benz%C3%A9cri%2C%20J.P.%20%281973%29%3A%20L%E2%80%99Analyse%20des%20Donn%C3%A9es%2CDunod." rel="noopener" target="_blank"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationContent" id="CR4">Benzécri, J.P. (1992): Correspondence Analysis Hand-Book, Marcel Dekker.<span class="Occurrences"><span class="Occurrence OccurrenceGS"><a class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="http://scholar.google.com/scholar_lookup?title=Correspondence%20Analysis%20Hand-Book&amp;author=JP.%20Benz%C3%A9cri&amp;publication_year=1992" rel="noopener" target="_blank"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationContent" id="CR5">Bock, H.-H. and Polasek, W. (1996) ed.: Data Analysis and Information Systems, Springer.<span class="Occurrences"><span class="Occurrence OccurrenceGS"><a class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="https://scholar.google.com/scholar?q=Bock%2C%20H.-H.%20and%20Polasek%2C%20W.%20%281996%29%20ed.%3A%20Data%20Analysis%20and%20Information%20Systems%2C%20Springer." rel="noopener" target="_blank"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationContent" id="CR6">Borg, I. and Shye, S. (1995): Facet Theory, Form and Content, Advanced Quantitative Techniques in the Social Sciences Series 5, Sage Publication.<span class="Occurrences"><span class="Occurrence OccurrenceGS"><a class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="http://scholar.google.com/scholar_lookup?title=Facet%20Theory%2C%20Form%20and%20Content%2C%20Advanced%20Quantitative%20Techniques%20in%20the%20Social%20Sciences%20Series%205&amp;author=I.%20Borg&amp;author=S.%20Shye&amp;publication_year=1995" rel="noopener" target="_blank"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationContent" id="CR7">Diday, E., J. Lemaire, J. Pouget and F. Testu (1983): <em class="EmphasisTypeItalic">Elements d’Analyse des Données</em>,Dunod.<span class="Occurrences"><span class="Occurrence OccurrenceGS"><a class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="https://scholar.google.com/scholar?q=Diday%2C%20E.%2C%20J.%20Lemaire%2C%20J.%20Pouget%20and%20F.%20Testu%20%281983%29%3A%20Elements%20d%E2%80%99Analyse%20des%20Donn%C3%A9es%2CDunod." rel="noopener" target="_blank"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationContent" id="CR8">Diday, E., G. Celeux, Y. Lechevallier, G. Govaert and H. Ralambondrainy (1989): <em class="EmphasisTypeItalic">Classification automatique et Analyse des Données: Méthodes et environment informatique</em>,Dunod.<span class="Occurrences"><span class="Occurrence OccurrenceGS"><a class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="https://scholar.google.com/scholar?q=Diday%2C%20E.%2C%20G.%20Celeux%2C%20Y.%20Lechevallier%2C%20G.%20Govaert%20and%20H.%20Ralambondrainy%20%281989%29%3A%20Classification%20automatique%20et%20Analyse%20des%20Donn%C3%A9es%3A%20M%C3%A9thodes%20et%20environment%20informatique%2CDunod." rel="noopener" target="_blank"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationContent" id="CR9">Diday, E. and Y. Leschevallier (1991): Symbolic -Numeric Data Analysis and Learning, -Versailles Sept 91- Nova Science Publisher.<span class="Occurrences"><span class="Occurrence OccurrenceGS"><a class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="http://scholar.google.com/scholar_lookup?title=Symbolic%20-Numeric%20Data%20Analysis%20and%20Learning&amp;author=E.%20Diday&amp;author=Y.%20Leschevallier&amp;publication_year=1991" rel="noopener" target="_blank"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationContent" id="CR10">Gaul, W. and Pferfer, D. (1996) ed: From Data to Knowledge, Springer.<span class="Occurrences"><span class="Occurrence OccurrenceGS"><a class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="http://scholar.google.com/scholar_lookup?title=ed&amp;author=W.%20Gaul&amp;author=D.%20Pferfer&amp;publication_year=1996" rel="noopener" target="_blank"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationContent" id="CR11">Guttman, L. (1994): <em class="EmphasisTypeItalic">Louis Guttman on Theory and Methodology: Selected Writings</em>, Shlomit Levy ed, Dartmouth.<span class="Occurrences"><span class="Occurrence OccurrenceGS"><a class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="http://scholar.google.com/scholar_lookup?title=Louis%20Guttman%20on%20Theory%20and%20Methodology%3A%20Selected%20Writings&amp;author=L.%20Guttman&amp;publication_year=1994" rel="noopener" target="_blank"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationContent" id="CR12">Hayashi, C. (1956): Theory and example of quantification(II). Proc. Inst. Statist. Math., 3, 69–98.<span class="Occurrences"><span class="Occurrence OccurrenceGS"><a class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="http://scholar.google.com/scholar_lookup?title=Theory%20and%20example%20of%20quantification%28II%29&amp;author=C..%20Hayashi&amp;journal=Proc.%20Inst.%20Statist.%20Math.&amp;volume=3&amp;pages=69-98&amp;publication_year=1956" rel="noopener" target="_blank"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationContent" id="CR13">Hayashi, C. (1974):.Minimum dimensional analysis MDA. <em class="EmphasisTypeItalic">Behaviormetrika</em>, 1, 1–24. Hayashi, C. (1976): Minimum dimensional analysis MDA-OR and MDA-UO, Essays in Probability and Statistics, Ikeda, S., et al. (eds.), 395–412, Shinko Tsusho Co. Ltd. Hayashi, C. ( 1993 ): Treatise on Behaviormetrics, Asakura Shoten.<span class="Occurrences"><span class="Occurrence OccurrenceGS"><a class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="http://scholar.google.com/scholar_lookup?title=%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20.Minimum%20dimensional%20analysis%20MDA.%20Behaviormetrika%2C%201%2C%201-24.%20Hayashi%2C%20C.%20%281976%29%3A%20Minimum%20dimensional%20analysis%20MDA-OR%20and%20MDA-UO%2C%20Essays%20in%20Probability%20and%20Statistics%2C%20Ikeda%2C%20S.%20%28eds.%29%2C%20395-412%2C%20Shinko%20Tsusho%20Co.%20Ltd.%20Hayashi%2C%20C.&amp;author=C.%20Hayashi&amp;publication_year=1974" rel="noopener" target="_blank"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationContent" id="CR14">Hayashi, C. (1993): Quantification of Qualitative Data -Theory and Method -, Asakura Shoten.<span class="Occurrences"><span class="Occurrence OccurrenceGS"><a class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="http://scholar.google.com/scholar_lookup?title=Quantification%20of%20Qualitative%20Data%20-Theory%20and%20Method%20-&amp;author=C.%20Hayashi&amp;publication_year=1993" rel="noopener" target="_blank"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationContent" id="CR15">Hayashi, C. (1995): <em class="EmphasisTypeItalic">Changing and Enduring Aspects of Japanese National Character</em>, The Institute of Social Research, Osaka, Japan.<span class="Occurrences"><span class="Occurrence OccurrenceGS"><a class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="http://scholar.google.com/scholar_lookup?title=Changing%20and%20Enduring%20Aspects%20of%20Japanese%20National%20Character&amp;author=C.%20Hayashi&amp;publication_year=1995" rel="noopener" target="_blank"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationContent" id="CR16">Hayashi, C. and Suzuki, T. (1986): <em class="EmphasisTypeItalic">Data Analysis in Social Surveys</em>, Iwanami Shoten. The English version by Hayashi, C. Suzuki,T. and Sasaki, M., <em class="EmphasisTypeItalic">“Data Analysis for Comparative Social Research: International Perspectives”</em> was published by Elsevier, North-Holland in 1992.<span class="Occurrences"><span class="Occurrence OccurrenceGS"><a class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="http://scholar.google.com/scholar_lookup?title=T.%20%281986%29%3A%20Data%20Analysis%20in%20Social%20Surveys%2C%20Iwanami%20Shoten.%20The%20English%20version%20by%20Hayashi%2C%20C.%20Suzuki%2CT.%20and%20Sasaki%2C%20M.%2C%20%E2%80%9CData%20Analysis%20for%20Comparative%20Social%20Research%3A%20International%20Perspectives%E2%80%9D%20was%20published%20by%20Elsevier&amp;author=C.%20Hayashi&amp;publication_year=1992" rel="noopener" target="_blank"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationContent" id="CR17">Hayashi, C. and Hayashi, F. (1995): <em class="EmphasisTypeItalic">Comparative Study of National Character</em>, Proceedings of the Institute of Statistical Mathematics Vol. 43, No. 1, 27–80.<span class="Occurrences"><span class="Occurrence OccurrenceGS"><a class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="https://scholar.google.com/scholar?q=Hayashi%2C%20C.%20and%20Hayashi%2C%20F.%20%281995%29%3A%20Comparative%20Study%20of%20National%20Character%2C%20Proceedings%20of%20the%20Institute%20of%20Statistical%20Mathematics%20Vol.%2043%2C%20No.%201%2C%2027%E2%80%9380." rel="noopener" target="_blank"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationContent" id="CR18">Jambu, M. (1989): <em class="EmphasisTypeItalic">Exploration Informatique et Statistique des Données</em>, Dunod. Jambu, M. ( 1991 ): Exploratory and Multivariate Data Analysis, Academic Press.<span class="Occurrences"><span class="Occurrence OccurrenceGS"><a class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="http://scholar.google.com/scholar_lookup?title=%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Exploration%20Informatique%20et%20Statistique%20des%20Donn%C3%A9es%2C%20Dunod.%20Jambu%2C%20M.&amp;author=M.%20Jambu&amp;publication_year=1989" rel="noopener" target="_blank"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationContent" id="CR19">Lebart, L., Morineau, A. and Warwick, K.M. (1984): <em class="EmphasisTypeItalic">Multivariate Descriptive Statistical Analysis</em>,John Wiley.<span class="Occurrences"><span class="Occurrence OccurrenceGS"><a class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="https://scholar.google.com/scholar?q=Lebart%2C%20L.%2C%20Morineau%2C%20A.%20and%20Warwick%2C%20K.M.%20%281984%29%3A%20Multivariate%20Descriptive%20Statistical%20Analysis%2CJohn%20Wiley." rel="noopener" target="_blank"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationContent" id="CR20">Lebart, L. and Salem, A. (1988): <em class="EmphasisTypeItalic">Analyse Statistiques des Données</em>, Textuelles, Dunod.<span class="Occurrences"><span class="Occurrence OccurrenceGS"><a class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="http://scholar.google.com/scholar_lookup?title=Analyse%20Statistiques%20des%20Donn%C3%A9es&amp;author=L.%20Lebart&amp;author=A.%20Salem&amp;publication_year=1988" rel="noopener" target="_blank"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationContent" id="CR21">Lebart, L. and Salem, A. (1994): Statistique Textuelle, Dunod.<span class="Occurrences"><span class="Occurrence OccurrenceGS"><a class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="http://scholar.google.com/scholar_lookup?title=Statistique%20Textuelle&amp;author=L.%20Lebart&amp;author=A.%20Salem&amp;publication_year=1994" rel="noopener" target="_blank"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationContent" id="CR22">Lebart, L., Morineau, A. and Piron, M. (1995): <em class="EmphasisTypeItalic">Statistique Exploratoire Multidimensionnelle</em>,Dunod.<span class="Occurrences"><span class="Occurrence OccurrenceGS"><a class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="https://scholar.google.com/scholar?q=Lebart%2C%20L.%2C%20Morineau%2C%20A.%20and%20Piron%2C%20M.%20%281995%29%3A%20Statistique%20Exploratoire%20Multidimensionnelle%2CDunod." rel="noopener" target="_blank"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationContent" id="CR23">Van Cutsem, B. (1994): Classification and Dissimilarity Analysis, Springer.<span class="Occurrences"><span class="Occurrence OccurrenceGS"><a class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="https://scholar.google.com/scholar?q=Van%20Cutsem%2C%20B.%20%281994%29%3A%20Classification%20and%20Dissimilarity%20Analysis%2C%20Springer." rel="noopener" target="_blank"><span><span>Google Scholar</span></span></a></span></span></div></li></ol></div></section><section class="Section1 RenderAsSection1"><h2 class="Heading" id="copyrightInformation">Copyright information</h2><div class="ArticleCopyright content"><div class="ChapterCopyright">© Springer Japan 1998</div></div></section><section class="Section1 RenderAsSection1" id="authorsandaffiliations"><h2 class="Heading">Authors and Affiliations</h2><div class="content authors-affiliations u-interface"><ul class="test-contributor-names"><li class="u-mb-2 u-pt-4 u-pb-4" itemscope="" itemtype="http://schema.org/Person"><span class="authors-affiliations__name" itemprop="name">Chikio Hayashi</span><ul class="authors-affiliations__indexes u-inline-list" data-role="AuthorsIndexes"><li data-affiliation="affiliation-1">1</li></ul></li></ul><ol class="test-affiliations"><li class="affiliation" data-affiliation-highlight="affiliation-1" data-test="affiliation-1" itemscope="" itemtype="http://schema.org/Organization"><span class="affiliation__count">1.</span><span class="affiliation__item"><span class="affiliation__name" itemprop="name">The Institute of Statistical Mathematics Sakuragaoka</span><span class="affiliation__address" itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress"><span class="affiliation__city" itemprop="addressRegion">Shibuya-ku Tokyo 150</span><span class="affiliation__country" itemprop="addressCountry">Japan</span></span></span></li></ol></div></section></div>
+</article>
+<aside class="section section--collapsible" id="AboutThisContent">
+<h2 class="section__heading" id="aboutcontent">About this paper</h2>
+<div class="section__content bibliographic-information">
+<div class="crossmark__adjacent">
+<dl class="citation-info u-highlight-target u-mb-16" id="citeas" tabindex="-1">
+<dt class="test-cite-heading">
+        Cite this paper as:
+    </dt>
+<dd id="citethis-text">Hayashi C. (1998) What is Data Science ? Fundamental Concepts and a Heuristic Example. In: Hayashi C., Yajima K., Bock HH., Ohsumi N., Tanaka Y., Baba Y. (eds) Data Science, Classification, and Related Methods. Studies in Classification, Data Analysis, and Knowledge Organization. Springer, Tokyo</dd>
+</dl>
+<ul class="bibliographic-information__list bibliographic-information__list--inline">
+<li class="bibliographic-information__item">
+<span class="bibliographic-information__title">DOI</span>
+<span class="bibliographic-information__value u-overflow-wrap" id="doi-url">https://doi.org/10.1007/978-4-431-65950-1_3</span>
+</li>
+<li class="bibliographic-information__item">
+<span class="bibliographic-information__title">Publisher Name</span>
+<span class="bibliographic-information__value" id="publisher-name">Springer, Tokyo</span>
+</li>
+<li class="bibliographic-information__item">
+<span class="bibliographic-information__title">Print ISBN</span>
+<span class="bibliographic-information__value" id="print-isbn">978-4-431-70208-5</span>
+</li>
+<li class="bibliographic-information__item">
+<span class="bibliographic-information__title">Online ISBN</span>
+<span class="bibliographic-information__value" id="electronic-isbn">978-4-431-65950-1</span>
+</li>
+<li class="bibliographic-information__item">
+<span class="bibliographic-information__title">eBook Packages</span>
+<span class="bibliographic-information__value">
+<a href="http://www.springer.com/gb/librarians/marc" id="ebook-package">Springer Book Archive</a>
+</span>
+</li>
+</ul>
+<ul class="bibliographic-information__list">
+<li class="bibliographic-information__item">
+<a href="//www.springer.com/978-4-431-70208-5?utm_source=springerlink&amp;utm_medium=referral&amp;utm_campaign=bookpage_about_buyonpublisherssite" id="about-book">Buy this book on publisher's site</a>
+</li>
+<li class="bibliographic-information__item">
+<a data-track="click" data-track-action="Reprints and Permissions" data-track-label="" href="https://s100.copyright.com/AppDispatchServlet?publisherName=SpringerNature&amp;orderBeanReset=true&amp;orderSource=SpringerLink&amp;copyright=Springer+Japan&amp;author=Chikio+Hayashi&amp;contentID=10.1007%2F978-4-431-65950-1_3&amp;endPage=51&amp;publicationDate=1998&amp;startPage=40&amp;title=What+is+Data+Science+%3F+Fundamental+Concepts+and+a+Heuristic+Example&amp;imprint=Springer+Japan&amp;publication=eBook" id="reprintsandpermissions-link" rel="noopener" target="_blank" title="Visit RightsLink for information about reusing this paper">Reprints and Permissions</a>
+</li>
+</ul>
+</div>
+</div>
+</aside>
+<div class="section section--collapsible uptodate-recommendations gtm-recommendations">
+<h2 class="uptodate-recommendations__title section__heading gtm-recommendations__title" id="uptodaterecommendations">Personalised recommendations</h2>
+<div class="section__content">
+<div class="uptodate-recommendations__container">
+<link href="/springerlink-static/409335052/css/recommendations.css" rel="uptodate-inline"/>
+</div>
+</div>
+</div>
+<div data-component="SpringerLink.GoogleAds" data-namespace="native" id="doubleclick-native-ad"></div>
+<div class="sticky-banner sticky-banner--buybox u-interface u-hide" data-component="SpringerLink.StickyBanner" data-namespace="hasLink">
+<div class="sticky-banner__container">
+<div class="citations" data-component="SV.Dropdown" data-namespace="citationsSticky">
+<h3 class="u-h4" data-role="button-dropdown__title">
+<span>Cite</span>
+<span class="hide-text-small">paper</span>
+</h3>
+<ul class="citations__content" data-role="button-dropdown__content">
+<li>
+<a data-track="click" data-track-action="Cite as link" data-track-label="Cite dropdown" href="#citeas">How to cite?</a>
+</li>
+<li>
+<a data-track="click" data-track-action="Export citation" data-track-label="RIS" href="//citation-needed.springer.com/v2/references/10.1007/978-4-431-65950-1_3?format=refman&amp;flavour=citation" title="Download this paper's citation as a .RIS file">
+<span class="citations__extension" data-gtmlabel="RIS">
+<svg class="u-vertical-align-absolute" height="14" viewbox="0 0 12 14" width="12" xmlns="http://www.w3.org/2000/svg"><path d="M7 7.269v-6.271c0-.551-.448-.998-1-.998-.556 0-1 .447-1 .998v6.271l-1.5-1.547c-.375-.387-1.01-.397-1.401-.006l.016-.016c-.397.397-.391 1.025-.001 1.416l3.178 3.178c.392.392 1.024.391 1.415 0l3.178-3.178c.392-.392.391-1.025-.001-1.416l.016.016c-.397-.397-1.018-.388-1.401.006l-1.5 1.547zm-7 5.731c0-.552.456-1 1.002-1h9.995c.554 0 1.002.444 1.002 1 0 .552-.456 1-1.002 1h-9.995c-.554 0-1.002-.444-1.002-1z" fill="#004aa7"></path></svg>
+                    .RIS
+                </span>
+<span class="citations__types">
+<span>
+                            Papers
+                        </span>
+<span>
+                            Reference Manager
+                        </span>
+<span>
+                            RefWorks
+                        </span>
+<span>
+                            Zotero
+                        </span>
+</span>
+</a>
+</li>
+<li>
+<a data-track="click" data-track-action="Export citation" data-track-label="ENW" href="//citation-needed.springer.com/v2/references/10.1007/978-4-431-65950-1_3?format=endnote&amp;flavour=citation" title="Download this paper's citation as a .ENW file">
+<span class="citations__extension" data-gtmlabel="ENW">
+<svg class="u-vertical-align-absolute" height="14" viewbox="0 0 12 14" width="12" xmlns="http://www.w3.org/2000/svg"><path d="M7 7.269v-6.271c0-.551-.448-.998-1-.998-.556 0-1 .447-1 .998v6.271l-1.5-1.547c-.375-.387-1.01-.397-1.401-.006l.016-.016c-.397.397-.391 1.025-.001 1.416l3.178 3.178c.392.392 1.024.391 1.415 0l3.178-3.178c.392-.392.391-1.025-.001-1.416l.016.016c-.397-.397-1.018-.388-1.401.006l-1.5 1.547zm-7 5.731c0-.552.456-1 1.002-1h9.995c.554 0 1.002.444 1.002 1 0 .552-.456 1-1.002 1h-9.995c-.554 0-1.002-.444-1.002-1z" fill="#004aa7"></path></svg>
+                    .ENW
+                </span>
+<span class="citations__types">
+<span>
+                            EndNote
+                        </span>
+</span>
+</a>
+</li>
+<li>
+<a data-track="click" data-track-action="Export citation" data-track-label="BIB" href="//citation-needed.springer.com/v2/references/10.1007/978-4-431-65950-1_3?format=bibtex&amp;flavour=citation" title="Download this paper's citation as a .BIB file">
+<span class="citations__extension" data-gtmlabel="BIB">
+<svg class="u-vertical-align-absolute" height="14" viewbox="0 0 12 14" width="12" xmlns="http://www.w3.org/2000/svg"><path d="M7 7.269v-6.271c0-.551-.448-.998-1-.998-.556 0-1 .447-1 .998v6.271l-1.5-1.547c-.375-.387-1.01-.397-1.401-.006l.016-.016c-.397.397-.391 1.025-.001 1.416l3.178 3.178c.392.392 1.024.391 1.415 0l3.178-3.178c.392-.392.391-1.025-.001-1.416l.016.016c-.397-.397-1.018-.388-1.401.006l-1.5 1.547zm-7 5.731c0-.552.456-1 1.002-1h9.995c.554 0 1.002.444 1.002 1 0 .552-.456 1-1.002 1h-9.995c-.554 0-1.002-.444-1.002-1z" fill="#004aa7"></path></svg>
+                    .BIB
+                </span>
+<span class="citations__types">
+<span>
+                            BibTeX
+                        </span>
+<span>
+                            JabRef
+                        </span>
+<span>
+                            Mendeley
+                        </span>
+</span>
+</a>
+</li>
+</ul>
+</div>
+<div class="sticky-banner__buybox-link sticky-banner__buybox-link--sticky">
+<a class="gtm-buybox-anchor" href="#buy">
+            Buy options
+        </a>
+</div>
+</div>
+</div>
+</div>
+<aside class="main-sidebar-right u-interface">
+<div data-role="sticky-wrapper">
+<div class="main-sidebar-right__content u-composite-layer" data-component="SpringerLink.StickySidebar">
+<div class="article-actions" id="article-actions">
+<h2 aria-hidden="true" class="u-screenreader-only">Actions</h2>
+<div id="buy">
+<style type="text/css">
+    .buybox {
+        margin: 16px 0 0;
+        position: relative;
+    }
+    .buybox {
+        font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        font-size: 1.4rem;
+    }
+    .buybox {
+        zoom: 1;
+    }
+    .buybox:after,
+    .buybox:before {
+        content: '';
+        display: table;
+    }
+    .buybox:after {
+        clear: both;
+    }
+    /*---------------------------------*/
+    .buybox .buybox__header {
+        border: 1px solid #b3b3b3;
+        border-bottom: 0;
+        padding: 8px;
+        position: relative;
+        background-color: #f2f2f2;
+    }
+    .buybox__header .buybox__login {
+        font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        font-size: 1.4rem;
+        letter-spacing: .017em;
+        display: inline-block;
+        line-height: 1.2;
+        padding: 0;
+    }
+    .buybox__header .buybox__login:before {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: perspective(1px) translateY(-50%);
+        transform: perspective(1px) translateY(-50%);
+        content: '\A';
+        width: 34px;
+        height: 34px;
+        left: 10px;
+    }
+    /*---------------------------------*/
+    .buybox .buybox__body {
+        padding: 0;
+        padding-bottom: 16px;
+        position: relative;
+        text-align: center;
+        background-color: #fcfcfc;
+        border: 1px solid #b3b3b3;
+    }
+    /******/
+    .buybox__body .buybox__section {
+        padding: 16px 12px 0 12px;
+        text-align: left;
+    }
+    .buybox__section .buybox__buttons {
+        text-align: center;
+        width: 100%;
+    }
+    /********** mycopy buybox specific **********/
+    .buybox.mycopy__buybox .buybox__body {
+        background-color: transparent;
+    }
+    .buybox.mycopy__buybox .buybox__section .buybox__buttons {
+        border-top: 0;
+        padding-top: 0;
+    }
+    /******/
+    .buybox__section:nth-child(2) .buybox__buttons {
+        border-top: 1px solid #b3b3b3;
+        padding-top: 20px;
+    }
+    .buybox__buttons .buybox__buy-button {
+        display: inline-block;
+        text-align: center;
+        margin-bottom: 5px;
+        padding: 6px 12px;
+        max-width: 180px
+    }
+    .buybox__buttons .buybox__price {
+        white-space: nowrap;
+        text-align: center;
+        font-size: larger;
+        padding-top: 6px;
+    }
+    .buybox__section .buybox__meta {
+        letter-spacing: 0;
+        padding-top: 12px;
+    }
+    .buybox__section .buybox__meta:only-of-type {
+        padding-top: 0;
+        position: relative;
+        bottom: 6px;
+    }
+    /********** mycopy buybox specific **********/
+    .buybox.mycopy__buybox .buybox__section .buybox__meta {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    /******/
+    .buybox__meta .buybox__product-title {
+        display: inline;
+        font-weight: bold;
+    }
+    .buybox__meta .buybox__list {
+        line-height: 1.3;
+    }
+    .buybox__meta .buybox__list li {
+        position: relative;
+        padding-left: 1em;
+        list-style: none;
+        margin-bottom: 5px;
+    }
+    .buybox__meta .buybox__list li:before {
+        font-size: 1em;
+        content: '\2022';
+        float: left;
+        position: relative;
+        top: .1em;
+        font-family: serif;
+        font-weight: 600;
+        text-align: center;
+        line-height: inherit;
+        color: #666;
+        width: auto;
+        margin-left: -1em;
+    }
+    .buybox__meta .buybox__list li:last-child {
+        margin-bottom: 0;
+    }
+    /********** chapter buybox specific **********/
+    .buybox.chapter__buybox .buybox__section .buybox__meta {
+        border-top: 1px solid #d3d3d3;
+        padding-top: 12px;
+    }
+    .buybox.chapter__buybox .buybox__section .buybox__buy-ebook {
+        margin-bottom: 12px;
+    }
+    /******/
+    /*---------------------------------*/
+    .buybox .buybox__footer {
+        border: 1px solid #b3b3b3;
+        border-top: 0;
+        padding: 8px;
+        position: relative;
+        border-style: dashed;
+        line-height: 1.3;
+    }
+    .buybox .deepdyve {
+        display: none;
+        text-align: left;
+        margin: 8px 12px 0 12px;
+        padding-top: 5px;
+        border-top: 1px solid #d3d3d3;
+    }
+    /*-----------------------------------------------------------------*/
+    @media screen and (min-width: 460px) and (max-width: 1074px) {
+        .buybox__body .buybox__section {
+            display: inline-block;
+            vertical-align: top;
+            padding: 12px 12px;
+            padding-bottom: 0;
+            text-align: left;
+            width: 48%;
+        }
+        .buybox__body .buybox__section {
+            padding-top: 16px;
+            padding-left: 0;
+        }
+        .buybox__section:nth-of-type(2) .buybox__meta {
+            border-left: 1px solid #d3d3d3;
+            padding-left: 28px;
+        }
+        .buybox__section:nth-of-type(2) .buybox__buttons {
+            border-top: 0;
+            padding-top: 0;
+            padding-left: 16px ;
+        }
+        .buybox__buttons .buybox__buy-button {
+        }
+        /********** article buybox specific **********/
+        .buybox.article__buybox .buybox__section:nth-of-type(2) {
+            margin-top: 16px;
+            padding-top: 0;
+        }
+        .buybox.article__buybox .buybox__section:nth-of-type(2) .buybox__meta {
+            margin-top: 40px;
+            padding-top: 0;
+            padding-bottom: 45px;
+        }
+        .buybox.article__buybox .buybox__section:nth-of-type(2) .buybox__meta:only-of-type {
+            margin-top: 8px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+        }
+        /********** mycopy buybox specific **********/
+        .buybox.mycopy__buybox .buybox__section:first-child {
+            width: 69%;
+            padding-left: 12px ;
+        }
+        .buybox.mycopy__buybox .buybox__section:last-child {
+            width: 29%;
+        }
+        /********** chapter buybox specific **********/
+        .buybox.chapter__buybox .buybox__body {
+            display: flex;
+            align-items: stretch;
+            padding-left: 12px;
+            padding-top: 12px;
+        }
+        .buybox.chapter__buybox .buybox__section .buybox__meta {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            border-top: 0;
+            padding-top: 0;
+        }
+        /******/
+    }
+    /*-----------------------------------------------------------------*/
+    @media screen and (max-width: 459px) {
+        /********** mycopy buybox specific **********/
+        .buybox.mycopy__buybox .buybox__body {
+            padding-bottom: 5px;
+        }
+        .buybox.mycopy__buybox .buybox__section:last-child {
+            text-align: center;
+            width: 100%;
+        }
+        .buybox.mycopy__buybox .buybox__buttons {
+            display: inline-block;
+            width: 150px ;
+        }
+        /******/
+    }
+    /*-----------------------------------------------------------------*/
+</style>
+<div class="buybox chapter__buybox" data-webtrekkcontentid="SL-chapter" data-webtrekktrackid="196033507532344">
+<div class="buybox__header">
+<span class="buybox__login">Log in to check access</span>
+</div>
+<div class="buybox__body">
+<div class="buybox__section">
+<div class="buybox__buttons">
+<div class="buybox__buy-ebook">
+<a class="buybox__buy-button c-button c-button--blue" data-ecommerceparam_11="chapter-page" data-gtm="buybox__buy-button-ebook" data-product-id="978-4-431-65950-1_Data Science, Classification, and " data-tracking-category="ebook" href="https://checkout.springer.com/checkout/add?utm_source=springerlink&amp;utm_medium=referral&amp;utm_campaign=sl-buybox_chapterPage_ebook&amp;isbn=978-4-431-65950-1">
+<span class="buybox__buy" data-gtm="buybox__buy-button">Buy eBook</span>
+</a>
+<div class="buybox__price" data-gtm="buybox__buy-button">
+                            USD 84.99
+                        </div>
+</div>
+<form action="https://order.springer.com/public/checkout?utm_source=springerlink&amp;utm_medium=referral&amp;utm_campaign=sl-buybox_chapterPage_chapter" class="buybox__form" method="POST">
+<input name="type" type="hidden" value="chapter"/>
+<input name="doi" type="hidden" value="10.1007/978-4-431-65950-1_3"/>
+<input name="isxn" type="hidden" value="978-4-431-65950-1"/>
+<input name="contenttitle" type="hidden" value="What is Data Science ? Fundamental Concepts and a Heuristic Example"/>
+<input name="copyrightyear" type="hidden" value="1998"/>
+<input name="year" type="hidden" value=""/>
+<input name="authors" type="hidden" value="Chikio Hayashi"/>
+<input name="title" type="hidden" value="Data Science, Classification, and Related Methods"/>
+<input name="mac" type="hidden" value="a3bc794dd5c4cb4c0af1ec1bed61cef5"/>
+<input name="returnurl" type="hidden" value="https://link.springer.com/chapter/10.1007%2F978-4-431-65950-1_3"/>
+<button class="buybox__buy-button c-button c-button--blue" data-ecommerceparam_11="chapter-page" data-gtm="buybox__buy-button" data-product-id="10.1007/978-4-431-65950-1_3_What is Data Science ? Fundamental" data-tracking-category="ppv" type="submit">
+<span class="buybox__buy" data-gtm="buybox__buy-button">Buy paper (PDF)</span>
+</button>
+<div class="buybox__price" data-gtm="buybox__buy-button">
+                                USD 29.95
+                            </div>
+</form>
+</div>
+</div>
+<div class="buybox__section">
+<div class="buybox__meta">
+<ul class="buybox__list">
+<li>Instant download</li>
+<li>Readable on all devices</li>
+<li>Own it forever</li>
+<li>Local sales tax included if applicable</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="buybox__footer">
+<a class="js-buybox__inst-sub-link" data-gtm="buybox__inst-sub-link" href="https://www.springernature.com/gp/librarians/licensing/license-options?utm_source=springerlink&amp;utm_medium=referral&amp;utm_campaign=sl-buybox_chapterPage_institutionalCustomers">
+        Learn about institutional subscriptions</a>
+</div>
+</div>
+<script>
+(function () {
+    var forEach = function (array, callback, scope) {
+        for (var i = 0; i < array.length; i++) {
+            callback.call(scope, i, array[i]);
+        }
+    };
+
+    var trackDomain = 'springergmbh01.webtrekk.net';
+    var domain = 'link.springer.com';
+    var loadEventSent = false;
+
+    var buyboxRoot = document.getElementsByClassName('buybox')[0];
+    var webtrekkTrackId = buyboxRoot.getAttribute('data-webtrekkTrackId');
+    var webtrekkContentId = buyboxRoot.getAttribute('data-webtrekkContentId');
+
+    function LinkTrack(webtrekkTrackId) {
+        if (!webtrekkTrackId) return;
+
+        var data = {
+            trackDomain: trackDomain,
+            trackId: webtrekkTrackId,
+            domain: domain,
+            contentId: 'springer_com.buybox',
+            customSessionParameter: {
+                2: getBusinessPartnerIds()
+            }
+        };
+
+        if (!window.webtrekkV3 && console) {
+            console.log('No webtrekk found.', data);
+            return;
+        }
+
+        return new webtrekkV3(data);
+    }
+
+    function Track(product, webtrekkTrackId, eCommerceParam_11, action) {
+        if (!product) return;
+
+        var data = {
+            trackDomain: trackDomain,
+            trackId: webtrekkTrackId,
+            domain: domain,
+            contentId: webtrekkContentId,
+            product: product.id,
+            productStatus: action,
+            productCategory: {
+                1: product.trackingCategory
+            },
+            customEcommerceParameter: {
+                9: domain,
+                11: eCommerceParam_11
+            },
+            customSessionParameter: {
+                2: getBusinessPartnerIds()
+            }
+        };
+
+        if (!window.webtrekkV3 && console) {
+            console.log('No webtrekk found.', data);
+            return;
+        }
+
+        return new webtrekkV3(data);
+    }
+
+    function track(trackingConfig) {
+        return function(payload) {
+            if (!trackingConfig) return
+            if (payload) {
+                trackingConfig.sendinfo(payload)
+            } else {
+                trackingConfig.sendinfo()
+            }
+            return true
+        }
+    }
+
+    function trackAddToCart(trackingConfig) {
+        return track(trackingConfig)()
+    }
+
+    function trackOnLoad(trackingConfig) {
+        if (loadEventSent) return;
+        loadEventSent = true;
+        return track(trackingConfig)()
+    }
+
+    function trackSubscription(trackingConfig) {
+        return track(trackingConfig)({linkId: 'inst. subscription info'})
+    }
+
+    function trackDeepDyve(trackingConfig) {
+        return track(trackingConfig)({linkId: 'Rent Article'})
+    }
+
+    function getBusinessPartnerIds() {
+        var businessPartnerIDs = [];
+        try {
+            var ids = window.dataLayer[0]["user"]["license"]["businessPartnerID"];
+            if(ids && ids.length) businessPartnerIDs = ids;
+        } catch(e) {}
+        return businessPartnerIDs.join(";");
+    }
+
+    var bindClickLinkHandle = function (link) {
+        if (!link) return;
+
+        link.addEventListener('click', function (event) {
+            trackSubscription(LinkTrack(webtrekkTrackId));
+        });
+    };
+
+    var bindLoadButtonHandle = function (button) {
+        if (!button) return;
+
+        var productId = button.getAttribute('data-product-id');
+        var trackingCategory = button.getAttribute('data-tracking-category');
+        var eCommerceParam_11 = button.getAttribute('data-eCommerceParam_11');
+
+        window.addEventListener('load', function (event) {
+            trackOnLoad(Track({
+                id: productId,
+                trackingCategory: trackingCategory
+            }, webtrekkTrackId, eCommerceParam_11, 'view'));
+        });
+    };
+
+    var bindClickButtonHandle = function (button) {
+        if (!button) return;
+
+        var productId = button.getAttribute('data-product-id');
+        var trackingCategory = button.getAttribute('data-tracking-category');
+        var eCommerceParam_11 = button.getAttribute('data-eCommerceParam_11');
+
+        button.addEventListener('click', function (event) {
+            trackAddToCart(Track({
+                id: productId,
+                trackingCategory: trackingCategory
+            }, webtrekkTrackId, eCommerceParam_11, 'add'));
+        });
+    };
+
+    var buyButtons = document.getElementsByClassName('buybox__buy-button');
+    forEach(buyButtons, function (index, button) {
+        bindLoadButtonHandle(button);
+        bindClickButtonHandle(button);
+    });
+
+    var sublinks = document.getElementsByClassName('js-buybox__inst-sub-link');
+    forEach(sublinks, function (index, link) {
+        bindClickLinkHandle(link);
+    });
+
+    var bindDeepDyveClickHandle = function (link) {
+        if (!link) return
+
+        link.addEventListener('click', function (event) {
+            trackDeepDyve(LinkTrack(webtrekkTrackId))
+        })
+    }
+
+    var deepDyveLink = document.getElementById('deepdyve-link')
+    bindDeepDyveClickHandle(deepDyveLink)
+})();
+</script>
+</div>
+<div class="u-js-hide u-js-show-two-col">
+<div class="citations" data-component="SV.Dropdown" data-namespace="citations">
+<h3 class="u-h4" data-role="button-dropdown__title">
+<span>Cite</span>
+<span class="hide-text-small">paper</span>
+</h3>
+<ul class="citations__content" data-role="button-dropdown__content">
+<li>
+<a data-track="click" data-track-action="Cite as link" data-track-label="Cite dropdown" href="#citeas">How to cite?</a>
+</li>
+<li>
+<a data-track="click" data-track-action="Export citation" data-track-label="RIS" href="//citation-needed.springer.com/v2/references/10.1007/978-4-431-65950-1_3?format=refman&amp;flavour=citation" title="Download this paper's citation as a .RIS file">
+<span class="citations__extension" data-gtmlabel="RIS">
+<svg class="u-vertical-align-absolute" height="14" viewbox="0 0 12 14" width="12" xmlns="http://www.w3.org/2000/svg"><path d="M7 7.269v-6.271c0-.551-.448-.998-1-.998-.556 0-1 .447-1 .998v6.271l-1.5-1.547c-.375-.387-1.01-.397-1.401-.006l.016-.016c-.397.397-.391 1.025-.001 1.416l3.178 3.178c.392.392 1.024.391 1.415 0l3.178-3.178c.392-.392.391-1.025-.001-1.416l.016.016c-.397-.397-1.018-.388-1.401.006l-1.5 1.547zm-7 5.731c0-.552.456-1 1.002-1h9.995c.554 0 1.002.444 1.002 1 0 .552-.456 1-1.002 1h-9.995c-.554 0-1.002-.444-1.002-1z" fill="#004aa7"></path></svg>
+                    .RIS
+                </span>
+<span class="citations__types">
+<span>
+                            Papers
+                        </span>
+<span>
+                            Reference Manager
+                        </span>
+<span>
+                            RefWorks
+                        </span>
+<span>
+                            Zotero
+                        </span>
+</span>
+</a>
+</li>
+<li>
+<a data-track="click" data-track-action="Export citation" data-track-label="ENW" href="//citation-needed.springer.com/v2/references/10.1007/978-4-431-65950-1_3?format=endnote&amp;flavour=citation" title="Download this paper's citation as a .ENW file">
+<span class="citations__extension" data-gtmlabel="ENW">
+<svg class="u-vertical-align-absolute" height="14" viewbox="0 0 12 14" width="12" xmlns="http://www.w3.org/2000/svg"><path d="M7 7.269v-6.271c0-.551-.448-.998-1-.998-.556 0-1 .447-1 .998v6.271l-1.5-1.547c-.375-.387-1.01-.397-1.401-.006l.016-.016c-.397.397-.391 1.025-.001 1.416l3.178 3.178c.392.392 1.024.391 1.415 0l3.178-3.178c.392-.392.391-1.025-.001-1.416l.016.016c-.397-.397-1.018-.388-1.401.006l-1.5 1.547zm-7 5.731c0-.552.456-1 1.002-1h9.995c.554 0 1.002.444 1.002 1 0 .552-.456 1-1.002 1h-9.995c-.554 0-1.002-.444-1.002-1z" fill="#004aa7"></path></svg>
+                    .ENW
+                </span>
+<span class="citations__types">
+<span>
+                            EndNote
+                        </span>
+</span>
+</a>
+</li>
+<li>
+<a data-track="click" data-track-action="Export citation" data-track-label="BIB" href="//citation-needed.springer.com/v2/references/10.1007/978-4-431-65950-1_3?format=bibtex&amp;flavour=citation" title="Download this paper's citation as a .BIB file">
+<span class="citations__extension" data-gtmlabel="BIB">
+<svg class="u-vertical-align-absolute" height="14" viewbox="0 0 12 14" width="12" xmlns="http://www.w3.org/2000/svg"><path d="M7 7.269v-6.271c0-.551-.448-.998-1-.998-.556 0-1 .447-1 .998v6.271l-1.5-1.547c-.375-.387-1.01-.397-1.401-.006l.016-.016c-.397.397-.391 1.025-.001 1.416l3.178 3.178c.392.392 1.024.391 1.415 0l3.178-3.178c.392-.392.391-1.025-.001-1.416l.016.016c-.397-.397-1.018-.388-1.401.006l-1.5 1.547zm-7 5.731c0-.552.456-1 1.002-1h9.995c.554 0 1.002.444 1.002 1 0 .552-.456 1-1.002 1h-9.995c-.554 0-1.002-.444-1.002-1z" fill="#004aa7"></path></svg>
+                    .BIB
+                </span>
+<span class="citations__types">
+<span>
+                            BibTeX
+                        </span>
+<span>
+                            JabRef
+                        </span>
+<span>
+                            Mendeley
+                        </span>
+</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="skyscraper-ad u-hide" data-component="SpringerLink.GoogleAds" data-namespace="skyscraper">
+<div class="skyscraper-ad__wrapper">
+<p class="skyscraper-ad__label">Advertisement</p>
+<button class="skyscraper-ad__hide" data-track="click" data-track-action="Hide advertisement" data-track-label="" title="Hide this advertisement">Hide</button>
+<div class="skyscraper-ad__ad" id="doubleclick-ad"></div>
+</div>
+</div>
+</div>
+</aside>
+</div>
+</main>
+<footer class="footer u-interface">
+<div class="footer__aside-wrapper">
+<div class="footer__content">
+<div class="footer__aside">
+<p class="footer__strapline">Over 10 million scientific documents at your fingertips</p>
+<div class="footer__edition" data-component="SV.EditionSwitcher">
+<h3 class="u-hide" data-btn-text="Switch between Academic &amp; Corporate Edition" data-role="button-dropdown__title">Switch Edition</h3>
+<ul data-role="button-dropdown__content">
+<li class="selected"><a href="/siteEdition/link?previousUrl=/chapter/10.1007%2F978-4-431-65950-1_3&amp;id=siteedition-academic-link" id="siteedition-academic-link">Academic Edition</a></li>
+<li><a href="/siteEdition/rd?previousUrl=/chapter/10.1007%2F978-4-431-65950-1_3&amp;id=siteedition-corporate-link" id="siteedition-corporate-link">Corporate Edition</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="footer__content">
+<ul class="footer__nav">
+<li>
+<a href="/">Home</a>
+</li>
+<li>
+<a href="/impressum">Impressum</a>
+</li>
+<li>
+<a href="/termsandconditions">Legal information</a>
+</li>
+<li>
+<a href="/privacystatement">Privacy statement</a>
+</li>
+<li>
+<a href="/cookiepolicy">How we use cookies</a>
+</li>
+<li>
+<a class="optanon-toggle-display" href="javascript:void(0);">Cookie settings</a>
+</li>
+<li>
+<a href="/accessibility">Accessibility</a>
+</li>
+<li>
+<a href="/contactus" id="contactus-footer-link">Contact us</a>
+</li>
+</ul>
+<a class="parent-logo" href="//www.springernature.com" rel="noopener" target="_blank" title="Go to Springer Nature">
+<span class="u-screenreader-only">Springer Nature</span>
+<svg aria-hidden="true" focusable="false" height="12" width="125">
+<image height="12" src="/springerlink-static/409335052/images/png/springernature.png" width="125" xlink:href="/springerlink-static/409335052/images/svg/springernature.svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+</image>
+</svg>
+</a>
+<p class="footer__copyright">© 2019 Springer Nature Switzerland AG. Part of <a href="//www.springernature.com" rel="noopener" target="_blank">Springer Nature</a>.</p>
+<p class="footer__user-access-info">
+<span>Not logged in</span>
+<span>Not affiliated</span>
+<span>201.102.74.123</span>
+</p>
+</div>
+</footer>
+</div>
+<script type="text/javascript">
+    (function() {
+        var linkEl = document.querySelector('.js-ctm');
+        var scriptsList = [];
+        var polyfillFeatures = '';
+
+        window.SpringerLink = window.SpringerLink || {};
+        window.SpringerLink.staticLocation = '/springerlink-static/409335052';
+        window.eventTrackerInstance = null;
+
+        if (window.matchMedia && window.matchMedia(linkEl.media).matches) {
+            (function(h){h.className = h.className.replace('no-js', 'js')})(document.documentElement);
+
+            polyfillFeatures = 'default,fetch,Promise,Object.setPrototypeOf,Object.entries,Number.isInteger,MutationObserver,startsWith,Array.prototype.includes,Array.from,IntersectionObserver';
+
+            scriptsList = [
+                'https://cdn.polyfill.io/v2/polyfill.min.js?features=' + polyfillFeatures + '&flags=gated',
+                window.SpringerLink.staticLocation + '/js/main.js'
+            ];
+
+            scriptsList.forEach(function(script) {
+                var tag = document.createElement('script');
+                tag.async = false;
+                tag.src = script;
+
+                document.body.appendChild(tag);
+            });
+        }
+    })();
+</script>
+<script id="googletag-push" type="text/javascript">
+        
+            var adSlot = '270604982/springerlink/book/chapter';
+        
+
+        var definedSlots = [
+                {slot: [728, 90], containerName: 'doubleclick-leaderboard-ad'},
+                {slot: [160, 600], containerName: 'doubleclick-ad'},
+            {slot: [2, 2], containerName: 'doubleclick-native-ad'}
+        ];
+    </script>
+<span class="u-hide" id="chat-widget"></span>
+</body>
+</html>

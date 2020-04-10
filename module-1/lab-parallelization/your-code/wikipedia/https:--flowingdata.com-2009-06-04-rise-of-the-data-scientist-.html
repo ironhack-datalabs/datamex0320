@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]--><!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]--><!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]--><!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8"/>
+<title>Rise of the Data Scientist | FlowingData</title>
+<meta content="FlowingData" name="description"/>
+<meta content="Nathan Yau" name="author"/>
+<meta content="WordPress 5.3.2" name="generator"/>
+<link href="//cloud.typography.com/7626174/696048/css/fonts.css" rel="stylesheet" type="text/css"/>
+<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/>
+<link href="https://flowingdata.com/wp-content/themes/fd-modern-5-8-3/style.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="//flowingdata.com/feed" rel="alternate" title="RSS 2.0" type="application/rss+xml"/>
+<link href="https://flowingdata.com/xmlrpc.php" rel="pingback"/>
+<meta content="width=device-width, initial-scale=1, user-scalable=yes" name="viewport"/>
+<link href="https://flowingdata.com/wp-content/themes/fd-modern-5-8-3/stylesheets/skeleton-3.css" rel="stylesheet"/>
+<link href="https://flowingdata.com/wp-content/themes/fd-modern-5-8-3/stylesheets/layout.css" rel="stylesheet"/>
+<!--[if lt IE 9]>
+		<script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+<link href="https://flowingdata.com/wp-content/themes/fd-modern-5-8-3/images/favicon.ico" rel="shortcut icon"/>
+<link href="images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72"/>
+<link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114"/>
+<link href="//s.w.org" rel="dns-prefetch"/>
+<link href="https://flowingdata.com/2009/06/04/rise-of-the-data-scientist/feed/" rel="alternate" title="FlowingData » Rise of the Data Scientist Comments Feed" type="application/rss+xml"/>
+<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/flowingdata.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.3.2"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link href="https://flowingdata.com/wp-content/plugins/yet-another-related-posts-plugin/style/widget.css?ver=5.3.2" id="yarppWidgetCss-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://flowingdata.com/wp-includes/css/dist/block-library/style.min.css?ver=5.3.2" id="wp-block-library-css" media="all" rel="stylesheet" type="text/css"/>
+<style id="wp-block-library-inline-css" type="text/css">
+.has-text-align-justify{text-align:justify;}
+</style>
+<link href="https://flowingdata.com/wp-content/plugins/bbpress/templates/default/css/bbpress.min.css?ver=2.6.2" id="bbp-default-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://flowingdata.com/wp-content/plugins/image-upload-for-bbpress/css/bbp-image-upload.css?ver=5.3.2" id="hm_bbpui-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://flowingdata.com/wp-content/plugins/jetpack/css/jetpack.css?ver=8.4.1" id="jetpack_css-css" media="all" rel="stylesheet" type="text/css"/>
+<script>if (document.location.protocol != "https:") {document.location = document.URL.replace(/^http:/i, "https:");}</script><script src="https://flowingdata.com/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp" type="text/javascript"></script>
+<script src="https://flowingdata.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1" type="text/javascript"></script>
+<script src="https://flowingdata.com/wp-content/plugins/image-upload-for-bbpress/js/bbp-image-upload.js?ver=5.3.2" type="text/javascript"></script>
+<link href="https://flowingdata.com/wp-json/" rel="https://api.w.org/"/>
+<link href="https://flowingdata.com/xmlrpc.php?rsd" rel="EditURI" title="RSD" type="application/rsd+xml"/>
+<link href="https://flowingdata.com/wp-includes/wlwmanifest.xml" rel="wlwmanifest" type="application/wlwmanifest+xml"/>
+<link href="https://flowingdata.com/2009/06/03/good-magazines-infographics-now-archived-on-flickr/" rel="prev" title="GOOD Magazine’s Infographics Now Archived on Flickr"/>
+<link href="https://flowingdata.com/2009/06/05/javascript-infovis-toolkit-new-version-released/" rel="next" title="Javascript InfoVis Toolkit – New Version Released"/>
+<meta content="WordPress 5.3.2" name="generator"/>
+<link href="https://flowingdata.com/2009/06/04/rise-of-the-data-scientist/" rel="canonical"/>
+<link href="https://flowingdata.com/?p=1585" rel="shortlink"/>
+<link href="https://flowingdata.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fflowingdata.com%2F2009%2F06%2F04%2Frise-of-the-data-scientist%2F" rel="alternate" type="application/json+oembed"/>
+<link href="https://flowingdata.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fflowingdata.com%2F2009%2F06%2F04%2Frise-of-the-data-scientist%2F&amp;format=xml" rel="alternate" type="text/xml+oembed"/>
+<link href="//v0.wordpress.com" rel="dns-prefetch"/>
+<link href="//i0.wp.com" rel="dns-prefetch"/>
+<link href="//i1.wp.com" rel="dns-prefetch"/>
+<link href="//i2.wp.com" rel="dns-prefetch"/>
+<style type="text/css">img#wpstats{display:none}</style>
+<meta content="article" property="og:type"/>
+<meta content="Rise of the Data Scientist" property="og:title"/>
+<meta content="https://flowingdata.com/2009/06/04/rise-of-the-data-scientist/" property="og:url"/>
+<meta content="Photo by majamarko As we’ve all read by now, Google’s chief economist Hal Varian commented in January that the next sexy job in the next 10 years would be statisticians. Obviously, I wh…" property="og:description"/>
+<meta content="2009-06-04T07:03:39+00:00" property="article:published_time"/>
+<meta content="2010-02-28T23:41:38+00:00" property="article:modified_time"/>
+<meta content="FlowingData" property="og:site_name"/>
+<meta content="https://i2.wp.com/flowingdata.com/wp-content/uploads/2014/10/logo-lone-square-600-5451c585_site_icon.png?fit=512%2C512&amp;ssl=1" property="og:image"/>
+<meta content="512" property="og:image:width"/>
+<meta content="512" property="og:image:height"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="@flowingdata" name="twitter:site"/>
+<meta content="Rise of the Data Scientist" name="twitter:text:title"/>
+<meta content="https://i2.wp.com/flowingdata.com/wp-content/uploads/2014/10/logo-lone-square-600-5451c585_site_icon.png?fit=240%2C240&amp;ssl=1" name="twitter:image"/>
+<meta content="summary" name="twitter:card"/>
+<link href="https://i2.wp.com/flowingdata.com/wp-content/uploads/2014/10/logo-lone-square-600-5451c585_site_icon.png?fit=32%2C32&amp;ssl=1" rel="icon" sizes="32x32"/>
+<link href="https://i2.wp.com/flowingdata.com/wp-content/uploads/2014/10/logo-lone-square-600-5451c585_site_icon.png?fit=192%2C192&amp;ssl=1" rel="icon" sizes="192x192"/>
+<link href="https://i2.wp.com/flowingdata.com/wp-content/uploads/2014/10/logo-lone-square-600-5451c585_site_icon.png?fit=180%2C180&amp;ssl=1" rel="apple-touch-icon-precomposed"/>
+<meta content="https://i2.wp.com/flowingdata.com/wp-content/uploads/2014/10/logo-lone-square-600-5451c585_site_icon.png?fit=270%2C270&amp;ssl=1" name="msapplication-TileImage"/>
+</head>
+<body data-rsssl="1">
+<div id="main-wrapper">
+<a name="top"></a>
+<div id="header-wrapper">
+<div class="container" id="header">
+<div class="four columns" id="logo">
+<a href="https://flowingdata.com/">
+<img src="https://flowingdata.com/wp-content/themes/fd-modern-5-8-3/images/logo-v2d.png"/>
+</a>
+</div>
+<div class="eight columns" id="nav">
+<ul>
+<li><a href="https://flowingdata.com/about/">About</a></li>
+<li><a href="//flowingdata.com/category/projects/">
+Projects</a>
+</li>
+<li><a href="//flowingdata.com/category/tutorials/">
+Tutorials</a>
+</li>
+<li class="hide-on-small"><a href="https://flowingdata.com/courses/">Courses</a></li>
+<li class="social hide-on-small">
+<a href="https://flowingdata.com/newsletter/"><img src="https://flowingdata.com/wp-content/themes/fd-modern-5-8-3/images/email-icon100.png"/></a>
+<a href="https://twitter.com/flowingdata" target="_blank"><img src="https://flowingdata.com/wp-content/themes/fd-modern-5-8-3/images/twitter-logo100.png"/></a>
+<a href="https://flowingdata.com/feed" target="_blank"><img src="https://flowingdata.com/wp-content/themes/fd-modern-5-8-3/images/rss-icon100.png"/></a>
+</li>
+</ul>
+</div>
+<div class="four columns" id="login">
+<ul>
+<li><a class="highlight" href="https://flowingdata.com/membership/">Become a Member</a></li>
+<li> | </li>
+<li><a href="https://flowingdata.com/wp-login.php">Log in</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="container" id="content-wrapper">
+<div class="archive-post eleven columns" id="single-post">
+<div class="nine columns offset-by-two alpha">
+<h1>
+Rise of the Data Scientist </h1>
+</div>
+<div class="clr"></div>
+<div class="byinfo two columns alpha">
+June 4, 2009
+<div style="margin-top:1.5rem">
+<h3 class="toplevel">Topic</h3>
+<strong><a href="https://flowingdata.com/category/design/" rel="category tag">Design</a>, <a href="https://flowingdata.com/category/statistics/" rel="category tag">Statistics</a></strong> </div>
+</div>
+<div class="nine columns omega">
+<div class="entry">
+<div class="img-right"><img alt="" class="alignnone size-full wp-image-1591" data-attachment-id="1591" data-comments-opened="0" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":""}' data-image-title="butterfly_m" data-large-file="https://i0.wp.com/flowingdata.com/wp-content/uploads/2009/06/butterfly_m.jpg?fit=240%2C160&amp;ssl=1" data-medium-file="https://i0.wp.com/flowingdata.com/wp-content/uploads/2009/06/butterfly_m.jpg?fit=240%2C160&amp;ssl=1" data-orig-file="https://i0.wp.com/flowingdata.com/wp-content/uploads/2009/06/butterfly_m.jpg?fit=240%2C160&amp;ssl=1" data-orig-size="240,160" data-permalink="https://flowingdata.com/2009/06/04/rise-of-the-data-scientist/butterfly_m/" data-recalc-dims="1" height="160" src="https://i0.wp.com/flowingdata.com/wp-content/uploads/2009/06/butterfly_m.jpg?resize=240%2C160" title="butterfly_m" width="240"/><br/>
+<em><small>Photo by <a href="http://www.flickr.com/photos/majamarko/">majamarko</a></small></em>
+</div>
+<p>As we’ve all read by now, Google’s chief economist Hal Varian <a href="https://flowingdata.com/2009/02/25/googles-chief-economist-hal-varian-on-statistics-and-data/">commented</a> in January that the next sexy job in the next 10 years would be statisticians. Obviously, I whole-heartedly <a href="http://www.stat.ucla.edu/~nyau/">agree</a>. Heck, I’d go a step further and say they’re sexy now – mentally <em>and</em> physically. </p>
+<p>However, if you went on to read the rest of Varian’s interview, you’d know that by <em>statisticians</em>, he actually meant it as a general title for someone who is able to extract information from large datasets and then present something of use to non-data experts.<br/>
+<span id="more-1585"></span></p>
+<h3>Sexy Skills of Data Geeks</h3>
+<p>As a follow up to Varian’s now-popular quote among data fans, Michael Driscoll of Dataspora, discusses the <a href="http://dataspora.com/blog/sexy-data-geeks/">three sexy skills of data geeks</a>. I won’t rehash the post, but here are the three skills that Michael highlights:</p>
+<ol>
+<li>Statistics – traditional analysis you’re used to thinking about</li>
+<li>Data Munging – parsing, scraping, and formatting data</li>
+<li>Visualization – graphs, tools, etc.</li>
+</ol>
+<h3>Oh, but there’s more…</h3>
+<p>These skills actually fit tightly with Ben Fry’s dissertation on <a href="http://benfry.com/phd/">Computational Information Design</a> (2004). However, Fry takes it a step further and argues for an entirely new field that combines the skills and talents from often disjoint areas of expertise:</p>
+<div style="border-top:1px dotted #CCC; border-bottom:1px dotted #CCC; margin-bottom: 20px;padding:20px 0;"><img alt="" class="alignnone size-full wp-image-1589" data-attachment-id="1589" data-comments-opened="0" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":""}' data-image-title="all-fields" data-large-file="https://i1.wp.com/flowingdata.com/wp-content/uploads/2009/06/all-fields.png?fit=544%2C85&amp;ssl=1" data-medium-file="https://i1.wp.com/flowingdata.com/wp-content/uploads/2009/06/all-fields.png?fit=544%2C85&amp;ssl=1" data-orig-file="https://i1.wp.com/flowingdata.com/wp-content/uploads/2009/06/all-fields.png?fit=544%2C85&amp;ssl=1" data-orig-size="544,85" data-permalink="https://flowingdata.com/2009/06/04/rise-of-the-data-scientist/all-fields/" data-recalc-dims="1" sizes="(max-width: 544px) 100vw, 544px" src="https://i1.wp.com/flowingdata.com/wp-content/uploads/2009/06/all-fields.png?w=1090" srcset="https://i1.wp.com/flowingdata.com/wp-content/uploads/2009/06/all-fields.png?w=544&amp;ssl=1 544w, https://i1.wp.com/flowingdata.com/wp-content/uploads/2009/06/all-fields.png?resize=250%2C39&amp;ssl=1 250w" title="all-fields"/></div>
+<ol>
+<li><strong>Computer Science</strong> – acquire and parse data</li>
+<li><strong>Mathematics, Statistics, &amp; Data Mining</strong> – filter and mine</li>
+<li><strong>Graphic Design</strong> – represent and refine</li>
+<li><strong>Infovis and Human-Computer Interaction (HCI)</strong> – interaction</li>
+</ol>
+<p>And after two years of highlighting visualization on FlowingData, it seems collaborations between the fields are growing more common, but more importantly, computational information design edges closer to reality. We’re seeing <em>data scientists</em> – people who can do it all – emerge from the rest of the pack.</p>
+<h3>Advantages of the Data Scientist</h3>
+<p>Think about all the visualization stuff you’ve been most impressed with or the groups that always seem to put out the best work. Martin Wattenberg. Stamen Design. Jonathan Harris. Golan Levin. Sep Kamvar. Why is their work always of such high quality? Because they’re not just students of computer science, math, statistics, or graphic design. </p>
+<p>They have a combination of skills that not just makes independent work easier and quicker; it makes collaboration more exciting and opens up possibilities in what can be done. Oftentimes, visualization projects are disjoint processes and involve a lot of waiting. Maybe a statistician is waiting for data from a computer scientist; or a graphic designer is waiting for results from an analyst; or an HCI specialist is waiting for layouts from a graphic designer. </p>
+<p>Let’s say you have several data scientists working together though. There’s going to be less waiting and the communication gaps between the fields are tightened.</p>
+<p>How often have we seen a visualization tool that held an excellent concept and looked great on paper but lacked the touch of HCI, which made it hard to use and in turn no one gave it a chance? How many important (and interesting) analyses have we missed because certain ideas could not be communicated clearly? The data scientist can solve your troubles.</p>
+<h3>An Application</h3>
+<p>This need for data scientists is quite evident in business applications where educated decisions need to be made swiftly. A delayed decision could mean lost opportunity and profit. Terabytes of data are coming in whether it be from websites or from sales across the country, but in an area where Excel is the tool of choice (or force), there are limitations, hence all the tools, applications, and consultancies to help out. This of course applies to areas outside of business as well.</p>
+<h3>Learn and Prosper</h3>
+<p>Even if you’re not into visualization, you’re going to need at least a subset of the skills that Fry highlights if you want to seriously mess with data. Statisticians should know APIs, databases, and how to scrape data; designers should learn to do things programmatically; and computer scientists should know how to analyze and find meaning in data. </p>
+<p>Basically, the more you learn, the more you can do, and the higher in demand you will be as the amount of data grows and the more people want to make use of it.</p>
+<div class="clr"></div>
+</div>
+<div class="share"></div>
+<div class="yarpp-related">
+<div id="related">
+<h3 class="toplevel">Related</h3>
+<ul>
+<li>
+<a href="https://flowingdata.com/2011/08/11/data-scientist-the-hottest-job-you-havent-heard-of/" rel="bookmark" title="Data Scientist: The hottest job you haven’t heard of">
+Data Scientist: The hottest job you haven’t heard of</a>
+</li>
+<li>
+<a href="https://flowingdata.com/2012/09/19/hiring-a-data-scientist/" rel="bookmark" title="Hiring a data scientist">
+Hiring a data scientist</a>
+</li>
+<li>
+<a href="https://flowingdata.com/2018/08/21/what-data-scientists-really-do/" rel="bookmark" title="What data scientists really do">
+What data scientists really do</a>
+</li>
+</ul>
+<div class="clear-line"></div>
+</div>
+</div>
+</div>
+<div class="clr"></div>
+<div class="nine columns offset-by-two alpha">
+<span id="comments"></span>
+<div id="comments-block">
+<h3 class="centered">47 Comments</h3>
+<ul class="commentlist">
+<li class="comment even thread-even depth-1" id="li-comment-30568">
+<div class="" id="comment-30568">
+<div class="comment-content">
+<div class="comment-author vcard">
+<cite class="fn"><a class="url" href="http://www.cloudera.com" rel="external nofollow ugc">jeff</a></cite> <span class="comment-meta">— <a href="https://flowingdata.com/2009/06/04/rise-of-the-data-scientist/#comment-30568">June 4, 2009 at 3:31 am</a>
+</span>
+</div>
+<div class="comment-text"><p>i’m curious about how you chose the term “data scientist” to describe this role. that’s precisely the title we used for folks on the data team at facebook, chosen somewhat arbitrarily as a contraction of “data analyst” and “research scientist”, with the same skills in mind as you mention above. i also titled my chapter for “beautiful data” “information platforms and the rise of the data scientist”. quite amazing if you formulated the phrase separately! something in the air…</p>
+</div>
+<div class="reply">
+</div>
+</div>
+<div class="clr"></div>
+</div>
+<ul class="children">
+<li class="comment odd alt depth-2" id="li-comment-30580">
+<div class="" id="comment-30580">
+<div class="comment-content">
+<div class="comment-author vcard">
+<cite class="fn"><a class="url" href="https://flowingdata.com/about-nathan" rel="external nofollow ugc">Nathan Yau</a></cite> <span class="comment-meta">— <a href="https://flowingdata.com/2009/06/04/rise-of-the-data-scientist/#comment-30580">June 4, 2009 at 10:29 am</a>
+</span>
+</div>
+<div class="comment-text"><p>@jeff – ha, yes, there must be something in the air. i read a grant proposal two or three years ago pushing for a new area of study called “data science.” it’s stuck with me ever since.</p>
+</div>
+<div class="reply">
+</div>
+</div>
+<div class="clr"></div>
+</div>
+</li>
+</ul>
+</li>
+<li class="comment even thread-odd thread-alt depth-1" id="li-comment-30570">
+<div class="" id="comment-30570">
+<div class="comment-content">
+<div class="comment-author vcard">
+<cite class="fn"><a class="url" href="http://www.dataspora.com/blog" rel="external nofollow ugc">Michael E Driscoll</a></cite> <span class="comment-meta">— <a href="https://flowingdata.com/2009/06/04/rise-of-the-data-scientist/#comment-30570">June 4, 2009 at 3:38 am</a>
+</span>
+</div>
+<div class="comment-text"><p>Nathan – Nice synthesis and thanks for the shout-out. Ben Fry’s model captures the various fields that comprise this interdisciplinary ‘data science’ quite elegantly. I’d even venture to add some bidirectional arrows. Between the four core activities — Munging, Modeling, Visualizing, and Interacting — there’s a lot of feedback. </p>
+<p>And as far as sexiness goes, I’m still holding my breath for People magazine to release its Sexiest Data Scientist Alive issue. It still may be a decade or more away.</p>
+</div>
+<div class="reply">
+</div>
+</div>
+<div class="clr"></div>
+</div>
+</li>
+<li class="comment odd alt thread-even depth-1" id="li-comment-30578">
+<div class="" id="comment-30578">
+<div class="comment-content">
+<div class="comment-author vcard">
+<cite class="fn"><a class="url" href="http://www.cavemanforecaster.com" rel="external nofollow ugc">Matt</a></cite> <span class="comment-meta">— <a href="https://flowingdata.com/2009/06/04/rise-of-the-data-scientist/#comment-30578">June 4, 2009 at 9:35 am</a>
+</span>
+</div>
+<div class="comment-text"><p>Power to the Data Scientists!</p>
+</div>
+<div class="reply">
+</div>
+</div>
+<div class="clr"></div>
+</div>
+</li>
+<li class="comment even thread-odd thread-alt depth-1" id="li-comment-30581">
+<div class="" id="comment-30581">
+<div class="comment-content">
+<div class="comment-author vcard">
+<cite class="fn"><a class="url" href="https://flowingdata.com/about-nathan" rel="external nofollow ugc">Nathan Yau</a></cite> <span class="comment-meta">— <a href="https://flowingdata.com/2009/06/04/rise-of-the-data-scientist/#comment-30581">June 4, 2009 at 10:39 am</a>
+</span>
+</div>
+<div class="comment-text"><p>@Michael – re:feedback definitely. fry gets into this as its one of his arguments for an interdisciplinary field – whereas in a collaboration, a person would have to explain to another what he wanted, have some misunderstandings along the way, and then wait.</p>
+<p>re:sexy we’ll have to start a letter campaign :)</p>
+</div>
+<div class="reply">
+</div>
+</div>
+<div class="clr"></div>
+</div>
+</li>
+<li class="pingback odd alt thread-even depth-1" id="li-comment-30583">
+<div id="comment-30583">
+<p>Pingback:
+<cite class="fn"><a class="url" href="http://jabberwocky.weecology.org/2009/06/04/data-scientists/" rel="external nofollow ugc">Data scientists « Jabberwocky Ecology</a></cite> </p>
+</div>
+</li>
+<li class="comment even thread-odd thread-alt depth-1" id="li-comment-30585">
+<div class="" id="comment-30585">
+<div class="comment-content">
+<div class="comment-author vcard">
+<cite class="fn">Craig</cite> <span class="comment-meta">— <a href="https://flowingdata.com/2009/06/04/rise-of-the-data-scientist/#comment-30585">June 4, 2009 at 12:37 pm</a>
+</span>
+</div>
+<div class="comment-text"><p>I have an open question. My graduate training has a foundation in statistics building to psychometrics. I’ve spent some time in human factors and usability, I was even an art major for awhile. This has all given me a solid base to understand the story data is telling as well as put it into visualizations that facilitate understanding among non-specialists. However, while I appreciate the opportunity to have a sexy I job I am currently on track to senior management in a major corporation. So here’s the question how do you balance becoming a specialist and developing the breadth necessary to perform as a business manager?</p>
+</div>
+<div class="reply">
+</div>
+</div>
+<div class="clr"></div>
+</div>
+<ul class="children">
+<li class="comment odd alt depth-2" id="li-comment-30844">
+<div class="" id="comment-30844">
+<div class="comment-content">
+<div class="comment-author vcard">
+<cite class="fn"><a class="url" href="http://mikefigueroa.com/" rel="external nofollow ugc">Mike Figueroa</a></cite> <span class="comment-meta">— <a href="https://flowingdata.com/2009/06/04/rise-of-the-data-scientist/#comment-30844">June 12, 2009 at 12:40 am</a>
+</span>
+</div>
+<div class="comment-text"><p>I don’t see that you can’t apply the ‘data scientist’ skill set to the ‘senior management in a major corporation’ job.</p>
+<p>Being able to gather/create, parse/analyze, then present data in a meaningful way would likely not hinder you. </p>
+<p>The only problem of being amazing is it makes others uncomfortable in their own skin, ie: “Jeez, I’ve been here 14 years and I never knew THAT. This guy is dangerous.”</p>
+</div>
+<div class="reply">
+</div>
+</div>
+<div class="clr"></div>
+</div>
+</li>
+</ul>
+</li>
+<li class="comment even thread-even depth-1" id="li-comment-30586">
+<div class="" id="comment-30586">
+<div class="comment-content">
+<div class="comment-author vcard">
+<cite class="fn"><a class="url" href="http://jeromecukier.net" rel="external nofollow ugc">JÃ©rÃ´me Cukier</a></cite> <span class="comment-meta">— <a href="https://flowingdata.com/2009/06/04/rise-of-the-data-scientist/#comment-30586">June 4, 2009 at 1:18 pm</a>
+</span>
+</div>
+<div class="comment-text"><p>I like Fry’s approach but in this time and age you’d have to accept that these skills are not necessarily mastered by the same person. </p>
+<p>The best mathematician could not the best graphic artist who is not necessarily the best interface designer who is not always a subject-matter expert, etc. </p>
+<p>Some people have all those skills and then some, but that’s more the exception than the rule.</p>
+</div>
+<div class="reply">
+</div>
+</div>
+<div class="clr"></div>
+</div>
+</li>
+<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-30587">
+<div class="" id="comment-30587">
+<div class="comment-content">
+<div class="comment-author vcard">
+<cite class="fn"><a class="url" href="http://www.creditcards.com" rel="external nofollow ugc">John</a></cite> <span class="comment-meta">— <a href="https://flowingdata.com/2009/06/04/rise-of-the-data-scientist/#comment-30587">June 4, 2009 at 1:56 pm</a>
+</span>
+</div>
+<div class="comment-text"><p>What about “storyteller?” Not trying to trivialize the issue at all, but the ability to effectively communicate the relevance and import of the findings would seem to be the skill that ties it all together. Completing the analysis isn’t the end of the project, getting the HiPPO’s sign-off is. If all the effort doesn’t go toward meeting an organizational goal, it’s wasted.</p>
+</div>
+<div class="reply">
+</div>
+</div>
+<div class="clr"></div>
+</div>
+</li>
+<li class="comment even thread-even depth-1" id="li-comment-30588">
+<div class="" id="comment-30588">
+<div class="comment-content">
+<div class="comment-author vcard">
+<cite class="fn">anon</cite> <span class="comment-meta">— <a href="https://flowingdata.com/2009/06/04/rise-of-the-data-scientist/#comment-30588">June 4, 2009 at 3:40 pm</a>
+</span>
+</div>
+<div class="comment-text"><p>@Craig: The best answer is to look at senior managers whose work you admire, and see how they did it. For example, often specialized knowledge is replaced by the ability to notice, nurture, and exploit technical talent.</p>
+<p>And note well: if you can’t find a senior manager you’d like to imitate, that’s a sign that being an executive will make you unhappy.</p>
+</div>
+<div class="reply">
+</div>
+</div>
+<div class="clr"></div>
+</div>
+</li>
+<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-30589">
+<div class="" id="comment-30589">
+<div class="comment-content">
+<div class="comment-author vcard">
+<cite class="fn"><a class="url" href="https://flowingdata.com/about-nathan" rel="external nofollow ugc">Nathan Yau</a></cite> <span class="comment-meta">— <a href="https://flowingdata.com/2009/06/04/rise-of-the-data-scientist/#comment-30589">June 4, 2009 at 5:24 pm</a>
+</span>
+</div>
+<div class="comment-text"><p>@Craig, @JÃ©rÃ´me – i think it’s not so much about learning all there is to know about all the fields. Instead, you’re learning a collection of skills from the fields with the primary purpose of visualization (or computational information design). So for example, you might learn graphic design, but you’re not going to learn logo design; you’re going to learn how to display data.</p>
+<p>From a management standpoint, you’ll know what everyone is talking about and the work involved which makes it easier to delegate and to keep things moving.</p>
+</div>
+<div class="reply">
+</div>
+</div>
+<div class="clr"></div>
+</div>
+</li>
+<li class="pingback even thread-even depth-1" id="li-comment-30592">
+<div id="comment-30592">
+<p>Pingback:
+<cite class="fn"><a class="url" href="http://www.analyticsteam.com/2009/06/04/the-role-of-the-data-scientist/" rel="external nofollow ugc">Analytics Team » Blog Archive » The role of the data scientist</a></cite> </p>
+</div>
+</li>
+<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-30596">
+<div class="" id="comment-30596">
+<div class="comment-content">
+<div class="comment-author vcard">
+<cite class="fn">Enrique</cite> <span class="comment-meta">— <a href="https://flowingdata.com/2009/06/04/rise-of-the-data-scientist/#comment-30596">June 5, 2009 at 6:04 am</a>
+</span>
+</div>
+<div class="comment-text"><p>I would add functional expertise to the list of skills. You need to understand the domain you are analyzing if you really want to understand your data.</p>
+</div>
+<div class="reply">
+</div>
+</div>
+<div class="clr"></div>
+</div>
+</li>
+<li class="comment even thread-even depth-1" id="li-comment-30605">
+<div class="" id="comment-30605">
+<div class="comment-content">
+<div class="comment-author vcard">
+<cite class="fn"><a class="url" href="http://webspace.ship.edu/sadrzy" rel="external nofollow ugc">Scott Drzyzga</a></cite> <span class="comment-meta">— <a href="https://flowingdata.com/2009/06/04/rise-of-the-data-scientist/#comment-30605">June 5, 2009 at 12:21 pm</a>
+</span>
+</div>
+<div class="comment-text"><p>I appreciate Dr. Fry’s explict recognzition and acknowledgement that “cartographers have mastered the ability to successfully organize geographic data in a manner that communicates effectively.” Fry goes on to suggest cartography could serve as a “useful model” and be extended in the “direction of Computational Information Design.” My only comment to Fry (and to Nathan’s post) is that it already has – a field called ‘Geographic Information Science and Technology’ (GIS&amp;T). The GIS&amp;T body of knowledge was outlined by Mike Goodchild and others in the mid 1990s and fully scoped in 2006 by the UCGIS. Perhaps new ‘data scientists’ will consider the groundwork already laid by so many geographers and cartographers as they expand into new territories and exploit emerging technologies.</p>
+<p>NCGIA Core Curriculum in Geographic Information Science<br/>
+<a href="http://www.ncgia.ucsb.edu/giscc/units/u002/u002.html" rel="nofollow ugc">http://www.ncgia.ucsb.edu/giscc/units/u002/u002.html</a></p>
+<p>Geographic Information Science &amp; Technology (GIS&amp;T) Body of Knowledge.<br/>
+<a href="http://www.aag.org/bok/" rel="nofollow ugc">http://www.aag.org/bok/</a></p>
+<p>University Consortium for Geographic Information Science (UCGIS)<br/>
+<a href="http://www.ucgis.org" rel="nofollow ugc">http://www.ucgis.org</a></p>
+<p>And a shameless plug for GIS&amp;T at Shippensburg University (PA)<br/>
+<a href="http://webspace.ship.edu/geog/GIS/" rel="nofollow ugc">http://webspace.ship.edu/geog/GIS/</a></p>
+</div>
+<div class="reply">
+</div>
+</div>
+<div class="clr"></div>
+</div>
+</li>
+<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-30606">
+<div class="" id="comment-30606">
+<div class="comment-content">
+<div class="comment-author vcard">
+<cite class="fn"><a class="url" href="http://www.aafter.com" rel="external nofollow ugc">Subhankar Ray</a></cite> <span class="comment-meta">— <a href="https://flowingdata.com/2009/06/04/rise-of-the-data-scientist/#comment-30606">June 5, 2009 at 12:38 pm</a>
+</span>
+</div>
+<div class="comment-text"><p>Can we predict a theory [like special theory of relativity] using data?<br/>
+Can data help us to prove a theorem like Fermat’s Last Theorem?</p>
+</div>
+<div class="reply">
+</div>
+</div>
+<div class="clr"></div>
+</div>
+<ul class="children">
+<li class="comment even depth-2" id="li-comment-30741">
+<div class="" id="comment-30741">
+<div class="comment-content">
+<div class="comment-author vcard">
+<cite class="fn"><a class="url" href="http://www.johnnylogic.org/" rel="external nofollow ugc">John L. Taylor</a></cite> <span class="comment-meta">— <a href="https://flowingdata.com/2009/06/04/rise-of-the-data-scientist/#comment-30741">June 10, 2009 at 12:48 pm</a>
+</span>
+</div>
+<div class="comment-text"><p>Subhankar Ray,</p>
+<p>I am not sure what you are getting at, but these are quite difficult questions. </p>
+<p>1)Can we predict a theory [like special theory of relativity] using data? </p>
+<p>Understanding you to not be asking the trivial question of whether or not data and analysis methods are used to make discoveries, but rather asking about the algorithmic discovery of new laws, or regularities– yes, but we are not very good at unaided computer discovery yet. Since the inception of AI, computer scientists, philosophers, mathematicians, and other researchers have endeavored to find methods for automated discovery of regularities from empirical data. Herbert Simon (BACON), and Paul Thagard (PI) are two historical examples of automated discovery. Today, much is being done in the area of machine learning and discovery, but that is a book (or ten) by itself.</p>
+<p>2) Can data help us to prove a theorem like Fermatâ€™s Last Theorem? </p>
+<p>While such theorems can be assisted with computers (see the four color theorem and Coq proof assistant), theorems are derived through mathematical induction, construction, negation, etc., not though empirical data. Quasi-empirical data, however is used, meaning the results of enumeration (such as the ever-growing list of prime numbers) or random evaluation of a complex mathematical object (such as Monte Carlo methods on probability density functions), allow us approximations or enumerations for further mathematical consideration</p>
+<p>Hope this addresses your questions.</p>
+</div>
+<div class="reply">
+</div>
+</div>
+<div class="clr"></div>
+</div>
+</li>
+</ul>
+</li>
+<li class="comment odd alt thread-even depth-1" id="li-comment-30609">
+<div class="" id="comment-30609">
+<div class="comment-content">
+<div class="comment-author vcard">
+<cite class="fn"><a class="url" href="http://weigend.com" rel="external nofollow ugc">Andreas Weigend</a></cite> <span class="comment-meta">— <a href="https://flowingdata.com/2009/06/04/rise-of-the-data-scientist/#comment-30609">June 5, 2009 at 5:53 pm</a>
+</span>
+</div>
+<div class="comment-text"><p>I think what’s missing in a discussion of incentives: How to get people to contribute data, both C2C or C2W.<br/>
+See:<br/>
+<a href="http://facebook.com/SocialDataRevolution" rel="nofollow ugc">http://facebook.com/SocialDataRevolution</a>,<br/>
+<a href="http://blogs.harvardbusiness.org/now-new-next/2009/05/the-social-data-revolution.htm" rel="nofollow ugc">http://blogs.harvardbusiness.org/now-new-next/2009/05/the-social-data-revolution.htm</a> (recent Harvard Business article)<br/>
+<a href="http://stanford2009.wikispaces.com" rel="nofollow ugc">http://stanford2009.wikispaces.com</a> (course wiki of Spring 2009 Data Mining course)<br/>
+Andreas Weigend</p>
+</div>
+<div class="reply">
+</div>
+</div>
+<div class="clr"></div>
+</div>
+</li>
+<li class="pingback even thread-odd thread-alt depth-1" id="li-comment-30630">
+<div id="comment-30630">
+<p>Pingback:
+<cite class="fn"><a class="url" href="http://thebernoullitrial.wordpress.com/2009/06/07/google-needs-more-sexy-statisticians/" rel="external nofollow ugc">Google needs more sexy statisticians « The Bernoulli Trial</a></cite> </p>
+</div>
+</li>
+<li class="pingback odd alt thread-even depth-1" id="li-comment-30671">
+<div id="comment-30671">
+<p>Pingback:
+<cite class="fn"><a class="url" href="http://www.bing.com/community/blogs/travel/archive/2009/06/08/a-gentle-introduction-to-fareology-by-fareologist.aspx" rel="external nofollow ugc">Bing Community</a></cite> </p>
+</div>
+</li>
+<li class="comment even thread-odd thread-alt depth-1" id="li-comment-30709">
+<div class="" id="comment-30709">
+<div class="comment-content">
+<div class="comment-author vcard">
+<cite class="fn"><a class="url" href="http://bibliopage.blogspot.com" rel="external nofollow ugc">SandrÃ©a</a></cite> <span class="comment-meta">— <a href="https://flowingdata.com/2009/06/04/rise-of-the-data-scientist/#comment-30709">June 9, 2009 at 2:19 pm</a>
+</span>
+</div>
+<div class="comment-text"><p>It’s interesting that the graphic you represented in this post has similarity to the job of librarians…<br/>
+We aquire books (or information), filter these books, or the information, to the right user or client; or mine the stacks or systems in pursuit of these information; the files are represented via catalog (cards or systems); and the reference service refines and interact with our users.<br/>
+Do you think that to be a Data Scientist is to have a librarian expertise too? And vice-versa?</p>
+</div>
+<div class="reply">
+</div>
+</div>
+<div class="clr"></div>
+</div>
+<ul class="children">
+<li class="comment odd alt depth-2" id="li-comment-30739">
+<div class="" id="comment-30739">
+<div class="comment-content">
+<div class="comment-author vcard">
+<cite class="fn"><a class="url" href="https://flowingdata.com/about-nathan" rel="external nofollow ugc">Nathan Yau</a></cite> <span class="comment-meta">— <a href="https://flowingdata.com/2009/06/04/rise-of-the-data-scientist/#comment-30739">June 10, 2009 at 11:52 am</a>
+</span>
+</div>
+<div class="comment-text"><p>having worked with information scientists, there are definitely several parallels in what we do.</p>
+</div>
+<div class="reply">
+</div>
+</div>
+<div class="clr"></div>
+</div>
+</li>
+</ul>
+</li>
+<li class="comment even thread-even depth-1" id="li-comment-30738">
+<div class="" id="comment-30738">
+<div class="comment-content">
+<div class="comment-author vcard">
+<cite class="fn">Dave</cite> <span class="comment-meta">— <a href="https://flowingdata.com/2009/06/04/rise-of-the-data-scientist/#comment-30738">June 10, 2009 at 11:45 am</a>
+</span>
+</div>
+<div class="comment-text"><p>Well, given that it was a sexy maths lady who first pointed me to this article in the first place… ^^</p>
+</div>
+<div class="reply">
+</div>
+</div>
+<div class="clr"></div>
+</div>
+</li>
+<li class="pingback odd alt thread-odd thread-alt depth-1" id="li-comment-30770">
+<div id="comment-30770">
+<p>Pingback:
+<cite class="fn"><a class="url" href="http://ideonexus.com/2009/06/11/science-etcetera-jupiterday-20090611/" rel="external nofollow ugc">Science Etcetera, Jupiterday 20090611 | ideonexus.com</a></cite> </p>
+</div>
+</li>
+<li class="pingback even thread-even depth-1" id="li-comment-30792">
+<div id="comment-30792">
+<p>Pingback:
+<cite class="fn"><a class="url" href="http://www.fireflyeco.com/index.php?blog/show/13" rel="external nofollow ugc">Data Scientists Apply Within - The Environment - Firefly Ecometrics</a></cite> </p>
+</div>
+</li>
+<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-30974">
+<div class="" id="comment-30974">
+<div class="comment-content">
+<div class="comment-author vcard">
+<cite class="fn"><a class="url" href="http://stat-exchange.blogspot.com/" rel="external nofollow ugc">Krish Swamy</a></cite> <span class="comment-meta">— <a href="https://flowingdata.com/2009/06/04/rise-of-the-data-scientist/#comment-30974">June 14, 2009 at 6:11 pm</a>
+</span>
+</div>
+<div class="comment-text"><p>Great summary. The data-munging/ scraping part was something I particularly identified with. Working in the financial services industry (ahead of others when it comes to using data to drive strategy), I am still surprised with the amount of data that just goes untapped and unused. The systems (and the vision) required to capture this data and put in in a form which is ‘analyzable’ just does not exist.</p>
+</div>
+<div class="reply">
+</div>
+</div>
+<div class="clr"></div>
+</div>
+</li>
+<li class="pingback even thread-even depth-1" id="li-comment-31041">
+<div id="comment-31041">
+<p>Pingback:
+<cite class="fn"><a class="url" href="http://www.cerebralmastication.com/?p=284" rel="external nofollow ugc">Cerebral Mastication » Blog Archive » Keeping Technical Talent or Why I Just Quit My Job</a></cite> </p>
+</div>
+</li>
+<li class="pingback odd alt thread-odd thread-alt depth-1" id="li-comment-31043">
+<div id="comment-31043">
+<p>Pingback:
+<cite class="fn"><a class="url" href="http://tech-monkey.info/2009/06/16/four-short-links-16-june-2009/" rel="external nofollow ugc">Four short links: 16 June 2009 | Tech-monkey.info Blogs</a></cite> </p>
+</div>
+</li>
+<li class="comment even thread-even depth-1" id="li-comment-31047">
+<div class="" id="comment-31047">
+<div class="comment-content">
+<div class="comment-author vcard">
+<cite class="fn">Silverfern</cite> <span class="comment-meta">— <a href="https://flowingdata.com/2009/06/04/rise-of-the-data-scientist/#comment-31047">June 16, 2009 at 8:24 pm</a>
+</span>
+</div>
+<div class="comment-text"><p>I would add one other domain/skill to Fry’s descriptions — Library/Information Science — to preserve the data (incl. access and retrieval, etc.) for the indefinite long-term.</p>
+</div>
+<div class="reply">
+</div>
+</div>
+<div class="clr"></div>
+</div>
+</li>
+<li class="pingback odd alt thread-odd thread-alt depth-1" id="li-comment-31053">
+<div id="comment-31053">
+<p>Pingback:
+<cite class="fn"><a class="url" href="http://itp.nyu.edu/viscomm/2008/04/21/information-graphics/" rel="external nofollow ugc">Visual Communications » Information Graphics contâ€™d</a></cite> </p>
+</div>
+</li>
+<li class="pingback even thread-even depth-1" id="li-comment-31095">
+<div id="comment-31095">
+<p>Pingback:
+<cite class="fn"><a class="url" href="http://builddesignwebsite.com/2009/06/four-short-links-16-june-2009/" rel="external nofollow ugc">Four short links: 16 June 2009 | Design Website</a></cite> </p>
+</div>
+</li>
+<li class="pingback odd alt thread-odd thread-alt depth-1" id="li-comment-31440">
+<div id="comment-31440">
+<p>Pingback:
+<cite class="fn"><a class="url" href="http://computationallegalstudies.com/2009/06/29/the-rise-of-the-data-scientist-from-flowing-data/" rel="external nofollow ugc">The Rise of the Data Scientist [From Flowing Data] | Computational Legal Studies</a></cite> </p>
+</div>
+</li>
+<li class="comment even thread-even depth-1" id="li-comment-31482">
+<div class="" id="comment-31482">
+<div class="comment-content">
+<div class="comment-author vcard">
+<cite class="fn">Jessica</cite> <span class="comment-meta">— <a href="https://flowingdata.com/2009/06/04/rise-of-the-data-scientist/#comment-31482">June 30, 2009 at 6:56 pm</a>
+</span>
+</div>
+<div class="comment-text"><p>This post reminds me of a post you made last year, about why Data Visualization isn’t popular. One point you made was that people know, but don’t know what it’s called (so they know.. but they just don’t know they know). But my question is where does ‘data visualization’ stop?</p>
+<p>The post here makes data visualization seem so complex (and I’m sure it is..) that I’m almost afraid to call simple graphs/maps ‘data visualization’.</p>
+<p>Like.. is this visualization?<br/>
+<a href="http://www.townme.com/san-francisco-ca/yuppie-locator/yuppies" rel="nofollow ugc">http://www.townme.com/san-francisco-ca/yuppie-locator/yuppies</a><br/>
+It’s a map, it uses census data, but it’s certainly not as complex as the typical visualizations on a blog like infosthetics.. </p>
+<p>Or, is this blog (that one of your comment-ers suggested on your 37 visualizations post) also visualization?<br/>
+<a href="http://thisisindexed.com/" rel="nofollow ugc">http://thisisindexed.com/</a></p>
+<p>I’m into visualization because reading lots of little words hurts my eyes, because I believe there’s a more efficient way to convey information, and it really is awesome looking sometimes. But, does everything count?</p>
+</div>
+<div class="reply">
+</div>
+</div>
+<div class="clr"></div>
+</div>
+</li>
+<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-31483">
+<div class="" id="comment-31483">
+<div class="comment-content">
+<div class="comment-author vcard">
+<cite class="fn">Jessica</cite> <span class="comment-meta">— <a href="https://flowingdata.com/2009/06/04/rise-of-the-data-scientist/#comment-31483">June 30, 2009 at 7:14 pm</a>
+</span>
+</div>
+<div class="comment-text"><p>More on my previous comment. Here is a definition of visualization by <a href="http://eagereyes.org" rel="nofollow ugc">http://eagereyes.org</a>. (<a href="http://eagereyes.org/theory/Definition-of-Visualization.html" rel="nofollow ugc">http://eagereyes.org/theory/Definition-of-Visualization.html</a>) </p>
+<p>To summarize… Robert Kosara gives a lot of definitions that I think would rule out the links in my previous comment as “data visualizations”. </p>
+<p>And then…the reason data visualization isn’t popular might also be because it’s so exclusive/scientific/precise that people don’t want to touch/enjoy/appreciate it! What do you think?</p>
+</div>
+<div class="reply">
+</div>
+</div>
+<div class="clr"></div>
+</div>
+</li>
+<li class="comment even thread-even depth-1" id="li-comment-31484">
+<div class="" id="comment-31484">
+<div class="comment-content">
+<div class="comment-author vcard">
+<cite class="fn">Jessica</cite> <span class="comment-meta">— <a href="https://flowingdata.com/2009/06/04/rise-of-the-data-scientist/#comment-31484">June 30, 2009 at 7:17 pm</a>
+</span>
+</div>
+<div class="comment-text"><p>Here is a definition of visualization from (a blog that was also suggested by a reader in your 37 visualizations post) <a href="http://eagereyes.org" rel="nofollow ugc">http://eagereyes.org</a><br/>
+<a href="http://eagereyes.org/theory/Definition-of-Visualization.html" rel="nofollow ugc">http://eagereyes.org/theory/Definition-of-Visualization.html</a></p>
+<p>To summarize… he gave a lot of very precise definitions and requirements for ‘information that results in a picture’ to be called visualization.</p>
+<p>The definitions (to me at least… casual graph-onlooker) seem pretty intense. And going back to your post about why data visualization wasn’t popular… it might be because data visualization is viewed as a science.. very precise/definite/intense that people are afraid to enjoy/appreciate it at all.</p>
+</div>
+<div class="reply">
+</div>
+</div>
+<div class="clr"></div>
+</div>
+</li>
+<li class="pingback odd alt thread-odd thread-alt depth-1" id="li-comment-31522">
+<div id="comment-31522">
+<p>Pingback:
+<cite class="fn"><a class="url" href="http://visualness.wordpress.com/2009/07/02/the-rise-of-the-data-scientist/" rel="external nofollow ugc">The Rise of The Data Scientist « Visualness</a></cite> </p>
+</div>
+</li>
+<li class="pingback even thread-even depth-1" id="li-comment-31566">
+<div id="comment-31566">
+<p>Pingback:
+<cite class="fn"><a class="url" href="http://gisandscience.com/2009/07/06/rise-of-the-data-scientist/" rel="external nofollow ugc">Rise of the Data Scientist « GIS and Science</a></cite> </p>
+</div>
+</li>
+<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-31591">
+<div class="" id="comment-31591">
+<div class="comment-content">
+<div class="comment-author vcard">
+<cite class="fn">Jen</cite> <span class="comment-meta">— <a href="https://flowingdata.com/2009/06/04/rise-of-the-data-scientist/#comment-31591">July 7, 2009 at 3:56 pm</a>
+</span>
+</div>
+<div class="comment-text"><p>This is my favorite unusually good data visualization site: <a href="http://www.babynamewizard.com/voyager" rel="nofollow ugc">http://www.babynamewizard.com/voyager</a><br/>
+Somebody showed me this one in grad school, and I immediately proceeded to spend several hours riveted to my screen, looking up the the popularity and geographic trends associated with the names of everyone I knew.</p>
+</div>
+<div class="reply">
+</div>
+</div>
+<div class="clr"></div>
+</div>
+</li>
+<li class="pingback even thread-even depth-1" id="li-comment-31600">
+<div id="comment-31600">
+<p>Pingback:
+<cite class="fn"><a class="url" href="http://caintechnews.wordpress.com/2009/07/08/in-the-tech-news-6/" rel="external nofollow ugc">In The Tech News « Caintech.co.uk</a></cite> </p>
+</div>
+</li>
+<li class="pingback odd alt thread-odd thread-alt depth-1" id="li-comment-31603">
+<div id="comment-31603">
+<p>Pingback:
+<cite class="fn"><a class="url" href="http://identi.ca/notice/6187030" rel="external nofollow ugc">Ivan Frantar (ivanico) 's status on Wednesday, 08-Jul-09 08:14:31 UTC - Identi.ca</a></cite> </p>
+</div>
+</li>
+<li class="pingback even thread-even depth-1" id="li-comment-31613">
+<div id="comment-31613">
+<p>Pingback:
+<cite class="fn"><a class="url" href="http://www.cloudknow.com/2009/07/daily-links-75/" rel="external nofollow ugc">Daily Links #75 | CloudKnow</a></cite> </p>
+</div>
+</li>
+<li class="pingback odd alt thread-odd thread-alt depth-1" id="li-comment-31621">
+<div id="comment-31621">
+<p>Pingback:
+<cite class="fn"><a class="url" href="http://clair.ro/flow/2009/07/09/daily-digest-for-july-9th/" rel="external nofollow ugc">Flow » Blog Archive » Daily Digest for July 9th - The zeitgeist daily</a></cite> </p>
+</div>
+</li>
+<li class="pingback even thread-even depth-1" id="li-comment-31687">
+<div id="comment-31687">
+<p>Pingback:
+<cite class="fn"><a class="url" href="http://www.visualizingeconomics.com/2009/07/12/data-scienist-data-geek-designer/" rel="external nofollow ugc">Data Scienist &gt; Data Geek &gt; Designer « Visualizing Economics</a></cite> </p>
+</div>
+</li>
+<li class="pingback odd alt thread-odd thread-alt depth-1" id="li-comment-32052">
+<div id="comment-32052">
+<p>Pingback:
+<cite class="fn"><a class="url" href="http://www.c2cbio.com/2009/07/26/episode-23/" rel="external nofollow ugc">Coast to Coast Bio Podcast » Blog Archive » Episode 23: So why were you talking about iPhones?</a></cite> </p>
+</div>
+</li>
+<li class="pingback even thread-even depth-1" id="li-comment-42437">
+<div id="comment-42437">
+<p>Pingback:
+<cite class="fn"><a class="url" href="http://blog.linkedin.com/2010/04/20/linkedin-data-scientist-skomoroch/" rel="external nofollow ugc">The LinkedIn Blog » Blog Archive Data Scientists: Wrangling Data for Professionals «</a></cite> </p>
+</div>
+</li>
+<li class="pingback odd alt thread-odd thread-alt depth-1" id="li-comment-42439">
+<div id="comment-42439">
+<p>Pingback:
+<cite class="fn"><a class="url" href="http://www.citirecruitment.com/2010/04/20/data-scientists-finding-patterns-in-linkedin-data/" rel="external nofollow ugc">Data Scientists: Finding Patterns in LinkedIn Data | CITI Recruitment</a></cite> </p>
+</div>
+</li>
+<li class="pingback even thread-even depth-1" id="li-comment-51953">
+<div id="comment-51953">
+<p>Pingback:
+<cite class="fn"><a class="url" href="http://www.wiseseoservice.com/9-tips-for-paid-search-newbies/" rel="external nofollow ugc">9 Tips for Paid Search Newbies | Wise SEO Service</a></cite> </p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="clr"></div>
+</div>
+<div class="five columns" id="sidebar">
+<div class="sec centered" id="membership-sidebar">
+<a href="https://flowingdata.com/membership/">
+<p>
+<strong>Become a member.</strong>
+<br/>Support an independent site.
+<br/>Make great charts.
+</p>
+<p><small>What you get</small></p>
+</a>
+</div>
+<div class="sec" id="members-recent">
+<h3 class="toplevel">Recent Members’ Posts</h3>
+<div class="row">
+<a href="https://flowingdata.com/2020/04/09/process-084-books/">
+<h4>Visualization Books in My Queue (The Process 084)</h4>
+</a>
+</div>
+<div class="row">
+<a href="https://flowingdata.com/2020/04/02/process-083-distractions/">
+<h4>Useful Distractions for Chartmakers – The Process 083</h4>
+</a>
+</div>
+<div class="row">
+<a href="https://flowingdata.com/2020/03/26/process-082-roundup/">
+<h4>Visualization Tools and Resources, March 2020 Roundup – The Process 082</h4>
+</a>
+</div>
+<div class="row">
+<a href="https://flowingdata.com/2020/03/19/process-081-simulating-the-unknown/">
+<h4>Simulating the Unknown; Working From Home – The Process 081</h4>
+</a>
+</div>
+<div class="row">
+<a href="https://flowingdata.com/2020/03/18/how-to-flatten-the-curve-a-social-distancing-simulation/">
+<h4>How to Flatten the Curve, a Social Distancing Simulation and Tutorial</h4>
+</a>
+</div>
+</div>
+</div>
+<div class="clr"></div>
+<div class="container archive across" id="tutorials-list">
+<div class="sixteen columns"><h3 class="toplevel">Projects by Nathan Yau <a href="https://flowingdata.com/category/projects/data-underload/">See All →</a></h3></div>
+<div class="archive-post preview four columns">
+<a href="https://flowingdata.com/2015/10/14/work-counts/" rel="bookmark">
+<div class="archive-featured-image cropped">
+<img alt="" class="attachment-archive-cropped size-archive-cropped wp-post-image" data-attachment-id="43243" data-comments-opened="0" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="work-featured" data-large-file="https://i1.wp.com/flowingdata.com/wp-content/uploads/2015/10/work-featured2.png?fit=1090%2C676&amp;ssl=1" data-medium-file="https://i1.wp.com/flowingdata.com/wp-content/uploads/2015/10/work-featured2.png?fit=720%2C447&amp;ssl=1" data-orig-file="https://i1.wp.com/flowingdata.com/wp-content/uploads/2015/10/work-featured2.png?fit=1900%2C1179&amp;ssl=1" data-orig-size="1900,1179" data-permalink="https://flowingdata.com/2015/10/14/work-counts/work-featured-3/" height="250" sizes="(max-width: 400px) 100vw, 400px" src="https://i1.wp.com/flowingdata.com/wp-content/uploads/2015/10/work-featured2.png?resize=400%2C250&amp;ssl=1" srcset="https://i1.wp.com/flowingdata.com/wp-content/uploads/2015/10/work-featured2.png?resize=210%2C130&amp;ssl=1 210w, https://i1.wp.com/flowingdata.com/wp-content/uploads/2015/10/work-featured2.png?resize=400%2C250&amp;ssl=1 400w, https://i1.wp.com/flowingdata.com/wp-content/uploads/2015/10/work-featured2.png?zoom=2&amp;resize=400%2C250&amp;ssl=1 800w, https://i1.wp.com/flowingdata.com/wp-content/uploads/2015/10/work-featured2.png?zoom=3&amp;resize=400%2C250&amp;ssl=1 1200w" width="400"/> </div>
+<h4>Work Counts</h4>
+<div class="excerpt"><p>Looking at educational attainment, income, work hours, and commute, this is who has the same work life as you do.</p>
+</div>
+</a>
+</div>
+<div class="archive-post preview four columns">
+<a href="https://flowingdata.com/2016/10/17/animated-map-of-unemployment/" rel="bookmark">
+<div class="archive-featured-image cropped">
+<img alt="" class="attachment-archive-cropped size-archive-cropped wp-post-image" data-attachment-id="46583" data-comments-opened="0" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="Unemployment in the United States" data-large-file="https://i1.wp.com/flowingdata.com/wp-content/uploads/2016/10/frame00013.png?fit=1090%2C613&amp;ssl=1" data-medium-file="https://i1.wp.com/flowingdata.com/wp-content/uploads/2016/10/frame00013.png?fit=720%2C405&amp;ssl=1" data-orig-file="https://i1.wp.com/flowingdata.com/wp-content/uploads/2016/10/frame00013.png?fit=1920%2C1080&amp;ssl=1" data-orig-size="1920,1080" data-permalink="https://flowingdata.com/2016/10/17/animated-map-of-unemployment/frame00013/" height="250" sizes="(max-width: 400px) 100vw, 400px" src="https://i1.wp.com/flowingdata.com/wp-content/uploads/2016/10/frame00013.png?resize=400%2C250&amp;ssl=1" srcset="https://i1.wp.com/flowingdata.com/wp-content/uploads/2016/10/frame00013.png?resize=400%2C250&amp;ssl=1 400w, https://i1.wp.com/flowingdata.com/wp-content/uploads/2016/10/frame00013.png?zoom=2&amp;resize=400%2C250&amp;ssl=1 800w, https://i1.wp.com/flowingdata.com/wp-content/uploads/2016/10/frame00013.png?zoom=3&amp;resize=400%2C250&amp;ssl=1 1200w" width="400"/> </div>
+<h4>Unemployment in America, Mapped Over Time</h4>
+<div class="excerpt"><p>Watch the regional changes across the country from 1990 to 2016.</p>
+</div>
+</a>
+</div>
+<div class="archive-post preview four columns">
+<a href="https://flowingdata.com/2017/02/23/the-first-time/" rel="bookmark">
+<div class="archive-featured-image cropped">
+<img alt="" class="attachment-archive-cropped size-archive-cropped wp-post-image" data-attachment-id="47637" data-comments-opened="0" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="The First Time…" data-large-file="https://i0.wp.com/flowingdata.com/wp-content/uploads/2017/02/family-featured.png?fit=1090%2C600&amp;ssl=1" data-medium-file="https://i0.wp.com/flowingdata.com/wp-content/uploads/2017/02/family-featured.png?fit=720%2C396&amp;ssl=1" data-orig-file="https://i0.wp.com/flowingdata.com/wp-content/uploads/2017/02/family-featured.png?fit=2180%2C1200&amp;ssl=1" data-orig-size="2180,1200" data-permalink="https://flowingdata.com/2017/02/23/the-first-time/family-featured/" height="250" sizes="(max-width: 400px) 100vw, 400px" src="https://i0.wp.com/flowingdata.com/wp-content/uploads/2017/02/family-featured.png?resize=400%2C250&amp;ssl=1" srcset="https://i0.wp.com/flowingdata.com/wp-content/uploads/2017/02/family-featured.png?resize=400%2C250&amp;ssl=1 400w, https://i0.wp.com/flowingdata.com/wp-content/uploads/2017/02/family-featured.png?zoom=2&amp;resize=400%2C250&amp;ssl=1 800w, https://i0.wp.com/flowingdata.com/wp-content/uploads/2017/02/family-featured.png?zoom=3&amp;resize=400%2C250&amp;ssl=1 1200w" width="400"/> </div>
+<h4>Relationships: The First Time…</h4>
+<div class="excerpt"><p>When Americans had sex, moved in with someone, and so on. Often not average. Far from normal.</p>
+</div>
+</a>
+</div>
+<div class="archive-post preview four columns">
+<a href="https://flowingdata.com/2015/12/15/a-day-in-the-life-of-americans/" rel="bookmark">
+<div class="archive-featured-image cropped">
+<img alt="" class="attachment-archive-cropped size-archive-cropped wp-post-image" data-attachment-id="43784" data-comments-opened="0" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="Time use" data-large-file="https://i1.wp.com/flowingdata.com/wp-content/uploads/2015/12/Time-use-featured-v2.png?fit=1090%2C659&amp;ssl=1" data-medium-file="https://i1.wp.com/flowingdata.com/wp-content/uploads/2015/12/Time-use-featured-v2.png?fit=720%2C435&amp;ssl=1" data-orig-file="https://i1.wp.com/flowingdata.com/wp-content/uploads/2015/12/Time-use-featured-v2.png?fit=2069%2C1250&amp;ssl=1" data-orig-size="2069,1250" data-permalink="https://flowingdata.com/2015/12/15/a-day-in-the-life-of-americans/time-use-featured-v2/" height="250" sizes="(max-width: 400px) 100vw, 400px" src="https://i1.wp.com/flowingdata.com/wp-content/uploads/2015/12/Time-use-featured-v2.png?resize=400%2C250&amp;ssl=1" srcset="https://i1.wp.com/flowingdata.com/wp-content/uploads/2015/12/Time-use-featured-v2.png?resize=400%2C250&amp;ssl=1 400w, https://i1.wp.com/flowingdata.com/wp-content/uploads/2015/12/Time-use-featured-v2.png?zoom=2&amp;resize=400%2C250&amp;ssl=1 800w, https://i1.wp.com/flowingdata.com/wp-content/uploads/2015/12/Time-use-featured-v2.png?zoom=3&amp;resize=400%2C250&amp;ssl=1 1200w" width="400"/> </div>
+<h4>A Day in the Life of Americans</h4>
+<div class="excerpt"><p>I wanted to see how daily patterns emerge at the individual level and how a person’s entire day plays out. So I simulated 1,000 of them.</p>
+</div>
+</a>
+</div>
+</div>
+</div>
+<div id="footer-wrapper">
+<div class="container" id="footer">
+<ul id="final-links">
+<li><a href="https://flowingdata.com/about">About</a></li>
+<li><a href="https://flowingdata.com/contact">Contact</a></li>
+<li><a href="https://twitter.com/flowingdata" target="_blank">Twitter</a></li>
+<li><a href="https://flowingdata.com/newsletter/">Newsletter</a></li>
+<li><a href="https://flowingdata.com/feed" target="_blank">RSS</a></li>
+</ul>
+<div id="bottom">Copyright © 2007-Present FlowingData. All rights reserved.</div>
+<div id="bottom-logo"><a href="https://flowingdata.com"><img src="https://flowingdata.com/wp-content/themes/fd-modern-5-8-3/images/logo-lone-v2d.png"/></a></div>
+</div>
+</div>
+<link href="https://flowingdata.com/wp-content/plugins/yet-another-related-posts-plugin/style/related.css?ver=5.3.2" id="yarppRelatedCss-css" media="all" rel="stylesheet" type="text/css"/>
+<script src="https://flowingdata.com/wp-includes/js/comment-reply.min.js?ver=5.3.2" type="text/javascript"></script>
+<script src="https://flowingdata.com/wp-content/plugins/jetpack/_inc/build/photon/photon.min.js?ver=20191001" type="text/javascript"></script>
+<script src="https://flowingdata.com/wp-includes/js/wp-embed.min.js?ver=5.3.2" type="text/javascript"></script>
+<script src="https://flowingdata.com/wp-content/plugins/jetpack/_inc/build/spin.min.js?ver=1.3" type="text/javascript"></script>
+<script src="https://flowingdata.com/wp-content/plugins/jetpack/_inc/build/jquery.spin.min.js?ver=1.3" type="text/javascript"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var jetpackCarouselStrings = {"widths":[370,700,1000,1200,1400,2000],"is_logged_in":"","lang":"en","ajaxurl":"https:\/\/flowingdata.com\/wp-admin\/admin-ajax.php","nonce":"a765bc676f","display_exif":"0","display_geo":"1","single_image_gallery":"1","single_image_gallery_media_file":"","background_color":"black","comment":"Comment","post_comment":"Post Comment","write_comment":"Write a Comment...","loading_comments":"Loading Comments...","download_original":"View full size <span class=\"photo-size\">{0}<span class=\"photo-size-times\">\u00d7<\/span>{1}<\/span>","no_comment_text":"Please be sure to submit some text with your comment.","no_comment_email":"Please provide an email address to comment.","no_comment_author":"Please provide your name to comment.","comment_post_error":"Sorry, but there was an error posting your comment. Please try again later.","comment_approved":"Your comment was approved.","comment_unapproved":"Your comment is in moderation.","camera":"Camera","aperture":"Aperture","shutter_speed":"Shutter Speed","focal_length":"Focal Length","copyright":"Copyright","comment_registration":"1","require_name_email":"1","login_url":"https:\/\/flowingdata.com\/wp-login.php?redirect_to=https%3A%2F%2Fflowingdata.com%2F2009%2F06%2F04%2Frise-of-the-data-scientist%2F","blog_id":"1","meta_data":["camera","aperture","shutter_speed","focal_length","copyright"],"local_comments_commenting_as":"<p id=\"jp-carousel-commenting-as\">You must be <a href=\"#\" class=\"jp-carousel-comment-login\">logged in<\/a> to post a comment.<\/p>"};
+/* ]]> */
+</script>
+<script src="https://flowingdata.com/wp-content/plugins/jetpack/_inc/build/carousel/jetpack-carousel.min.js?ver=20190102" type="text/javascript"></script>
+<script async="async" defer="defer" src="https://stats.wp.com/e-202015.js" type="text/javascript"></script>
+<script type="text/javascript">
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:8.4.1',blog:'1938889',post:'1585',tz:'-7',srv:'flowingdata.com'} ]);
+	_stq.push([ 'clickTrackerInit', '1938889', '1585' ]);
+</script>
+</div></body>
+</html>
