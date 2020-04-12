@@ -1,0 +1,14 @@
+Flight Number,Date,Time (UTC),Booster Version,Launch Site,Payload,Payload Mass (kg),Orbit,Customer,Mission Outcome,Landing Outcome
+67,2019-01-11,15:31:00,F9 B5   B1049.2[401],VAFBSLC-4E,Iridium NEXT-8 ,"9,600 ",Polar LEO,Iridium Communications,Success,Success  
+68,2019-02-22,01:45:00,F9 B5   B1048.3[403],CCAFSSLC-40,Nusantara Satu ,Beresheet Moon lander[405],S5[406],"4,850 kg(10,690 lb)[407]",GTO,PSN
+69,2019-03-02,07:49:00,F9 B5B1051.1[270][417],KSCLC-39A,SpX-DM1[418],"12,055 ",LEO (ISS), NASA (CCD) ,Success,Success  
+FH 2,2019-04-11,22:35:00,Falcon HeavyB1055 core[425],KSCLC-39A,Arabsat-6A[426],"6,465 ",GTO,Arabsat,Success,Success[h] 
+70,2019-05-04,06:48:00,F9 B5B1056.1[424],CCAFSSLC-40,SpaceX CRS-17[145],"2,495 ",LEO (ISS),NASA (CRS),Success,Success  
+71,2019-05-24,02:30:00,F9 B5  B1049.3[438],CCAFSSLC-40,Starlink v0.9 ,"13,620 ",LEO,SpaceX,Success,Success  
+72,2019-06-12,14:17:00,F9 B5   B1051.2[424],VAFBSLC-4E,RADARSAT Constellation ,"4,200 ",SSO,Canadian Space Agency,Success,Success  
+FH 3,2019-06-25,06:30:00,Falcon Heavy B1057 core[424],KSCLC-39A,Space Test Program Flight 2 ,"3,700 ",LEO / MEO,U.S. Air Force,Success,Failure   
+73,2019-07-25,22:01:00,F9 B5   B1056.2[468],CCAFSSLC-40,SpaceX CRS-18[145],"2,268 ",LEO (ISS),NASA (CRS),Success,Success  
+74,2019-08-06,23:23:00,F9 B5  B1047.3[475],CCAFS SLC-40,AMOS-17[476],"6,500 ",GTO,Spacecom,Success,No attempt[477]
+75,2019-11-11,14:56:00,F9 B5  B1048.4,"CCAFS, SLC-40",Starlink 1 v1.0 ,"15,600 ",LEO,SpaceX,Success,Success  
+76,2019-12-05,17:29:00,F9 B5 B1059.1[484],CCAFS SLC-40,SpaceX CRS-19[485],"2,617 ",LEO (ISS),NASA (CRS),Success,Success  
+77,2019-12-17,00:10:00,F9 B5 B1056.3[484],CCAFS SLC-40,JCSat-18 / Kacific 1[490],"6,956 ",GTO,Sky Perfect JSAT Kacific,Success,Success  
