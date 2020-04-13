@@ -1,4 +1,4 @@
-![](/home/miguel/Desktop/Ironhack/datamex0320/module-1/web-project/your-code/output_folder/arxiv_quant-ph.png)
+![](arxiv_quant-ph.png)
 
 ------
 
