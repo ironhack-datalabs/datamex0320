@@ -5,3 +5,29 @@ Ut porttitor iaculis tellus bibendum euismod. Morbi porta, ante nec tempus porta
 Suspendisse ut malesuada ex. Nulla ultricies nisl et nisi rhoncus sollicitudin. Vestibulum maximus iaculis ligula, nec commodo nunc ullamcorper nec. Duis quis condimentum sapien. Cras vestibulum interdum felis eu auctor. Quisque semper, magna at dapibus faucibus, felis risus semper ligula, id aliquam lectus ligula vel nisi. In hac habitasse platea dictumst. Donec arcu sapien, suscipit ac dictum et, imperdiet id tortor. Maecenas ornare sodales interdum. Mauris dictum felis eu eros vestibulum cursus. Phasellus accumsan, turpis ut malesuada sollicitudin, augue leo venenatis ante, vel convallis tellus diam sit amet lacus. Aenean eu mauris eros. Praesent ante lacus, gravida sit amet tellus nec, laoreet ultrices lacus. Integer commodo semper vestibulum. Fusce felis massa, consectetur facilisis rutrum nec, pulvinar et nisi.
 
 Morbi fermentum ultricies tortor, vehicula ultrices eros elementum a. Duis ornare aliquam facilisis. Proin aliquam tincidunt odio vitae dignissim. Sed malesuada lacinia massa, nec blandit urna auctor elementum. Duis auctor non tortor in consequat. Mauris id vestibulum risus. In eget erat sed lacus efficitur viverra sed eu est. Aliquam interdum consequat molestie. Aliquam metus nisi, blandit non semper ut, blandit vel leo. Cras dictum turpis erat, sed iaculis ligula facilisis dapibus. Aliquam posuere dignissim fermentum. Praesent at neque sit amet lectus ornare iaculis. Curabitur id urna quis lorem varius ultrices eu sit amet sapien. Curabitur maximus volutpat suscipit. Proin imperdiet elementum lacus a eleifend. Sed tempor lacus posuere diam vehicula iaculis.
+lab-re# Who am I
+
+    * Where are you from?
+    I was born in Cuernavaca Morelos 
+    * What do you do?
+    I have 3 part time jobs. 
+    * Do you have previous experience with technology/data?
+    Tecnology yes but very little with Data
+
+    # Why am I here
+    I am here to learn the ways of use and manipulation of data.
+
+    * What has brought you to Ironhack?
+    I have a dream, and i feel IronHack has the tools to help and intructors to guide me to become the person that will effectivly reach that goal.   
+    * What knowledge/skills do you expect to learn in this bootcamp?
+    How to import and export data, and also how to analize that said data.
+
+    # What will I do after the bootcamp?
+    The idea is to invest my time on making an effective e-commerce, or dive into the data analitic world by getting a job.
+
+    * Which industry will you seek employment in?
+    I qant to explore the e-commerce aspect of the tech world.
+    * What will your future role look like?
+    Like a lot of hard work..
+    * What is your career goal?
+    To become a founder and Ceo of a startup.
