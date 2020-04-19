@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ef2cf792e7b245e8b83c455af1fe618a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_ef2cf792e7b245e8b83c455af1fe618a" ></div>
+        
+</body>
+<script>    
+    
+            var map_ef2cf792e7b245e8b83c455af1fe618a = L.map(
+                "map_ef2cf792e7b245e8b83c455af1fe618a",
+                {
+                    center: [47.604348, -122.331304],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 16,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_788855a1630f48d882afac3b8f813d17 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ef2cf792e7b245e8b83c455af1fe618a);
+        
+    
+            var circle_a3a2c214d7bf41b3aa697bf032cc520b = L.circle(
+                [47.604348, -122.331304],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30, "stroke": true, "weight": 3}
+            ).addTo(map_ef2cf792e7b245e8b83c455af1fe618a);
+        
+    
+        var popup_326f135153d94a9aa5599e6d1024c77b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d1915fae2b554a40b2bbe45823efb0d8 = $(`<div id="html_d1915fae2b554a40b2bbe45823efb0d8" style="width: 100.0%; height: 100.0%;">Proposed Store</div>`)[0];
+            popup_326f135153d94a9aa5599e6d1024c77b.setContent(html_d1915fae2b554a40b2bbe45823efb0d8);
+        
+
+        circle_a3a2c214d7bf41b3aa697bf032cc520b.bindPopup(popup_326f135153d94a9aa5599e6d1024c77b)
+        ;
+
+        
+    
+    
+            var circle_marker_84c00d2608b84bbf82915bcf6495f7d9 = L.circleMarker(
+                [47.604209, -122.331127],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_ef2cf792e7b245e8b83c455af1fe618a);
+        
+    
+        var popup_05e1a33a8ff843048bc2a0e5a13bf34e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_474022741a214d649f537825db1ed477 = $(`<div id="html_474022741a214d649f537825db1ed477" style="width: 100.0%; height: 100.0%;">Main Cluster</div>`)[0];
+            popup_05e1a33a8ff843048bc2a0e5a13bf34e.setContent(html_474022741a214d649f537825db1ed477);
+        
+
+        circle_marker_84c00d2608b84bbf82915bcf6495f7d9.bindPopup(popup_05e1a33a8ff843048bc2a0e5a13bf34e)
+        ;
+
+        
+    
+    
+            var marker_d666586e9bb24864b42008d6fa5350b6 = L.marker(
+                [47.60589, -122.332978],
+                {}
+            ).addTo(map_ef2cf792e7b245e8b83c455af1fe618a);
+        
+    
+            var icon_fec52bd5ffec47a587be171c86b401b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-cutlery", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d666586e9bb24864b42008d6fa5350b6.setIcon(icon_fec52bd5ffec47a587be171c86b401b2);
+        
+    
+        var popup_8e24dee1f5a14c63a9c0b7d99e4405e0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ef55e71b7c7742b782afbbe21f97c03f = $(`<div id="html_ef55e71b7c7742b782afbbe21f97c03f" style="width: 100.0%; height: 100.0%;">Belle Epicurean Bakery & Catering</div>`)[0];
+            popup_8e24dee1f5a14c63a9c0b7d99e4405e0.setContent(html_ef55e71b7c7742b782afbbe21f97c03f);
+        
+
+        marker_d666586e9bb24864b42008d6fa5350b6.bindPopup(popup_8e24dee1f5a14c63a9c0b7d99e4405e0)
+        ;
+
+        
+    
+    
+            var marker_aad7a1717ac7483687f15c4ca130b672 = L.marker(
+                [47.603655, -122.330642],
+                {}
+            ).addTo(map_ef2cf792e7b245e8b83c455af1fe618a);
+        
+    
+            var icon_c6a1beb742c44d5690adf88c64d62e97 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-cutlery", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_aad7a1717ac7483687f15c4ca130b672.setIcon(icon_c6a1beb742c44d5690adf88c64d62e97);
+        
+    
+        var popup_71337317c8d44c518f9c2a818a616e52 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a06b41e47e064c0f8bf740a7920938c1 = $(`<div id="html_a06b41e47e064c0f8bf740a7920938c1" style="width: 100.0%; height: 100.0%;">Einstein Bros. Bagels</div>`)[0];
+            popup_71337317c8d44c518f9c2a818a616e52.setContent(html_a06b41e47e064c0f8bf740a7920938c1);
+        
+
+        marker_aad7a1717ac7483687f15c4ca130b672.bindPopup(popup_71337317c8d44c518f9c2a818a616e52)
+        ;
+
+        
+    
+    
+            var marker_e63717485ab24edcbfc4ce157d99921d = L.marker(
+                [47.600032, -122.332845],
+                {}
+            ).addTo(map_ef2cf792e7b245e8b83c455af1fe618a);
+        
+    
+            var icon_558ab44ddce94fbd813f424be80c0309 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-cutlery", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e63717485ab24edcbfc4ce157d99921d.setIcon(icon_558ab44ddce94fbd813f424be80c0309);
+        
+    
+        var popup_d74ed4390cca4ab78edb3654512c47e7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f72fc84844644adcbc9c539dab994671 = $(`<div id="html_f72fc84844644adcbc9c539dab994671" style="width: 100.0%; height: 100.0%;">The London Plane</div>`)[0];
+            popup_d74ed4390cca4ab78edb3654512c47e7.setContent(html_f72fc84844644adcbc9c539dab994671);
+        
+
+        marker_e63717485ab24edcbfc4ce157d99921d.bindPopup(popup_d74ed4390cca4ab78edb3654512c47e7)
+        ;
+
+        
+    
+</script>
