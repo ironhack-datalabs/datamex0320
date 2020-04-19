@@ -1,4 +1,4 @@
-<img src="https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png">
+<img src="https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png"><img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Seattle_from_Kerry_Park_%281%29.jpg" style="zoom: 25%;" > 
 
 
 
@@ -64,8 +64,8 @@ As mentioned before our client wants to be located in Seattle but is open to exp
 
 ## Author
 ```
-|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|
-| CODING FERRET |
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|
+| CODING FERRET     |
 |___________________|
 (\__/) || 
 (•ㅅ•) || 
