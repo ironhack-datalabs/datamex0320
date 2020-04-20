@@ -1,4 +1,7 @@
-<img src="https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png">
+<center> <img src="https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png"></center>
+<center> <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Seattle_from_Kerry_Park_%281%29.jpg"></center>
+
+
 
 
 
@@ -25,17 +28,17 @@ As mentioned before our client wants to be located in Seattle but is open to exp
   - Must be located in a highly commercial area with preference in Seattle downtown or the International District.
   - Must be located at the ground level (First floor) with:
 
-- - - Street access
+    - Street access
     - Employees access
-
+  
   - Parking area for clients is optional as longer the possible location is in a commercial area with easy street parking access.
-
+  
   - Easy access for public and private transportation for customers and employees. 
-
+  
   - Multi-purpose commercial areas are preferable.
-
+  
   - This store is a step-stone for future stores.
-
+  
 - **Localization:** Seattle, Bellevue, Kirkland, Redmond.
 
 
