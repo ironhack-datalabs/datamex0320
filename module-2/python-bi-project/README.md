@@ -1,58 +1,42 @@
-![IronHack Logo](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_d5c5793015fec3be28a63c4fa3dd4d55.png)
-
-# Project: Business Intelligence with Python
-
-## Overview
-
-The goal of this project is for you to apply the things that we have learned in the previous lessons in data visualizations with python and derive Business Intelligence insights. For this project, you will choose a data set and explore it using Python. You will put together a Story using different visualizations for presentation showing the insights you have derived from the data. You should demonstrate your proficiency using Python and the concepts you have learned throughout the chapter. 
-
-**You will be working individually for this project**, but we'll be guiding you along the process and helping you as you go. Show us what you've got!
-
----
-
-## Technical Requirements
-
-The technical requirements for this project are as follows:
-
-* You must construct a Story using visualizations consisting of at least 5 different plots for the data set you have chosen.
-* Choose a different visualizations types for each of the 5 plots. Try to implement the concepts that we covered in the chapter (sorting, filtering, different , aggregations, etc.)
-* Save the file in the python-bi-project in Github, and your data should be saved to a folder named data.
-* You should also include a README.md file that describes the steps you took, your thought process as you built your visualizations
-
-## Necessary Deliverables
-
-The following deliverables should be pushed to your Github repo for this chapter.
-
-* **A Jupyter notebook uploaded to Git Hub** that contains the visualizations you created from your data set.
-* **A data folder** containing the data set you used for your project.
-* **A ``README.md`` file** containing a detailed explanation of your approach and code for constructing visualizations and organizing them into a Story as well as your results, obstacles encountered, lessons learned, and a link to your completed Tableau workbook.
+### Proyecto BI
 
 
-## Suggested Ways to Get Started
 
-* **Find a data set to process** - a great place to start looking would be [Awesome Public Data Sets](https://github.com/awesomedata/awesome-public-datasets) and [Kaggle Data Sets](https://www.kaggle.com/datasets).
-* **Explore the data set** and come up with a variety of visualizations that you can potentially include in your story.
-* **Break the project down into different steps** - identify the entities/dimensions in your data set, explore them each individually, and then progress to analyzing different combinations of them.
-* **Use the tools in your tool kit** - the concepts and methods you have learned in the business intelligence chapter as well as some of the things you've learned in previous chapters. This is a great way to start tying everything you've learned together!
-* **Work through the lessons in class** & ask questions when you need to! Think about adding relevant code to your project each night, instead of, you know... _procrastinating_.
-* **Commit early, commit often**, don’t be afraid of doing something incorrectly because you can always roll back to a previous version.
-* **Consult documentation and resources provided** to better understand the tools you are using and how to accomplish what you want.
+##### Objetivo.
+
+Utilizar herramientas de geolocalización para detectar un lugar de trabajo idóneo para una empresa.
+
+##### Planteamiento del problema.
+
+La creadora de una startup de comercio de ropa en línea, está en busca de una oficina para incrementar el número de empleados y al mismo tiempo, tener la oportunidad de estar en contacto con clientes pertenecientes a la industria de la moda y atraer un nuevo mercado. 
+
+Para ello, algunas de las consideraciones que solicita son:
+
+- La oficina debe estar ubicada en una zona donde también existan otros desarrolladores de páginas web y de e-commerce
+- Debe pertenecer al estado de Nueva York, fuera de Brooklyn ya que su oficina central se encuentra ahí. 
+- Debe estar cerca de transporte público, como una estación de metro. 
+
+##### Solución
+
+Para encontrar el área de la oficina, se consideraron como criterios de selección algunas empresas con dos oficinas, pertenecientes a la categoría de ecommerce y web de una base de datos.
+
+A partir de ese primer filtro, se seleccionaron aquellas pertenecientes a Nueva York y se realizó un heatmap para observar de manera gráfica cuál era la zona predominante donde se localizaban las empresas. Esto dio como resultado Manhattan, particularmente la zona centro-sur. 
+
+Se utilizó también un dataset que contenía algunos restaurantes y food trucks, con el fin de considerar que en algún momento los trabajadores puedan tener la posibilidad de acceder a ellos facilmente. 
+
+Tomando una base de datos de propiedades del gobierno de NY, se filtraron propiedades pertenecientes al área de Manhattan para que, posteriormente se compararan con una zona específica. En este caso se seleccionó Gramercy Park, debido a su precio de renta. Una vez que se localizaron las propiedades más cercanas se realizó una segunda búsqueda para saber cuál era la propiedad más cercana a una estación de metro. 
+
+Comparando las direcciones obtenidas con ambas condiciones, se seleccionó una oficina que cumplía con los requisitos descritos previamente.
+
+Finalmente se construyó un mapa para reflejar la posible ubicación de la oficina, el subterráneo y el Brooklyn Bridge, como una referencia de lo distante que se encontraría la nueva oficina de las oficinas centrales. 
 
 
-## Project Feedback + Evaluation
 
-* __Technical Requirements__: Did you deliver a project that met all the technical requirements? Given what the class has covered so far, did you build something that was reasonably complex?
+> Precios de renta en Gramercy Park: https://42floors.com/us/ny/new-york/251-park-ave-s?listings=1736728
+>
+> Dataset de propiedades: https://data.cityofnewyork.us/
+>
+> 
 
-* __Creativity__: Did you add a personal spin or creative element into your project submission? Did you incorporate domain knowledge or unique perspective into your analysis.
 
-* __Code Quality__: Did you follow code style guidance and best practices covered in class?
 
-* __Total__: Your instructors will give you a total score on your project between:
-
-    **Score**|**Expectations**
-    -----|-----
-    0|Does not meet expectations
-    1|Meets expectactions, good job!
-    2|Exceeds expectations, you wonderful creature, you!
-
-This will be useful as an overall gauge of whether you met the project goals, but __the more important scores are described in the specs above__, which can help you identify where to focus your efforts for the next project!
