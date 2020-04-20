@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c61084ddf0ac43b7b639164b34233129 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_c61084ddf0ac43b7b639164b34233129" ></div>
+        
+</body>
+<script>    
+    
+            var map_c61084ddf0ac43b7b639164b34233129 = L.map(
+                "map_c61084ddf0ac43b7b639164b34233129",
+                {
+                    center: [51.509865, -0.118092],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_47ac16d282604e789d075dc8f434854f = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c61084ddf0ac43b7b639164b34233129);
+        
+    
+            var circle_marker_b9f618feb095435cb352e9ef2707bd90 = L.circleMarker(
+                [51.509865, -0.118092],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 70, "stroke": true, "weight": 3}
+            ).addTo(map_c61084ddf0ac43b7b639164b34233129);
+        
+    
+        var popup_8fa4ef14c4064fccabf51639c72e983f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5eba2c7b267b41c4ab5f12c1d457af63 = $(`<div id="html_5eba2c7b267b41c4ab5f12c1d457af63" style="width: 100.0%; height: 100.0%;">Laurelhurst Park</div>`)[0];
+            popup_8fa4ef14c4064fccabf51639c72e983f.setContent(html_5eba2c7b267b41c4ab5f12c1d457af63);
+        
+
+        circle_marker_b9f618feb095435cb352e9ef2707bd90.bindPopup(popup_8fa4ef14c4064fccabf51639c72e983f)
+        ;
+
+        
+    
+    
+            var circle_82275a08d5a443ea8ce4add4de858a9f = L.circle(
+                [51.5024412, -0.0189649],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 200, "stroke": true, "weight": 3}
+            ).addTo(map_c61084ddf0ac43b7b639164b34233129);
+        
+    
+        var popup_190763896b784f688761869eb0897b51 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7b80aa63697140749f6eb1b7728af374 = $(`<div id="html_7b80aa63697140749f6eb1b7728af374" style="width: 100.0%; height: 100.0%;">The Waterfront</div>`)[0];
+            popup_190763896b784f688761869eb0897b51.setContent(html_7b80aa63697140749f6eb1b7728af374);
+        
+
+        circle_82275a08d5a443ea8ce4add4de858a9f.bindPopup(popup_190763896b784f688761869eb0897b51)
+        ;
+
+        
+    
+    
+            var marker_6ef8e462d01749caa0c078267091462d = L.marker(
+                [51.503827, 0.049267],
+                {}
+            ).addTo(map_c61084ddf0ac43b7b639164b34233129);
+        
+    
+            var icon_1c2ff8500051424ca4b80dc31658f800 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plane", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6ef8e462d01749caa0c078267091462d.setIcon(icon_1c2ff8500051424ca4b80dc31658f800);
+        
+    
+        var popup_411574ab6a3647248c43e01c4e0d24bc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c4a8fe0e18684bd8bfdaa066d8318b13 = $(`<div id="html_c4a8fe0e18684bd8bfdaa066d8318b13" style="width: 100.0%; height: 100.0%;">Amazon</div>`)[0];
+            popup_411574ab6a3647248c43e01c4e0d24bc.setContent(html_c4a8fe0e18684bd8bfdaa066d8318b13);
+        
+
+        marker_6ef8e462d01749caa0c078267091462d.bindPopup(popup_411574ab6a3647248c43e01c4e0d24bc)
+        ;
+
+        
+    
+</script>
