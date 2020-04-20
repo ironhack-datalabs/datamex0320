@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8cc0ff0f9c7d4971a861bfed81c1b4e8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://leaflet.github.io/Leaflet.heat/dist/leaflet-heat.js"></script>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_8cc0ff0f9c7d4971a861bfed81c1b4e8" ></div>
+        
+</body>
+<script>    
+    
+            var map_8cc0ff0f9c7d4971a861bfed81c1b4e8 = L.map(
+                "map_8cc0ff0f9c7d4971a861bfed81c1b4e8",
+                {
+                    center: [32.7174209, -117.1627714],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_536e5b47706a4d1683351fcbc416d242 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8cc0ff0f9c7d4971a861bfed81c1b4e8);
+        
+    
+            var heat_map_dae2083c55f34dc0abe712a77bdd28bf = L.heatLayer(
+                [[32.718834, -117.163841], [32.718834, -117.163841], [32.718834, -117.163841], [32.718834, -117.163841], [32.718834, -117.163841], [32.718834, -117.163841], [32.718834, -117.163841], [32.718834, -117.163841], [32.718834, -117.163841], [32.718379, -117.160661], [32.71537, -117.163353], [32.717797, -117.158793], [32.717797, -117.158793], [32.717244, -117.167105], [32.716294, -117.166932], [32.715414, -117.158798], [32.7194538, -117.1673934], [32.72038, -117.166941], [32.7160497, -117.1574252], [32.7161896, -117.168697], [32.720656, -117.167831], [32.7154, -117.1565], [32.7154, -117.1565], [32.736369, -117.160619]],
+                {"blur": 15, "max": 1.0, "maxZoom": 18, "minOpacity": 0.5, "radius": 15}
+            ).addTo(map_8cc0ff0f9c7d4971a861bfed81c1b4e8);
+        
+    
+            var marker_1001beb3c7834d509b3706c550604a32 = L.marker(
+                [32.7174209, -117.1627714],
+                {}
+            ).addTo(map_8cc0ff0f9c7d4971a861bfed81c1b4e8);
+        
+    
+            var icon_e50d4fb6bdfa4f9e8e20757660531969 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1001beb3c7834d509b3706c550604a32.setIcon(icon_e50d4fb6bdfa4f9e8e20757660531969);
+        
+    
+            marker_1001beb3c7834d509b3706c550604a32.bindTooltip(
+                `<div>
+                     Location you chose: San Diego California 
+ United States of America, San Diego
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

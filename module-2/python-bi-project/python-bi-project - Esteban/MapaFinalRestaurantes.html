@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_49035a569c114d2ca44d51939b8a581a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://leaflet.github.io/Leaflet.heat/dist/leaflet-heat.js"></script>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_49035a569c114d2ca44d51939b8a581a" ></div>
+        
+</body>
+<script>    
+    
+            var map_49035a569c114d2ca44d51939b8a581a = L.map(
+                "map_49035a569c114d2ca44d51939b8a581a",
+                {
+                    center: [32.7174209, -117.1627714],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d39b389ab2894d578493f3ee3e649783 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_49035a569c114d2ca44d51939b8a581a);
+        
+    
+            var heat_map_376033be480d431685884cf6a5e126da = L.heatLayer(
+                [[32.718834, -117.163841], [32.718834, -117.163841], [32.718834, -117.163841], [32.718834, -117.163841], [32.718834, -117.163841], [32.718834, -117.163841], [32.718834, -117.163841], [32.718834, -117.163841], [32.718834, -117.163841], [32.718379, -117.160661], [32.71537, -117.163353], [32.717797, -117.158793], [32.717797, -117.158793], [32.717244, -117.167105], [32.716294, -117.166932], [32.715414, -117.158798], [32.7194538, -117.1673934], [32.72038, -117.166941], [32.7160497, -117.1574252], [32.7161896, -117.168697], [32.720656, -117.167831], [32.7154, -117.1565], [32.7154, -117.1565], [32.736369, -117.160619]],
+                {"blur": 15, "max": 1.0, "maxZoom": 18, "minOpacity": 0.5, "radius": 15}
+            ).addTo(map_49035a569c114d2ca44d51939b8a581a);
+        
+    
+            var marker_d97c507df05b47cdb7eee6e163609e1e = L.marker(
+                [32.7174209, -117.1627714],
+                {}
+            ).addTo(map_49035a569c114d2ca44d51939b8a581a);
+        
+    
+            var icon_5c9d2637f04d4d008ad3f6ed158f1080 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d97c507df05b47cdb7eee6e163609e1e.setIcon(icon_5c9d2637f04d4d008ad3f6ed158f1080);
+        
+    
+            marker_d97c507df05b47cdb7eee6e163609e1e.bindTooltip(
+                `<div>
+                     Location you chose: San Diego California 
+ United States of America, San Diego
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_78a4740d141f4fe1a230778308432eb7 = L.marker(
+                [32.7156373, -117.1701501],
+                {}
+            ).addTo(map_49035a569c114d2ca44d51939b8a581a);
+        
+    
+            var icon_2dbef31c0d8346b1be98975b704c3dc8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_78a4740d141f4fe1a230778308432eb7.setIcon(icon_2dbef31c0d8346b1be98975b704c3dc8);
+        
+    
+            marker_78a4740d141f4fe1a230778308432eb7.bindTooltip(
+                `<div>
+                     FRANK'S BURGER
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_32327acdde63418cbdda3c3a29f6265f = L.marker(
+                [32.706318, -117.14241],
+                {}
+            ).addTo(map_49035a569c114d2ca44d51939b8a581a);
+        
+    
+            var icon_f78d5b0c520b4dd4beb4c4742dd12b44 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_32327acdde63418cbdda3c3a29f6265f.setIcon(icon_f78d5b0c520b4dd4beb4c4742dd12b44);
+        
+    
+            marker_32327acdde63418cbdda3c3a29f6265f.bindTooltip(
+                `<div>
+                     STARBUCKS COFFEE #545
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
