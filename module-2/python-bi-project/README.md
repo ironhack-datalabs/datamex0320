@@ -1,58 +1,82 @@
-![IronHack Logo](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_d5c5793015fec3be28a63c4fa3dd4d55.png)
+<center> <img src="https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png"></center>
 
-# Project: Business Intelligence with Python
+------
 
-## Overview
+<center> <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Seattle_from_Kerry_Park_%281%29.jpg"></center>
 
-The goal of this project is for you to apply the things that we have learned in the previous lessons in data visualizations with python and derive Business Intelligence insights. For this project, you will choose a data set and explore it using Python. You will put together a Story using different visualizations for presentation showing the insights you have derived from the data. You should demonstrate your proficiency using Python and the concepts you have learned throughout the chapter. 
-
-**You will be working individually for this project**, but we'll be guiding you along the process and helping you as you go. Show us what you've got!
-
----
-
-## Technical Requirements
-
-The technical requirements for this project are as follows:
-
-* You must construct a Story using visualizations consisting of at least 5 different plots for the data set you have chosen.
-* Choose a different visualizations types for each of the 5 plots. Try to implement the concepts that we covered in the chapter (sorting, filtering, different , aggregations, etc.)
-* Save the file in the python-bi-project in Github, and your data should be saved to a folder named data.
-* You should also include a README.md file that describes the steps you took, your thought process as you built your visualizations
-
-## Necessary Deliverables
-
-The following deliverables should be pushed to your Github repo for this chapter.
-
-* **A Jupyter notebook uploaded to Git Hub** that contains the visualizations you created from your data set.
-* **A data folder** containing the data set you used for your project.
-* **A ``README.md`` file** containing a detailed explanation of your approach and code for constructing visualizations and organizing them into a Story as well as your results, obstacles encountered, lessons learned, and a link to your completed Tableau workbook.
+------
 
 
-## Suggested Ways to Get Started
 
-* **Find a data set to process** - a great place to start looking would be [Awesome Public Data Sets](https://github.com/awesomedata/awesome-public-datasets) and [Kaggle Data Sets](https://www.kaggle.com/datasets).
-* **Explore the data set** and come up with a variety of visualizations that you can potentially include in your story.
-* **Break the project down into different steps** - identify the entities/dimensions in your data set, explore them each individually, and then progress to analyzing different combinations of them.
-* **Use the tools in your tool kit** - the concepts and methods you have learned in the business intelligence chapter as well as some of the things you've learned in previous chapters. This is a great way to start tying everything you've learned together!
-* **Work through the lessons in class** & ask questions when you need to! Think about adding relevant code to your project each night, instead of, you know... _procrastinating_.
-* **Commit early, commit often**, don’t be afraid of doing something incorrectly because you can always roll back to a previous version.
-* **Consult documentation and resources provided** to better understand the tools you are using and how to accomplish what you want.
+# Python-bi-project 
+
+For this project, I chose a certain Japanese bakery with 107 years of history that originally started in Seattle, USA. As expansion project, they are interested in going back to Seattle, the company hometown and have a location where they can showcase their long history and be part of one of the most vibrant cities in the USA. 
+
+Seattle is home to some of the greatest companies in the world like Amazon, Boeing, Costco, Starbucks and others...is time to take our place too. 
 
 
-## Project Feedback + Evaluation
 
-* __Technical Requirements__: Did you deliver a project that met all the technical requirements? Given what the class has covered so far, did you build something that was reasonably complex?
+## Client Requirements 
 
-* __Creativity__: Did you add a personal spin or creative element into your project submission? Did you incorporate domain knowledge or unique perspective into your analysis.
+As mentioned before our client wants to be located in Seattle but is open to explore the Great Puget Sound Area best know as Seattle Great Area that includes the cities of Seattle, Bellevue, Redmond, and Kirkland. 
 
-* __Code Quality__: Did you follow code style guidance and best practices covered in class?
+- **Budget**: 3 million dollars as initial investment and setup
 
-* __Total__: Your instructors will give you a total score on your project between:
+- **Restrictions**: 
 
-    **Score**|**Expectations**
-    -----|-----
-    0|Does not meet expectations
-    1|Meets expectactions, good job!
-    2|Exceeds expectations, you wonderful creature, you!
+- - Must be located in a high foot traffic area. 
+  - Must be located in a safe environment where Japanese employees can work peacefully without dealing with the negative aspects of Seattle.
+  - Must be located in a highly commercial area with preference in Seattle downtown or the International District.
+  - Must be located at the ground level (First floor) with:
 
-This will be useful as an overall gauge of whether you met the project goals, but __the more important scores are described in the specs above__, which can help you identify where to focus your efforts for the next project!
+    - Street access
+    - Employees access
+  
+  - Parking area for clients is optional as longer the possible location is in a commercial area with easy street parking access.
+  
+  - Easy access for public and private transportation for customers and employees. 
+  
+  - Multi-purpose commercial areas are preferable.
+  
+  - This store is a step-stone for future stores.
+  
+- **Localization:** Seattle, Bellevue, Kirkland, Redmond.
+
+
+
+## Project Steps
+
+**Jupyter notebook**:
+
+1. I defined a testing area where I can try my mongo queries, data frames and results manipulation. 
+2. Defined a specific query that helped me to find a possible cluster of companies as the product of the client is targetting middle and middle-high class workers.  As the Great Seattle Area is home of large companies I wanted to find how these clusters are distributed in the area. 
+3. Once I got the query result I worked my wat to unwrap all info in a clean and clear data frame. 
+4. This data frame was added to Mongo for future reference.
+5. With this data frame, I produced 2 maps: Heatmap and Markers map that allowed me to identify possible locations. 
+6. After, some extra research a location was chosen where all the conditions of the client are covered. 
+
+
+
+## Files
+
+1. Mongo query's - Funnel.ipynb
+2. dataset_clean.csv
+3. dataset_clean.json
+4. README.md
+5. Maps:
+   1. heatmap.html
+   2. detail_clustering.html
+   3. proposed_site.html
+
+## Author
+```
+|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|
+| CODING FERRET     |
+|___________________|
+(\__/) || 
+(•ㅅ•) || 
+/ 　 づ
+I'm a ferret, not a rabbit o(>ω<)o 
+```
+
+
