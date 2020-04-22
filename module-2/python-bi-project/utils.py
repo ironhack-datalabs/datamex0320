@@ -58,7 +58,7 @@ def metric_score(df):
     c = df['dist_param']
     cost = df['cost_param']
     
-    score = 10000*math.log(n, 100)*math.log10(n)*(c**6)/(cost**0.2*math.log10(cost)**6)
+    score = (1000000.*math.log(n, 100.)*math.log10(n)*(c**6)*math.pow(100., c**8))/(cost**0.2*math.log10(cost)**12)
     
     return score
 
